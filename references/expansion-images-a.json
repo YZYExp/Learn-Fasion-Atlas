@@ -1,0 +1,46 @@
+[
+  {
+    "id": "38-garment-families",
+    "file": "assets/images/38-garment-families.png",
+    "chapter": 23,
+    "prompt": "Use case: scientific-educational. Asset type: photographic fashion teaching comparison plate for a Chinese illustrated clothing atlas. High quality editorial studio photography, warm ivory seamless background and very fine panel rules. Portrait canvas with exactly 3 columns and 2 rows, 6 equal panels with generous separation. Beautiful ADULT models age 25-35, predominantly East Asian plus varied skin tones. Natural relaxed standing poses, accurate normal body proportions, no extreme fashion elongation, no wide-angle distortion, natural hands, unobstructed clothes. Warm soft daylight, realistic fabrics. Clear small dark serif English label below each panel. No titles or extra text. Non-sexual clothing catalog, all garments opaque and fully covering breasts, no lingerie styling. Structure visibly corresponds to each label; do not invent hidden construction. All six panels fit fully within the canvas. Full-length head-to-shoes fashion portraits. Reading order: WRAP DRESS (muted blue true overlapping diagonal front wrap, side waist tie, knee-length), SHIRT DRESS (cream collared cotton dress with continuous button placket from collar to hem, belt, midi length), CULOTTES (navy wide knee-to-midcalf trousers, clearly distinct two trouser legs with space between), TAPERED TROUSERS (sand trousers wider at hip narrowing to ankle with plain fitted top), FLARED TROUSERS (dark trousers fitted thigh, clearly flaring below knee with plain top), CAPE (wine-colored sleeveless shoulder-draped cape with clear hand slits worn over a cream shirt and dark trousers, arms emerge through slits, no sewn sleeves). Different adults, East Asian majority; include one South Asian woman and one Black woman. Keep each full body visible and comparable.",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "review": "目视核验六种衣型、标签与人物比例均可辨识。披风实际为开前襟披覆，不能将画面断言为闭合前片上的手插口。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-d1b53f5b-3fd4-4002-ad37-e03472d86e54.png"
+  },
+  {
+    "id": "39-bodice-details",
+    "file": "assets/images/39-bodice-details.png",
+    "chapter": 24,
+    "prompt": "Use case: scientific-educational. Asset type: photographic fashion teaching comparison plate for a Chinese illustrated clothing atlas. High quality editorial studio photography, warm ivory seamless background and very fine panel rules. Portrait canvas with exactly 3 columns and 2 rows, 6 equal panels with generous separation. Beautiful ADULT models age 25-35, predominantly East Asian plus varied skin tones. Natural relaxed standing poses, accurate normal body proportions, no extreme fashion elongation, no wide-angle distortion, natural hands, unobstructed clothes. Warm soft daylight, realistic fabrics. Clear small dark serif English label below each panel. No titles or extra text. Non-sexual clothing catalog, all garments opaque and fully covering breasts, no lingerie styling. Structure visibly corresponds to each label; do not invent hidden construction. All six panels fit fully within the canvas. Six adult female fashion portraits framed head to hip, ordinary attractive relaxed posture, tops worn with tailored high-waist trousers. Top row front views: THIN-STRAP CAMISOLE (opaque navy camisole thin shoulder straps), HALTER TOP (opaque cream top secured behind neck, shoulders bare), STRAPLESS TOP (opaque burgundy fitted straight strapless top, fully covering breasts). Bottom row: BUSTIER-INSPIRED TOP (opaque navy external tailored top with shaped bodice and visible vertical panel seams, no assertion of internal boning, worn as ordinary outerwear), LACE-UP BACK (three-quarter BACK view of an opaque burgundy fitted top showing centered functional back lacing with modest opaque backing beneath all lacing), CROSS-STRAP BACK (BACK view of opaque cream top with two straps crossing on upper back, opaque lower back panel). Make back views actually show the backs; hair swept aside to reveal closure. No sexual posing, no cleavage emphasis. Clothing construction recognition.",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "review": "目视核验三种固定方式、分割线、背系带和交叉背带清楚。背系带缝隙可见皮肤，不能声称不透明背衬；不能据图证明钢圈、骨条等内部结构。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-58a020a6-9fbc-4e3a-8fd6-6a6fa20e214c.png"
+  },
+  {
+    "id": "40-neck-back-details",
+    "file": "assets/images/40-neck-back-details.png",
+    "chapter": 25,
+    "prompt": "Use case: scientific-educational. Asset type: photographic fashion teaching comparison plate for a Chinese illustrated clothing atlas. High quality editorial studio photography, warm ivory seamless background and very fine panel rules. Portrait canvas with exactly 3 columns and 2 rows, 6 equal panels with generous separation. Beautiful ADULT models age 25-35, predominantly East Asian plus varied skin tones. Natural relaxed standing poses, accurate normal body proportions, no extreme fashion elongation, no wide-angle distortion, natural hands, unobstructed clothes. Warm soft daylight, realistic fabrics. Clear small dark serif English label below each panel. No titles or extra text. Non-sexual clothing catalog, all garments opaque and fully covering breasts, no lingerie styling. Structure visibly corresponds to each label; do not invent hidden construction. All six panels fit fully within the canvas. Controlled-variable fashion teaching plate. Exactly the SAME beautiful East Asian adult woman, identical face, neat dark hair gathered up, same opaque matte deep emerald green bodice, same neutral posture and studio light, head-to-hip crop. Top row FRONT view differences only neckline: SQUARE NECKLINE (clearly straight horizontal base and vertical sides), SWEETHEART NECKLINE (two symmetrical rounded arcs meeting at central dip, supportive shoulder straps), BOAT NECKLINE (wide shallow near-horizontal opening ending near shoulders, not off-shoulder). Bottom row BACK views: DEEP-U BACK (clearly deep rounded U opening on upper-middle back, modest opaque lower back), CROSS-STRAP BACK (two emerald straps form an X across upper back, lower bodice opaque), BUTTON-BACK (fully opaque back with a centered vertical row of small buttons, opening closed). Back views must actually show back; do not repeat fronts. Same garment color and material and body proportions across all six. No extra accessories.",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "review": "同一人物、同色衣身与相近姿态一致；正面方领、心形领、船领，背面深U、交叉带、纽扣门襟可见。不同领口导致局部上身裁片随之变化，属于控制主要变量的教学近似。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-56907c7e-059e-493b-8eff-e44e5b8315f7.png"
+  },
+  {
+    "id": "41-sleeve-comparison",
+    "file": "assets/images/41-sleeve-comparison.png",
+    "chapter": 25,
+    "prompt": "Use case: scientific-educational. Asset type: photographic fashion teaching comparison plate for a Chinese illustrated clothing atlas. High quality editorial studio photography, warm ivory seamless background and very fine panel rules. Portrait canvas with exactly 3 columns and 2 rows, 6 equal panels with generous separation. Beautiful ADULT models age 25-35, predominantly East Asian plus varied skin tones. Natural relaxed standing poses, accurate normal body proportions, no extreme fashion elongation, no wide-angle distortion, natural hands, unobstructed clothes. Warm soft daylight, realistic fabrics. Clear small dark serif English label below each panel. No titles or extra text. Non-sexual clothing catalog, all garments opaque and fully covering breasts, no lingerie styling. Structure visibly corresponds to each label; do not invent hidden construction. All six panels fit fully within the canvas. Controlled-variable teaching plate with the SAME beautiful East Asian ADULT woman, same face and neat tied hair, same opaque ivory cotton blouse with plain round neck and dark tailored trousers, same relaxed pose, head-to-hip crop. Both arms slightly away from torso to reveal sleeve construction, hands relaxed. SIX cases: SET-IN SHOULDER (natural shoulder seam and conventional vertical armhole seam, straight full sleeve); DROP SHOULDER (shoulder seam visibly extends past natural shoulder point onto upper arm, relaxed straight long sleeve); RAGLAN SEAM (diagonal seam from neck to underarm, continuous sleeve shoulder piece, long plain sleeve); PUFF SLEEVE (short rounded volume gathered at shoulder and above-elbow cuff); LANTERN SLEEVE (long sleeve with fullness concentrated at middle/lower arm and gathered narrow wrist cuff); BELL SLEEVE (long sleeve flaring into a wide OPEN cuff at wrist, no gathered cuff). First three are seam-placement comparisons, final three sleeve-volume comparisons. All seams must be clearly visible through subtle tonal stitching, no diagram lines, no exaggerated balloon shape. Correct English labels below panels.",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "review": "目视核验装袖、落肩、插肩的接合线和泡泡、灯笼、喇叭的体积区别可见；同一人物、同色衣身、相近姿态。灯笼袖以中下段蓬量和收口呈现，不是裁片图。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-6b2df12f-b9f0-4461-aed0-ed5568a9d02a.png"
+  }
+]

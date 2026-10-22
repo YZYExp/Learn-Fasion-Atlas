@@ -80,3 +80,57 @@
 | [World Cosplay Championship，Judging and Competition Rules](https://wcc.worldcosplaysummit.jp/en/championship/rule/) | 角色对应、制作与多元扮演者 |
 | [Blizzard，Introducing: Cosplay Reference Kits](https://news.blizzard.com/en-gb/article/19881985/introducing-cosplay-reference-kits) | 多角度与隐藏层参考方法 |
 | [Blizzard，Casual Cosplay Shines at BlizzCon](https://news.blizzard.com/en-us/article/22647474/casual-cosplay-shines-at-blizzcon) | 日常化改编真实案例 |
+
+## 辨识进阶：第23—28章
+
+各章在事实旁给出链接。以下入口便于沿专题继续阅读，图示不替代实物结构资料。
+
+
+### 第 23 章｜相邻衣型怎样分：从裙装到裤装与外搭
+
+- [真实旁读：The Met，Diane von Furstenberg，Dress，1975–76](https://www.metmuseum.org/art/collection/search/79701)
+- [当代实例：M&S，Satin V-Neck Midi Tea Dress](https://www.marksandspencer.com/satin-v-neck-midi-tea-dress/p/clp23045425)
+- [历史旁读：The Met，Tea gown，2009.300.558](https://www.metmuseum.org/art/collection/search/159102)
+- [ASU FIDM Museum，Time for Tea](https://asufidmmuseum.asu.edu/learn/articles/time-tea)
+- [实物旁读：UNIQLO，Wide Tapered Pants](https://www.uniqlo.com/us/en/products/E471934-000/00)
+- [UNIQLO，Culottes，481238](https://www.uniqlo.com/sg/en/products/E481238-000/00)
+- [实物旁读：European Fashion Heritage Association，A Rich Evening Cape from Southern Germany](https://fashionheritage.eu/object-voices-a-rich-evening-cape-from-southern-germany/)
+
+### 第 24 章｜胸衣感从哪里来：固定方式、杯线与支撑结构
+
+- [真实旁读：H&M，Cotton halterneck top，1332448007](https://www2.hm.com/en_sg/productpage.1332448007.html)
+- [结构资料：Wacoal，Bra Anatomy](https://wacoal-america.com/pages/bra-anatomy)
+- [历史结构资料：V&A，Corsets, crinolines and bustles](https://www.vam.ac.uk/articles/corsets-crinolines-and-bustles-fashionable-victorian-underwear)
+- [实物旁读：London Museum，Corset, stays，object-77973](https://www.londonmuseum.org.uk/collections/v/object-77973/corset-stays/)
+
+### 第 25 章｜从领口到背部：把一件上衣描述完整
+
+- [教学参照：Utah Education Network，Neckline Variations](https://www.uen.org/cte/family/fashion/downloads/principles/necklines.pdf)
+- [品牌教学参照：Knit Picks，Anatomy of a Sweater](https://blog.knitpicks.com/anatomy-of-a-sweater/)
+- [博物馆参照：Museum at FIT，Statement Sleeves](https://www.fitnyc.edu/museum/exhibitions/statement-sleeves/index.php)
+
+### 第 26 章｜只换一种材料：用对照看清衣服的质感
+
+- [材料参照：MFA Boston，Silk](https://cameo.mfa.org/wiki/Silk)
+- [结构参照：MFA Boston，Satin weave](https://cameo.mfa.org/wiki/Satin_weave)
+- [材料参照：MFA Boston，Chiffon](https://cameo.mfa.org/wiki/Chiffon)
+- [Organza](https://cameo.mfa.org/wiki/Organza)
+- [术语参照：Fitzwilliam Museum，Lace](https://data.fitzmuseum.cam.ac.uk/id/terminology/term-39352)
+- [实物参照：Border or flounce，T.5-1986](https://data.fitzmuseum.cam.ac.uk/id/object/110172)
+
+### 第 27 章｜鞋袜与包：名称之外，还要说清哪些部位
+
+- [资料：CHARLES & KEITH，Mary Jane Shoes: All You Need to Know](https://www.charleskeith.com/sg/guides/mary-janes.html)
+- [资料：Cole Haan，Women's Loafer Style Guide](https://www.colehaan.com/pages/womens-loafer-style-guide)
+- [资料：Clarks，Straven Sling](https://clarks.sg/products/straven-sling-womens)
+- [品牌结构指南：Charles Tyrwhitt，Shoe Design](https://www.charlestyrwhitt.com/ca/en_CA/ttip-shoe-design.html)
+- [资料：Injinji，Toesock Height Options](https://www.injinji.com/height.html)
+- [资料：CHARLES & KEITH，Hobo Bags Guide](https://www.charleskeith.co.uk/gb/guides/hobo-bags.html)
+- [资料：Mulberry，Crossbody Bags](https://www.mulberry.com/sg/shop/women/bags/crossbody-bags)
+- [实物检索参照：CHARLES & KEITH，Bucket & Drawstring Bags](https://www.charleskeith.com/sg/bags/bucket-bags)
+
+### 第 28 章｜男装与中性衣橱：把整套穿着写成可调整的关系
+
+- [资料：V&A，Fashioning Masculinities: The Art of Menswear](https://www.vam.ac.uk/exhibitions/fashioning-masculinities-the-art-of-menswear)
+- [资料：Suitsupply，Your Jacket Detail Guide](https://suitsupply.com/en-it/journal/jacket-details-explained.html)
+- [资料：Suitsupply，Trousers Fit Guide](https://suitsupply.com/en-us/journal/trousers-fit-guide.html)

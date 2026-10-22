@@ -9,3 +9,5 @@
 .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 32px;align-items:start}
 .atlas-item{align-self:start}.atlas-board{display:block;position:relative;width:100%;border:0;padding:0;background:#eae7df;cursor:zoom-in;text-align:left}.atlas-board img{display:block;width:100%;height:auto;max-width:100%}.zoom-label{position:absolute;right:12px;bottom:12px;background:var(--white);padding:5px 10px;font-size:10px;opacity:0;transition:opacity .2s}.atlas-board:hover .zoom-label,.atlas-board:focus-visible .zoom-label{opacity:1}.atlas-item h3{font-size:24px}.atlas-item h3 small{font-size:11px}.atlas-item p{font-size:12px}.atlas-chapter{display:inline-block;font-size:12px;margin-top:12px;border-bottom:1px solid var(--line)}.atlas-chapter:hover{color:var(--accent)}
 @media(max-width:760px){.gallery{grid-template-columns:1fr;gap:36px}.atlas-item h3{display:flex;font-size:23px}.atlas-item h3 small{display:inline;font-size:10px}.atlas-item p,.atlas-chapter{font-size:11px}.zoom-label{opacity:1}}
+
+.filters{flex-wrap:wrap}.explore-toolbar{flex-wrap:wrap}

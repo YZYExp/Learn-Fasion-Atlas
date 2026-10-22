@@ -1,12 +1,14 @@
 from pathlib import Path
-import json,re,html,shutil,os
+import json,re,html,shutil,os,io
 from PIL import Image
 SOURCE=Path(os.environ.get('FASHION_ATLAS_SOURCE',str(Path(__file__).resolve().parent.parent)))
 DIST=Path(__file__).parent/'dist';(DIST/'assets').mkdir(exist_ok=True)
 for p in (SOURCE/'assets/images').glob('*.png'):
- im=Image.open(p).convert('RGB');im.save(DIST/'assets'/(p.stem+'.webp'),'WEBP',quality=88,method=6)
+ target=DIST/'assets'/(p.stem+'.webp')
+ im=Image.open(p).convert('RGB');buffer=io.BytesIO();im.save(buffer,'WEBP',quality=88,method=6)
+ data=buffer.getvalue();Image.open(io.BytesIO(data)).verify();target.write_bytes(data)
 shutil.copy2(SOURCE/'output/pdf/fashion-atlas-expanded.pdf',DIST/'fashion-atlas.pdf')
-chapters=sorted((SOURCE/'chapters').glob('*.md'));appendices=sorted((SOURCE/'appendices').glob('*.md'))
+book=json.loads((SOURCE/'book.json').read_text());chapters=[SOURCE/c['source'] for c in book['chapters']];appendices=[SOURCE/p for p in book['appendices']]
 files=chapters+appendices+[SOURCE/'references/sources.md'];ids={p.name:p.stem for p in files}
 def urlfix(u):
  if u.startswith(('http://','https://','#')):return u
@@ -66,4 +68,15 @@ out=[]
 for p in files:
  text=p.read_text();title=text.splitlines()[0].lstrip('# ');out.append({'id':p.stem,'title':title,'number':int(p.stem[:2]) if p in chapters else None,'kind':'chapter' if p in chapters else 'appendix','html':render(text)})
 (DIST/'content.json').write_text(json.dumps(out,ensure_ascii=False))
-print({'chapters':len(chapters),'appendices':len(appendices),'images':37})
+print({'chapters':len(chapters),'appendices':len(appendices),'images':len(list((SOURCE/'assets/images').glob('*.png')))})
+
+# Update displayed counts from the completed PDF instead of hard-coded values.
+meta=json.loads((SOURCE/'output/pdf/metadata.json').read_text())
+p=DIST/'index.html';s=p.read_text()
+s=re.sub(r'探索\d+章正文、\d+张配图',f"探索{meta['chapters']}章正文、{meta['images']}张配图",s)
+s=re.sub(r'<b>\d+</b>章正文',f"<b>{meta['chapters']}</b>章正文",s)
+s=re.sub(r'<b>\d+</b>张配图',f"<b>{meta['images']}</b>张配图",s)
+s=re.sub(r'<b>\d+</b>页读本',f"<b>{meta['pages']}</b>页读本",s)
+s=re.sub(r'完整图解读本 · \d+ 页',f"完整图解读本 · {meta['pages']} 页",s)
+s=re.sub(r'PDF 约 [\d.]+ MB',f"PDF 约 {(DIST/'fashion-atlas.pdf').stat().st_size/1000000:.1f} MB",s)
+p.write_text(s)

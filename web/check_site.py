@@ -1,6 +1,7 @@
 """Check published assets and chapter routes before deployment."""
 import json, re
 from pathlib import Path
+from PIL import Image
 from urllib.parse import urlsplit, parse_qs, unquote
 
 root = Path(__file__).resolve().parent / 'dist'
@@ -28,8 +29,10 @@ for file in root.glob('*.html'):
         check_url(url, file.name)
 app = (root / 'app.js').read_text()
 for name in re.findall(r"\{id:'([^']+)'", app):
-    for suffix in ('.webp', '-thumb.webp'):
+    for suffix in ('.webp',):
         check_url('assets/' + name + suffix, name)
+for image in (root / 'assets').glob('*.webp'):
+    Image.open(image).verify()
 assert len(ids) == len(chapters), 'Duplicate chapter IDs'
 assert (root / 'fashion-atlas.pdf').read_bytes().startswith(b'%PDF-'), 'Missing or invalid PDF'
 assert not errors, '\n'.join(errors)

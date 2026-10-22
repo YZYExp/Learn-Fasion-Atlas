@@ -44,7 +44,10 @@ S={
  'quote':ParagraphStyle('quote',fontName='CN',fontSize=10.1,leading=17,textColor=TEAL,leftIndent=13,borderPadding=8,backColor=colors.HexColor('#f0f5f4'),spaceBefore=5,spaceAfter=10,wordWrap='CJK'),
  'small':ParagraphStyle('small',fontName='CN',fontSize=8.3,leading=13.2,textColor=MUTED,wordWrap='CJK'),
 }
-FILES=sorted((ROOT/'chapters').glob('*.md'))+sorted((ROOT/'appendices').glob('*.md'))+[ROOT/'references/sources.md']
+BOOK=json.loads((ROOT/'book.json').read_text())
+CHAPTERS=[ROOT/c['source'] for c in BOOK['chapters']]
+IMAGE_COUNT=len(list((ROOT/'assets/images').glob('*.png')))
+FILES=CHAPTERS+sorted((ROOT/'appendices').glob('*.md'))+[ROOT/'references/sources.md']
 KEYS={p.name:'section-'+p.stem for p in FILES}
 REFS={}
 for p in FILES:
@@ -86,10 +89,10 @@ def para(text,style='body',track=True):
 
 def img(path):
  source=PILImage.open(path).convert('RGB')
- maxw=491;maxh=540
+ maxw=491;maxh=520 if path.stem[:2].isdigit() and int(path.stem[:2])>=38 else 540
  fac=min(maxw/source.width,maxh/source.height)
  target=TMP/(hashlib.sha256(str(path).encode()).hexdigest()[:12]+'.jpg')
- source.save(target,quality=int(os.environ.get('FASHION_ATLAS_JPEG_QUALITY','82')),subsampling=2,optimize=True)
+ source.save(target,quality=int(os.environ.get('FASHION_ATLAS_JPEG_QUALITY','76')),subsampling=2,optimize=True)
  return Image(str(target),width=source.width*fac,height=source.height*fac,hAlign='CENTER')
 
 class Cover(Flowable):
@@ -101,7 +104,7 @@ class Cover(Flowable):
   c.setFont('CN',18);c.drawString(0,517,'从风格识别到单品描述')
   c.setFillColor(MUTED);c.setFont('CN',10.5)
   c.drawString(0,483,'看懂服饰 · 认识名称 · 说清人物穿着')
-  c.setFont('CN',10);c.drawString(0,448,'22 章正文 / 36 张图板 / 210 个对照格')
+  c.setFont('CN',10);c.drawString(0,448,f'{len(CHAPTERS)-1} 章正文 / {IMAGE_COUNT} 张教学配图')
   path=ROOT/'assets/images/13-dresses.png'
   p=PILImage.open(path);dw=245;dh=dw*p.height/p.width
   c.drawImage(ImageReader(p),BW-dw,28,width=dw,height=dh,mask='auto')
@@ -207,6 +210,7 @@ def main():
  for p in FILES:story.extend([PageBreak(),*parse(p)])
  d.multiBuild(story,maxPasses=4)
  (TMP/'pdf-citations.json').write_text(json.dumps(d.citation_pages,indent=2))
- print(json.dumps({'output':str(OUT),'pages':d.page,'sources':len(REFS),'images':37},ensure_ascii=False))
+ (ROOT/'output/pdf/metadata.json').write_text(json.dumps({'pages':d.page,'chapters':len(CHAPTERS)-1,'images':IMAGE_COUNT},ensure_ascii=False,indent=2)+'\n')
+ print(json.dumps({'output':str(OUT),'pages':d.page,'sources':len(REFS),'images':IMAGE_COUNT},ensure_ascii=False))
 
 if __name__=='__main__':main()

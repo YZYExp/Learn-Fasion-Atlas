@@ -16,9 +16,11 @@ def local_target(source, url):
 
 def validate():
     errors = []
-    files = sorted((ROOT / 'chapters').glob('*.md'))
-    if len(files) != 23:
-        errors.append(f'Expected 23 chapter files including introduction, got {len(files)}')
+    manifest = json.loads((ROOT / 'book.json').read_text())
+    files = [ROOT / c['source'] for c in manifest['chapters']]
+    actual = set((ROOT / 'chapters').glob('*.md'))
+    if set(files) != actual:
+        errors.append('Chapter manifest does not match source files')
     for source in [*files, *sorted((ROOT / 'appendices').glob('*.md')), ROOT / 'README.md']:
         text = source.read_text(encoding='utf-8')
         if len(text) < 500:
@@ -32,7 +34,7 @@ def validate():
         if re.search(r'\bTODO\b|待生成|占位图', text):
             errors.append(f'Unfinished content: {source.name}')
     image_records = []
-    for manifest in ('images.json', 'detail-plan.json', 'variation-plan.json', 'hanfu-cosplay-images.json'):
+    for manifest in ('images.json', 'detail-plan.json', 'variation-plan.json', 'hanfu-cosplay-images.json', 'expansion-images-a.json', 'expansion-images-b.json'):
         image_records.extend(json.loads((ROOT / 'references' / manifest).read_text(encoding='utf-8')))
     for image in image_records:
         if not (ROOT / image['file']).is_file() or not image.get('prompt'):

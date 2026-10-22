@@ -1,0 +1,263 @@
+{
+  "title": "衣着有名：从风格识别到单品描述",
+  "language": "zh-CN",
+  "edition": "辨识进阶扩充版",
+  "cover": "assets/images/13-dresses.png",
+  "sections": [
+    {
+      "id": "I",
+      "title": "风格与衣橱"
+    },
+    {
+      "id": "II",
+      "title": "单品与细节基础"
+    },
+    {
+      "id": "III",
+      "title": "传统与角色服装"
+    },
+    {
+      "id": "IV",
+      "title": "辨识进阶与衣橱实践"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "00-reading",
+      "number": 0,
+      "title": "导读｜给喜欢的衣服一个准确的名字",
+      "source": "chapters/00-reading.md",
+      "slug": "00-reading",
+      "group": "I"
+    },
+    {
+      "id": "01-observe",
+      "number": 1,
+      "title": "第 1 章｜先看衣服，再猜风格",
+      "source": "chapters/01-observe.md",
+      "slug": "01-observe",
+      "group": "I"
+    },
+    {
+      "id": "02-classic",
+      "number": 2,
+      "title": "第 2 章｜经典、学院与城市：相近的整洁，怎样说清",
+      "source": "chapters/02-classic.md",
+      "slug": "02-classic",
+      "group": "I"
+    },
+    {
+      "id": "03-romantic",
+      "number": 3,
+      "title": "第 3 章｜浪漫、田园与轻甜：柔软并不只有一种",
+      "source": "chapters/03-romantic.md",
+      "slug": "03-romantic",
+      "group": "I"
+    },
+    {
+      "id": "04-street",
+      "number": 4,
+      "title": "第 4 章｜朋克、哥特与街头：衣服背后有社群",
+      "source": "chapters/04-street.md",
+      "slug": "04-street",
+      "group": "I"
+    },
+    {
+      "id": "05-functional",
+      "number": 5,
+      "title": "第 5 章｜工装、户外与机能：先问它借用了什么功能",
+      "source": "chapters/05-functional.md",
+      "slug": "05-functional",
+      "group": "I"
+    },
+    {
+      "id": "06-retro",
+      "number": 6,
+      "title": "第 6 章｜复古不是一个年代：从腰线与体积认时间",
+      "source": "chapters/06-retro.md",
+      "slug": "06-retro",
+      "group": "I"
+    },
+    {
+      "id": "07-lolita",
+      "number": 7,
+      "title": "第 7 章｜洛丽塔、王子系与蒸汽朋克：共享历史灵感，不是同一种衣服",
+      "source": "chapters/07-lolita.md",
+      "slug": "07-lolita",
+      "group": "I"
+    },
+    {
+      "id": "08-tradition",
+      "number": 8,
+      "title": "第 8 章｜传统、改良与新表达：先说清你想靠近哪一种",
+      "source": "chapters/08-tradition.md",
+      "slug": "08-tradition",
+      "group": "I"
+    },
+    {
+      "id": "09-avant",
+      "number": 9,
+      "title": "第 9 章｜极繁、解构与雕塑：当风格是设计方法",
+      "source": "chapters/09-avant.md",
+      "slug": "09-avant",
+      "group": "I"
+    },
+    {
+      "id": "10-accessories",
+      "number": 10,
+      "title": "第 10 章｜鞋、包、首饰与面料：说清细节，风格才落地",
+      "source": "chapters/10-accessories.md",
+      "slug": "10-accessories",
+      "group": "I"
+    },
+    {
+      "id": "11-express",
+      "number": 11,
+      "title": "第 11 章｜把喜欢变成表达：检索、生图、设计与讨论",
+      "source": "chapters/11-express.md",
+      "slug": "11-express",
+      "group": "I"
+    },
+    {
+      "id": "12-street-future",
+      "number": 12,
+      "title": "第 12 章｜日系街头与未来幻想：把夸张、日常和想象分开说",
+      "source": "chapters/12-street-future.md",
+      "slug": "12-street-future",
+      "group": "I"
+    },
+    {
+      "id": "13-dresses",
+      "number": 13,
+      "title": "第 13 章｜连衣裙叫什么：从细肩带到网球裙装",
+      "source": "chapters/13-dresses.md",
+      "slug": "13-dresses",
+      "group": "II"
+    },
+    {
+      "id": "14-skirts",
+      "number": 14,
+      "title": "第 14 章｜半裙的六种组织：裙摆为什么这样展开",
+      "source": "chapters/14-skirts.md",
+      "slug": "14-skirts",
+      "group": "II"
+    },
+    {
+      "id": "15-tops-underwear",
+      "number": 15,
+      "title": "第 15 章｜吊带、背心、胸衣与连体衣：外观、结构和用途分别命名",
+      "source": "chapters/15-tops-underwear.md",
+      "slug": "15-tops-underwear",
+      "group": "II"
+    },
+    {
+      "id": "16-necklines-sleeves",
+      "number": 16,
+      "title": "第 16 章｜领口与袖子：从“这件很特别”说到具体形状",
+      "source": "chapters/16-necklines-sleeves.md",
+      "slug": "16-necklines-sleeves",
+      "group": "II"
+    },
+    {
+      "id": "17-fabrics",
+      "number": 17,
+      "title": "第 17 章｜蕾丝、缎面与网纱：材料如何改变同一件衣服",
+      "source": "chapters/17-fabrics.md",
+      "slug": "17-fabrics",
+      "group": "II"
+    },
+    {
+      "id": "18-trousers-outerwear",
+      "number": 18,
+      "title": "第 18 章｜裤子与外搭：先看轮廓，再说衣型",
+      "source": "chapters/18-trousers-outerwear.md",
+      "slug": "18-trousers-outerwear",
+      "group": "II"
+    },
+    {
+      "id": "19-details",
+      "number": 19,
+      "title": "第 19 章｜不要都叫“褶皱”：抽褶、褶裥与波浪边",
+      "source": "chapters/19-details.md",
+      "slug": "19-details",
+      "group": "II"
+    },
+    {
+      "id": "20-description-workshop",
+      "number": 20,
+      "title": "第 20 章｜不知道衣服叫什么，也能把它说清楚",
+      "source": "chapters/20-description-workshop.md",
+      "slug": "20-description-workshop",
+      "group": "II"
+    },
+    {
+      "id": "21-hanfu",
+      "number": 21,
+      "title": "第 21 章｜汉服：先认形制，再谈风格",
+      "source": "chapters/21-hanfu.md",
+      "slug": "21-hanfu",
+      "group": "III"
+    },
+    {
+      "id": "22-cosplay",
+      "number": 22,
+      "title": "第 22 章｜Cosplay与角色服装：把角色拆成可描述的衣物",
+      "source": "chapters/22-cosplay.md",
+      "slug": "22-cosplay",
+      "group": "III"
+    },
+    {
+      "id": "23-garment-families",
+      "number": 23,
+      "title": "第 23 章｜相邻衣型怎样分：从裙装到裤装与外搭",
+      "source": "chapters/23-garment-families.md",
+      "slug": "23-garment-families",
+      "group": "IV"
+    },
+    {
+      "id": "24-bodice-structure",
+      "number": 24,
+      "title": "第 24 章｜胸衣感从哪里来：固定方式、杯线与支撑结构",
+      "source": "chapters/24-bodice-structure.md",
+      "slug": "24-bodice-structure",
+      "group": "IV"
+    },
+    {
+      "id": "25-visible-details",
+      "number": 25,
+      "title": "第 25 章｜从领口到背部：把一件上衣描述完整",
+      "source": "chapters/25-visible-details.md",
+      "slug": "25-visible-details",
+      "group": "IV"
+    },
+    {
+      "id": "26-material-comparison",
+      "number": 26,
+      "title": "第 26 章｜只换一种材料：用对照看清衣服的质感",
+      "source": "chapters/26-material-comparison.md",
+      "slug": "26-material-comparison",
+      "group": "IV"
+    },
+    {
+      "id": "27-shoes-accessories",
+      "number": 27,
+      "title": "第 27 章｜鞋袜与包：名称之外，还要说清哪些部位",
+      "source": "chapters/27-shoes-accessories.md",
+      "slug": "27-shoes-accessories",
+      "group": "IV"
+    },
+    {
+      "id": "28-wardrobe-lab",
+      "number": 28,
+      "title": "第 28 章｜男装与中性衣橱：把整套穿着写成可调整的关系",
+      "source": "chapters/28-wardrobe-lab.md",
+      "slug": "28-wardrobe-lab",
+      "group": "IV"
+    }
+  ],
+  "appendices": [
+    "appendices/01-glossary.md",
+    "appendices/02-comparisons.md",
+    "appendices/03-garment-words.md"
+  ]
+}

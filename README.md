@@ -4,7 +4,7 @@
 
 ## 阅读
 
-从 [全书合并稿](book.md) 连续阅读，或按下面的分章目录阅读。只想先学会描述人物穿着，可先看 [单品细节分册](garment-details.md)，从第 13—22 章进入；不需要先掌握风格名。图片全部附在工程内，解压后请保留目录关系。主稿为 Markdown，不需要联网才能看自有配图；真实作品与资料链接需联网访问。
+从 [全书合并稿](book.md) 连续阅读，或按下面的分章目录阅读。只想先学会描述人物穿着，可先看 [单品细节分册](garment-details.md)，从第 13—28 章进入；不需要先掌握风格名。图片全部附在工程内，解压后请保留目录关系。主稿为 Markdown，不需要联网才能看自有配图；真实作品与资料链接需联网访问。
 
 | 顺序 | 章节 | 读完能做什么 |
 |---|---|---|
@@ -31,13 +31,19 @@
 | 20 | [人物衣着描述工坊](chapters/20-description-workshop.md) | 用八槽方法、十句范例和三次改写练表达 |
 | 21 | [汉服形制与证据](chapters/21-hanfu.md) | 褙子、三件套、马面裙及资料核查 |
 | 22 | [Cosplay与角色服装](chapters/22-cosplay.md) | 结构分组、仙侠幻想与角色参考 |
+| 23 | [相邻衣型怎样分：从裙装到裤装与外搭](chapters/23-garment-families.md) | 辨识进阶与完整衣着描述 |
+| 24 | [胸衣感从哪里来：固定方式、杯线与支撑结构](chapters/24-bodice-structure.md) | 辨识进阶与完整衣着描述 |
+| 25 | [从领口到背部：把一件上衣描述完整](chapters/25-visible-details.md) | 辨识进阶与完整衣着描述 |
+| 26 | [只换一种材料：用对照看清衣服的质感](chapters/26-material-comparison.md) | 辨识进阶与完整衣着描述 |
+| 27 | [鞋袜与包：名称之外，还要说清哪些部位](chapters/27-shoes-accessories.md) | 辨识进阶与完整衣着描述 |
+| 28 | [男装与中性衣橱：把整套穿着写成可调整的关系](chapters/28-wardrobe-lab.md) | 辨识进阶与完整衣着描述 |
 | A | [双语索引](appendices/01-glossary.md) | 查 81 条术语与正文位置 |
 | B | [12 组易混辨析](appendices/02-comparisons.md) | 快速找到可见区别与讨论说法 |
 | C | [单品细节词表](appendices/03-garment-words.md) | 从模糊说法查具体名称与部位词 |
 
 ## 图片与资料
 
-36 张实际生成的 AI 教学图板，共 210 个对照格，另有 1 张原创几何廓形图。第二部分新增 10 张图板、60 格，改用全身、局部、面料近景与平铺来观察单品细节。对照格包括服装、配饰、结构与设计方法，不能等同于 210 种互斥风格。各章明确说明图中选择及已知偏差。
+44 张实际生成的 AI 教学图板，另有 1 张原创几何廓形图。本轮新增8张图板，共48个对照格。第二部分新增 10 张图板、60 格，改用全身、局部、面料近景与平铺来观察单品细节。对照格包括服装、配饰、结构与设计方法，不能等同于同等数量的互斥风格。各章明确说明图中选择及已知偏差。
 
 图像生成采用内置 image_gen。第一部分完整提示词见 [images.json](references/images.json)，单品细节部分见 [detail-plan.json](references/detail-plan.json)，均对应实际图片；袖型图保留了定向修图提示。几何图生成脚本单独保留。历史与社群资料及真实案例就近引用，集中入口见 [sources.md](references/sources.md)。本书的观察方法、比较表和提示词示例为原创教学组织。
 
@@ -94,4 +100,9 @@ python3 scripts/split_pdf.py
 
 ## 在线首页
 
-[衣着有名 · Fashion Atlas](https://yzy-fashion-atlas.giving-macaw-4424.chatgpt.site)（当前仅所有者可访问）。提供分类图鉴、完整在线章节、衣着描述练习与 PDF 下载。首页源码位于 `web/`。
+[衣着有名 · Fashion Atlas](https://yzyexp.github.io/Learn-Fasion-Atlas/)（GitHub Pages 公开读本）。提供分类图鉴、完整在线章节、衣着描述练习与 PDF 下载。首页源码位于 `web/`。
+
+
+## 本轮扩展与组织
+
+新增23—28章：衣型名称、上身结构、可见细节、材料对照、鞋袜包袋、剪裁衣橱实践。按名称→局部→材料→整套描述衔接，基础章编号保持稳定。章节清单见 [book.json](book.json)，覆盖分工和完成记录见 [expansion-plan.md](references/expansion-plan.md)。新增8张图的完整提示词与检查记录见 [A组](references/expansion-images-a.json)、[B组](references/expansion-images-b.json)。图鉴直接展示全部图组，推送main经CI校验后发布。

@@ -11,9 +11,17 @@ const atlas=[
 {id:'33-song-beizi',title:'褙子的结构观察',tag:'tradition',label:'FORM & EVIDENCE',sub:'对照具体实物，认识领襟与侧衩。',chapter:'21-hanfu',count:'3 个视角',triptych:true,description:'直领对襟、长侧衩与前襟闭合的教学观察。参照南宋周氏墓资料约束生成，配色与人物为创作，具体罗组织与原件扣襻细节以藏品资料为准。'},
 {id:'32-urban-tailoring',title:'都市剪裁',tag:'style',label:'AN EVERYDAY WARDROBE',sub:'整套西装，也能向柔和日常打开。',chapter:'02-classic',count:'6 种搭配',description:'宽松西装、短西装与高腰阔腿裤、浅色套装、长西装配直身裙、针织Polo配软肩西装、无领外套配锥形裤。',pos:'50% 0%'},
 {id:'36-cosplay-types',title:'Cosplay 服装',tag:'character',label:'CHARACTER & COSTUME',sub:'制服、袍服、装甲，先看服装骨架。',chapter:'22-cosplay',count:'6 个入口',description:'原创角色教学分组：水手领制服式、幻想立领制服、舞台演出服、法师长袍、板甲式装甲、科幻连体服。它们不对应特定作品。',pos:'100% 0%'},
-{id:'37-xianxia-fantasy',title:'仙侠幻想服装',tag:'character',label:'IMAGINED WORLDS',sub:'让想象自由，也把衣物层次说清。',chapter:'22-cosplay',count:'6 种造型',description:'宽袖层叠袍服、窄袖侠客装、上衣与层叠裙、带护甲袍服、旅装和仪式感长袍。此组明确为幻想设计，不作朝代形制复原。'}
+{id:'37-xianxia-fantasy',title:'仙侠幻想服装',tag:'character',label:'IMAGINED WORLDS',sub:'让想象自由，也把衣物层次说清。',chapter:'22-cosplay',count:'6 种造型',description:'宽袖层叠袍服、窄袖侠客装、上衣与层叠裙、带护甲袍服、旅装和仪式感长袍。此组明确为幻想设计，不作朝代形制复原。'} ,
+{id:"38-garment-families",title:"衣型名称与边界",tag:"detail",label:"GARMENT FAMILIES",sub:"名称会叠加，衣型先看结构。",chapter:"23-garment-families",count:"6 种衣型",description:"裹身裙、衬衫裙、裙裤、锥形裤、喇叭裤与开前襟披风。名称各自描述不同特征，不构成互斥风格。"},
+{id:"39-bodice-details",title:"上衣固定点与背带",tag:"detail",label:"SUPPORT & FASTENING",sub:"细带、挂脖、抹胸和胸衣式外观。",chapter:"24-bodice-structure",count:"6 个例子",description:"从肩颈固定与背带观察上衣。杯线、竖向分割线和系带外观不能单独证明内部钢圈、骨条或束腰功能。"},
+{id:"40-neck-back-details",title:"领口与背部",tag:"detail",label:"FRONT & BACK",sub:"前领、后背，分别描述才准确。",chapter:"25-visible-details",count:"6 个方案",description:"上排三种前领口，下排三种背部设计。各格是独立设计方案，不是三套前后配对图。"},
+{id:"41-sleeve-comparison",title:"袖接合与袖体积",tag:"detail",label:"SEAM & VOLUME",sub:"接在哪里，和怎样蓬起，是两件事。",chapter:"25-visible-details",count:"6 个例子",description:"上排比较常规装袖、落肩、插肩接合；下排比较泡泡短袖、宽泛灯笼或主教式收口长袖、喇叭袖。"},
+{id:"42-material-comparison",title:"同廓形材料比较",tag:"detail",label:"SURFACE & DRAPE",sub:"光泽、绒毛、透明外层和挺软对照。",chapter:"26-material-comparison",count:"6 种外观",description:"尽量控制人物与衣型的材料视觉比较。领缘、褶量和裙摆仍有微差；图像不能证明纤维成分或材料性能。"},
+{id:"43-footwear-details",title:"鞋型辨识",tag:"accessory",label:"SHOES, NAMED PRECISELY",sub:"看鞋带、鞋口与后跟固定方式。",chapter:"27-shoes-accessories",count:"6 种鞋型",description:"玛丽珍鞋、乐福鞋、穆勒鞋、后空绕带鞋、牛津鞋与切尔西靴。鞋型、跟型和固定方式的名称可以交叉。"},
+{id:"44-bag-types",title:"包型与提带",tag:"accessory",label:"SHAPE & CARRY",sub:"轮廓、软硬与提带，分开描述。",chapter:"27-shoes-accessories",count:"6 个例子",description:"托特、搭扣翻盖书包型、新月软包、水桶、手拿包和长带小包。最后一项强调背法，产品图不能显示人体佩戴落点。"},
+{id:"45-neutral-wardrobe",title:"剪裁与中性衣橱",tag:"style",label:"TAILORING & LAYERS",sub:"把西装、马甲与针织穿成完整造型。",chapter:"28-wardrobe-lab",count:"6 套搭配",description:"单排西装、双排夹克、衬衫马甲、宽松剪裁、针织与裤装、衬衫阔腿裤。服装可跨性别使用，先描述可见剪裁。"}
 ];
-const groupData=[{n:'I',title:'先看风格与衣橱',range:[0,12],note:'从观察方法，到相邻风格的差别'},{n:'II',title:'再看一件衣服的细节',range:[13,20],note:'衣型、领袖、材料与描述练习'},{n:'III',title:'传统衣装与角色想象',range:[21,22],note:'具体形制、现代穿着与幻想设计'},{n:'IV',title:'需要时，回到索引',appendix:true,note:'双语查词、易混辨析与资料'}];
+const groupData=[{n:'I',title:'先看风格与衣橱',range:[0,12],note:'从观察方法，到相邻风格的差别'},{n:'II',title:'再看一件衣服的细节',range:[13,20],note:'衣型、领袖、材料与描述练习'},{n:'III',title:'传统衣装与角色想象',range:[21,22],note:'具体形制、现代穿着与幻想设计'},{n:'IV',title:'辨识进阶与衣橱实践',range:[23,28],note:'把相近名称、背部与材料说清楚'},{n:'V',title:'需要时，回到索引',appendix:true,note:'双语查词、易混辨析与资料'}];
 let filter='all',query='';const gallery=document.getElementById('gallery');
 function renderGallery(){
  const list=atlas.filter(x=>(filter==='all'||x.tag===filter)&&(`${x.title}${x.sub}${x.description}`).toLowerCase().includes(query));
