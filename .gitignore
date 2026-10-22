@@ -15,3 +15,6 @@ output/pdf/chapters/*
 fonts/*.ttf
 fonts/*.otf
 .history.bundle.*
+
+# Published homepage
+!web/**/*.html

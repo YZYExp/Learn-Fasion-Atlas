@@ -1,0 +1,69 @@
+from pathlib import Path
+import json,re,html,shutil,os
+from PIL import Image
+SOURCE=Path(os.environ.get('FASHION_ATLAS_SOURCE',str(Path(__file__).resolve().parent.parent)))
+DIST=Path(__file__).parent/'dist';(DIST/'assets').mkdir(exist_ok=True)
+for p in (SOURCE/'assets/images').glob('*.png'):
+ im=Image.open(p).convert('RGB');im.save(DIST/'assets'/(p.stem+'.webp'),'WEBP',quality=88,method=6)
+shutil.copy2(SOURCE/'output/pdf/fashion-atlas-expanded.pdf',DIST/'fashion-atlas.pdf')
+chapters=sorted((SOURCE/'chapters').glob('*.md'));appendices=sorted((SOURCE/'appendices').glob('*.md'))
+files=chapters+appendices+[SOURCE/'references/sources.md'];ids={p.name:p.stem for p in files}
+def urlfix(u):
+ if u.startswith(('http://','https://','#')):return u
+ if 'assets/images/' in u:return 'assets/'+Path(u).stem+'.webp'
+ n=Path(u.split('#')[0]).name
+ if n in ids:return 'read.html?chapter='+ids[n]
+ return u
+
+def inline(s):
+ stash=[]
+ def link(m):
+  label,u=m.groups();u=urlfix(u);external=u.startswith('http');v='<a href="'+html.escape(u,quote=True)+'"'+(' target="_blank" rel="noopener noreferrer"' if external else '')+'>'+html.escape(label)+'</a>';stash.append(v);return f'ZZT{len(stash)-1}ZZ'
+ s=re.sub(r'\[([^\]]+)\]\(([^\s)]+)\)',link,s);s=html.escape(s)
+ s=re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',s);s=re.sub(r'`([^`]+)`',r'<code>\1</code>',s);s=re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)',r'<em>\1</em>',s)
+ for i,v in enumerate(stash):s=s.replace(f'ZZT{i}ZZ',v)
+ return s
+
+def render(text):
+ lines=text.splitlines();o=[];i=0
+ while i<len(lines):
+  line=lines[i].strip()
+  if not line:i+=1;continue
+  if line=='---':o.append('<hr>');i+=1;continue
+  if line.startswith('```'):
+   b=[];i+=1
+   while i<len(lines) and not lines[i].startswith('```'):b.append(lines[i]);i+=1
+   o.append('<pre><code>'+html.escape('\n'.join(b))+'</code></pre>');i+=1;continue
+  m=re.fullmatch(r'!\[([^\]]*)\]\(([^)]+)\)',line)
+  if m:o.append('<figure><img loading="lazy" src="'+urlfix(m[2])+'" alt="'+html.escape(m[1],quote=True)+'"></figure>');i+=1;continue
+  if line.startswith('#'):
+   m=re.match(r'(#+)\s+(.*)',line);n=min(len(m[1]),4);o.append(f'<h{n}>'+inline(m[2])+f'</h{n}>');i+=1;continue
+  if line.startswith('|'):
+   rows=[]
+   while i<len(lines) and lines[i].strip().startswith('|'):
+    cells=[c.strip() for c in lines[i].strip().strip('|').split('|')]
+    if not all(re.fullmatch(r':?-+:?',c) for c in cells):rows.append(cells)
+    i+=1
+   o.append('<div class="table-scroll"><table><thead><tr>'+''.join('<th>'+inline(c)+'</th>' for c in rows[0])+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+inline(c)+'</td>' for c in row)+'</tr>' for row in rows[1:])+'</tbody></table></div>');continue
+  if line.startswith('>'):
+   b=[]
+   while i<len(lines) and lines[i].strip().startswith('>'):b.append(lines[i].strip()[1:].strip());i+=1
+   o.append('<blockquote>'+inline(' '.join(b))+'</blockquote>');continue
+  if line.startswith('- '):
+   b=[]
+   while i<len(lines) and lines[i].strip().startswith('- '):b.append(lines[i].strip()[2:]);i+=1
+   o.append('<ul>'+''.join('<li>'+inline(c)+'</li>' for c in b)+'</ul>');continue
+  if re.match(r'\d+\. ',line):
+   b=[]
+   while i<len(lines) and re.match(r'\d+\. ',lines[i].strip()):b.append(re.sub(r'^\d+\. ','',lines[i].strip()));i+=1
+   o.append('<ol>'+''.join('<li>'+inline(c)+'</li>' for c in b)+'</ol>');continue
+  b=[line];i+=1
+  while i<len(lines) and lines[i].strip() and not re.match(r'^(#|!\[|\||>|```|- |\d+\. )',lines[i].strip()):b.append(lines[i].strip());i+=1
+  css=' class="figure-caption"' if line.startswith('*') and not line.startswith('**') else ''
+  o.append('<p'+css+'>'+inline(' '.join(b))+'</p>')
+ return '\n'.join(o)
+out=[]
+for p in files:
+ text=p.read_text();title=text.splitlines()[0].lstrip('# ');out.append({'id':p.stem,'title':title,'number':int(p.stem[:2]) if p in chapters else None,'kind':'chapter' if p in chapters else 'appendix','html':render(text)})
+(DIST/'content.json').write_text(json.dumps(out,ensure_ascii=False))
+print({'chapters':len(chapters),'appendices':len(appendices),'images':37})

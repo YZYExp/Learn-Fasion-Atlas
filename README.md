@@ -91,3 +91,7 @@ python3 scripts/split_pdf.py
 - [第22章：Cosplay与角色服装](chapters/22-cosplay.md)
 
 新增5张图板（含2张三联结构观察图），汉服依据具体博物馆资料核查，历史衣装、当代搭配与幻想角色服装分清标注。图像记录见 [hanfu-cosplay-images.json](references/hanfu-cosplay-images.json)，逐项核查见 [structure-audit.md](references/structure-audit.md)。完整PDF及分章PDF由 scripts/export_pdf.py 与 scripts/split_pdf.py 生成。
+
+## 在线首页
+
+[衣着有名 · Fashion Atlas](https://yzy-fashion-atlas.giving-macaw-4424.chatgpt.site)（当前仅所有者可访问）。提供分类图鉴、完整在线章节、衣着描述练习与 PDF 下载。首页源码位于 `web/`。
