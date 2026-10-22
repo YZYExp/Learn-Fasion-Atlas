@@ -1,0 +1,17 @@
+build/
+__pycache__/
+*.pyc
+*.html
+history.bundle
+history.bundle.lock
+*.zip
+output/*
+!output/pdf/
+output/pdf/*
+!output/pdf/fashion-atlas-expanded.pdf
+!output/pdf/chapters/
+output/pdf/chapters/*
+!output/pdf/chapters/*.pdf
+fonts/*.ttf
+fonts/*.otf
+.history.bundle.*
