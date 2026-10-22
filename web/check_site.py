@@ -1,5 +1,5 @@
 """Check published assets and chapter routes before deployment."""
-import json, re
+import hashlib, json, re
 from pathlib import Path
 from PIL import Image
 from urllib.parse import urlsplit, parse_qs, unquote
@@ -15,6 +15,11 @@ def check_url(url, source):
     path = unquote(parsed.path)
     if path and not (root / path).is_file():
         errors.append(f'{source}: missing {path}')
+    version = parse_qs(parsed.query).get('v', [None])[0]
+    if version and path and (root / path).is_file():
+        actual = hashlib.sha256((root / path).read_bytes()).hexdigest()[:12]
+        if version != actual:
+            errors.append(f'{source}: stale version for {path}')
     if path == 'read.html':
         chapter = parse_qs(parsed.query).get('chapter', [''])[0]
         if chapter and chapter not in ids:
@@ -27,6 +32,9 @@ for file in root.glob('*.html'):
         check_url(url, file.name)
     for url in re.findall(r"url\('([^']+)'\)", file.read_text()):
         check_url(url, file.name)
+for file in [root/'app.js',root/'reader.js']:
+    for url in re.findall(r"fetch\('([^']+)'\)",file.read_text()):
+        check_url(url,file.name)
 atlas=json.loads((root / 'atlas.json').read_text())
 for board in atlas:
     check_url('assets/'+board['id']+'.webp',board['id'])

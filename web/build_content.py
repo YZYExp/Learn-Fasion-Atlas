@@ -90,3 +90,17 @@ shutil.copy2(Path(__file__).parent/'atlas.json',DIST/'atlas.json')
 groups=[{'n':g['id'],'title':g['title'],'ids':[c['id'] for c in book['chapters'] if c['group']==g['id']]} for g in book['sections']]
 groups.append({'n':'VI','title':'查词、辨析与描述路线','ids':[c['id'] for c in out if c['kind']=='appendix']})
 (DIST/'book-meta.json').write_text(json.dumps({'title':book['title'],'groups':groups,'stats':meta},ensure_ascii=False,indent=2)+'\n')
+
+# Content fingerprints keep browsers from mixing old scripts/data with a new edition.
+def versioned(name):
+ return name+'?v='+hashlib.sha256((DIST/name).read_bytes()).hexdigest()[:12]
+for name in ['app.js','reader.js']:
+ p=DIST/name;s=p.read_text()
+ for data in ['content.json','atlas.json','book-meta.json']:
+  s=re.sub(r"fetch\('"+re.escape(data)+r"(?:\?v=[a-f0-9]+)?'\)",lambda m: "fetch('"+versioned(data)+"')",s)
+ p.write_text(s)
+for p in DIST.glob('*.html'):
+ s=p.read_text()
+ for name in ['app.js','reader.js','style.css','fashion-atlas.pdf']:
+  s=re.sub(r'((?:src|href)=")'+re.escape(name)+r'(?:\?v=[a-f0-9]+)?"',lambda m: m[1]+versioned(name)+'"',s)
+ p.write_text(s)

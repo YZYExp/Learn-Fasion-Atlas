@@ -16,8 +16,8 @@ function closeAtlas(){document.getElementById('atlas-dialog').close();document.b
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});renderGallery();}));
 document.getElementById('atlas-search').addEventListener('input',e=>{query=e.target.value.trim().toLowerCase();renderGallery();});
 document.querySelector('.close-dialog').addEventListener('click',closeAtlas);document.getElementById('atlas-dialog').addEventListener('click',e=>{if(e.target===e.currentTarget)closeAtlas();});document.getElementById('atlas-dialog').addEventListener('close',()=>{document.body.style.overflow='';});
-fetch('atlas.json').then(r=>{if(!r.ok)throw new Error('atlas');return r.json();}).then(data=>{atlas=data;renderGallery();}).catch(()=>{const p=document.getElementById('no-results');p.textContent='图鉴暂时未载入，请刷新页面，或从章节目录阅读。';p.classList.remove('hidden');});
-Promise.all([fetch('content.json').then(r=>{if(!r.ok)throw new Error('content');return r.json();}),fetch('book-meta.json').then(r=>{if(!r.ok)throw new Error('meta');return r.json();})]).then(([chapters,meta])=>{
+fetch('atlas.json?v=63c6770e5ee0').then(r=>{if(!r.ok)throw new Error('atlas');return r.json();}).then(data=>{atlas=data;renderGallery();}).catch(()=>{const p=document.getElementById('no-results');p.textContent='图鉴暂时未载入，请刷新页面，或从章节目录阅读。';p.classList.remove('hidden');});
+Promise.all([fetch('content.json?v=398b58e452e8').then(r=>{if(!r.ok)throw new Error('content');return r.json();}),fetch('book-meta.json?v=6a7d5e54854b').then(r=>{if(!r.ok)throw new Error('meta');return r.json();})]).then(([chapters,meta])=>{
  const root=document.getElementById('chapter-groups');
  for(const group of meta.groups){
   const details=document.createElement('details');details.open=true;details.className='chapter-group';
