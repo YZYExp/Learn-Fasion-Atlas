@@ -1,12 +1,17 @@
 from pathlib import Path
-import json,re,html,shutil,os,io
+import json,re,html,shutil,os,io,hashlib
 from PIL import Image
 SOURCE=Path(os.environ.get('FASHION_ATLAS_SOURCE',str(Path(__file__).resolve().parent.parent)))
 DIST=Path(__file__).parent/'dist';(DIST/'assets').mkdir(exist_ok=True)
+cache_path=Path(__file__).parent/'image-cache.json'
+cache=json.loads(cache_path.read_text()) if cache_path.exists() else {}
+new_cache={}
 for p in (SOURCE/'assets/images').glob('*.png'):
- target=DIST/'assets'/(p.stem+'.webp')
+ target=DIST/'assets'/(p.stem+'.webp');digest=hashlib.sha256(p.read_bytes()).hexdigest();new_cache[p.name]=digest
+ if cache.get(p.name)==digest and target.is_file() and target.stat().st_size>0:continue
  im=Image.open(p).convert('RGB');buffer=io.BytesIO();im.save(buffer,'WEBP',quality=88,method=6)
  data=buffer.getvalue();Image.open(io.BytesIO(data)).verify();target.write_bytes(data)
+cache_path.write_text(json.dumps(new_cache,indent=2)+'\n')
 shutil.copy2(SOURCE/'output/pdf/fashion-atlas-expanded.pdf',DIST/'fashion-atlas.pdf')
 book=json.loads((SOURCE/'book.json').read_text());chapters=[SOURCE/c['source'] for c in book['chapters']];appendices=[SOURCE/p for p in book['appendices']]
 files=chapters+appendices+[SOURCE/'references/sources.md'];ids={p.name:p.stem for p in files}
@@ -80,3 +85,8 @@ s=re.sub(r'<b>\d+</b>页读本',f"<b>{meta['pages']}</b>页读本",s)
 s=re.sub(r'完整图解读本 · \d+ 页',f"完整图解读本 · {meta['pages']} 页",s)
 s=re.sub(r'PDF 约 [\d.]+ MB',f"PDF 约 {(DIST/'fashion-atlas.pdf').stat().st_size/1000000:.1f} MB",s)
 p.write_text(s)
+
+shutil.copy2(Path(__file__).parent/'atlas.json',DIST/'atlas.json')
+groups=[{'n':g['id'],'title':g['title'],'ids':[c['id'] for c in book['chapters'] if c['group']==g['id']]} for g in book['sections']]
+groups.append({'n':'VI','title':'查词、辨析与描述路线','ids':[c['id'] for c in out if c['kind']=='appendix']})
+(DIST/'book-meta.json').write_text(json.dumps({'title':book['title'],'groups':groups,'stats':meta},ensure_ascii=False,indent=2)+'\n')

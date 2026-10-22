@@ -27,10 +27,15 @@ for file in root.glob('*.html'):
         check_url(url, file.name)
     for url in re.findall(r"url\('([^']+)'\)", file.read_text()):
         check_url(url, file.name)
-app = (root / 'app.js').read_text()
-for name in re.findall(r"\{id:'([^']+)'", app):
-    for suffix in ('.webp',):
-        check_url('assets/' + name + suffix, name)
+atlas=json.loads((root / 'atlas.json').read_text())
+for board in atlas:
+    check_url('assets/'+board['id']+'.webp',board['id'])
+    assert board['chapter'] in ids, f"Unknown atlas chapter: {board['id']}"
+    assert board['width']>0 and board['height']>0
+expected={p.stem for p in (root/'assets').glob('*.webp') if not p.stem.endswith('-thumb') and p.stem!='12-silhouettes'}
+assert {b['id'] for b in atlas} == expected, 'Gallery does not cover all photographic plates'
+meta=json.loads((root/'book-meta.json').read_text())
+assert set().union(*(set(g['ids']) for g in meta['groups'])) == ids, 'Reading groups omit chapters'
 for image in (root / 'assets').glob('*.webp'):
     Image.open(image).verify()
 assert len(ids) == len(chapters), 'Duplicate chapter IDs'

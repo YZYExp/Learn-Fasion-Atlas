@@ -19,7 +19,7 @@ visibility to enable Pages. Private repositories need a plan that supports Pages
 From the repository root:
 
 ```sh
-python -m pip install Pillow
+python -m pip install -r web/requirements.txt
 python web/build_content.py
 python web/build_thumbnails.py
 node --check web/dist/app.js
@@ -29,3 +29,5 @@ python web/check_site.py
 
 The full PDF is copied from `output/pdf/fashion-atlas-expanded.pdf`; rebuild
 that file separately when updating the downloadable book.
+
+The gallery is generated from `web/atlas.json`; reading groups come from `book.json`. The image cache records source hashes, so content-only updates reuse verified WebP assets. Validation checks that every photographic plate has a gallery entry and every reading entry belongs to a group.

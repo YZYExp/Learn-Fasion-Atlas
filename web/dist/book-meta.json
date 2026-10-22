@@ -1,0 +1,83 @@
+{
+  "title": "衣着有名：从风格识别到单品描述",
+  "groups": [
+    {
+      "n": "I",
+      "title": "风格与衣橱",
+      "ids": [
+        "00-reading",
+        "01-observe",
+        "02-classic",
+        "03-romantic",
+        "04-street",
+        "05-functional",
+        "06-retro",
+        "07-lolita",
+        "08-tradition",
+        "09-avant",
+        "10-accessories",
+        "11-express",
+        "12-street-future"
+      ]
+    },
+    {
+      "n": "II",
+      "title": "单品与细节基础",
+      "ids": [
+        "13-dresses",
+        "14-skirts",
+        "15-tops-underwear",
+        "16-necklines-sleeves",
+        "17-fabrics",
+        "18-trousers-outerwear",
+        "19-details",
+        "20-description-workshop"
+      ]
+    },
+    {
+      "n": "III",
+      "title": "传统与角色服装",
+      "ids": [
+        "21-hanfu",
+        "22-cosplay"
+      ]
+    },
+    {
+      "n": "IV",
+      "title": "辨识进阶与衣橱实践",
+      "ids": [
+        "23-garment-families",
+        "24-bodice-structure",
+        "25-visible-details",
+        "26-material-comparison",
+        "27-shoes-accessories",
+        "28-wardrobe-lab"
+      ]
+    },
+    {
+      "n": "V",
+      "title": "纹样、配饰与场景",
+      "ids": [
+        "29-patterns",
+        "30-headwear-jewelry",
+        "31-context-layering"
+      ]
+    },
+    {
+      "n": "VI",
+      "title": "查词、辨析与描述路线",
+      "ids": [
+        "01-glossary",
+        "02-comparisons",
+        "03-garment-words",
+        "04-description-routes",
+        "sources"
+      ]
+    }
+  ],
+  "stats": {
+    "pages": 160,
+    "chapters": 31,
+    "images": 50
+  }
+}

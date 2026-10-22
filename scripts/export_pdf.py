@@ -92,7 +92,7 @@ def img(path):
  maxw=491;maxh=520 if path.stem[:2].isdigit() and int(path.stem[:2])>=38 else 540
  fac=min(maxw/source.width,maxh/source.height)
  target=TMP/(hashlib.sha256(str(path).encode()).hexdigest()[:12]+'.jpg')
- source.save(target,quality=int(os.environ.get('FASHION_ATLAS_JPEG_QUALITY','76')),subsampling=2,optimize=True)
+ source.save(target,quality=int(os.environ.get('FASHION_ATLAS_JPEG_QUALITY','75')),subsampling=2,optimize=True)
  return Image(str(target),width=source.width*fac,height=source.height*fac,hAlign='CENTER')
 
 class Cover(Flowable):

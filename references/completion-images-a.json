@@ -1,0 +1,36 @@
+[
+  {
+    "id": "46-pattern-comparison",
+    "chapter": 29,
+    "prompt": "Use case: scientific-educational. Asset type: photographic fashion teaching comparison plate for a Chinese illustrated clothing atlas. Portrait canvas 1024x1536, exactly 3 columns and 2 rows, six equal clean panels with fine rules, warm ivory seamless backdrop, soft natural studio light, high-quality realistic editorial photography, realistic skin and fabric, normal human anatomy and proportions. Adults age 25-35 only. Relaxed natural expression and posture, no stiff mannequin pose, no camera distortion. Clear small elegant dark English label at bottom of each panel, spelled exactly. No extra title or watermark. This is neutral clothing catalog education. Six panels show the SAME beautiful adult East Asian woman, same face, same relaxed stance, front view head to knees, same opaque short-sleeved crewneck light-color top and dark straight trousers. Keep garment cut and camera framing identical, change ONLY the printed pattern on the top. Reading left to right then top to bottom: STRIPES (fine navy vertical stripes), GINGHAM (regular equal-width two-color blue-and-white checks), POLKA DOTS (regular small navy circular dots on ivory), SMALL FLORAL (small scattered multicolor floral motifs), PAISLEY (recognizable curved teardrop paisley motifs), HOUNDSTOOTH (classic black and white broken checks with four-pointed tooth shapes, accurate houndstooth pattern). Patterns must be clearly distinguishable and be surface prints, not folds or cloth weave. Avoid belts, jewelry, scarves or distracting accessories.",
+    "file": "assets/images/46-pattern-comparison.png",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "review": "六种图案与英文标签可辨；同一人物、姿态和基本衣型总体一致。仅作控制主要变量的视觉比较，不能从图确定图案是印花、提花或色织等实际工艺。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-76a3b473-cca6-444e-bdd2-fe53067be014.png"
+  },
+  {
+    "id": "47-headwear-types",
+    "chapter": 30,
+    "prompt": "Use case: scientific-educational. Asset type: photographic fashion teaching comparison plate for a Chinese illustrated clothing atlas. Portrait canvas 1024x1536, exactly 3 columns and 2 rows, six equal clean panels with fine rules, warm ivory seamless backdrop, soft natural studio light, high-quality realistic editorial photography, realistic skin and fabric, normal human anatomy and proportions. Adults age 25-35 only. Relaxed natural expression and posture, no stiff mannequin pose, no camera distortion. Clear small elegant dark English label at bottom of each panel, spelled exactly. No extra title or watermark. This is neutral clothing catalog education. Head-and-shoulder portraits, six beautiful adult models including four East Asian women and men, one South Asian woman and one Black woman. Natural varied small expressions and slight head angles, simple neutral opaque crewneck clothing. Every hat fully inside frame, clear complete crown and brim, hat not obscured by hair or hands. Reading order and exact labels: BERET (soft round navy beret with NO brim), BUCKET HAT (sand cotton bucket hat, short downward brim all around), FEDORA (gray felt fedora with clearly indented crown and pinched front, medium brim), CLOCHE (burgundy close-fitting bell-shaped cloche with low rounded crown and narrow curved brim), BASEBALL CAP (navy structured baseball cap with a curved front visor), WIDE-BRIM HAT (natural straw hat with broad woven brim). Hats must accurately show each silhouette. Balanced gender presentation and beautiful but natural portraits. No additional jewelry.",
+    "file": "assets/images/47-headwear-types.png",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "review": "贝雷、渔夫、Fedora、钟形、棒球与宽檐帽轮廓和英文标签可辨；亚洲占多数并含南亚、黑人模特。宽檐帽右侧边缘略触图框，完整帽檐外缘未全部展示，不宜从图量取檐宽。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-2d22adb0-d07c-4c46-a651-43390939bcb4.png"
+  },
+  {
+    "id": "48-jewelry-placement",
+    "chapter": 30,
+    "prompt": "Use case: scientific-educational. Asset type: photographic fashion teaching comparison plate for a Chinese illustrated clothing atlas. Portrait canvas 1024x1536, exactly 3 columns and 2 rows, six equal clean panels with fine rules, warm ivory seamless backdrop, soft natural studio light, high-quality realistic editorial photography, realistic skin and fabric, normal human anatomy and proportions. Adults age 25-35 only. Relaxed natural expression and posture, no stiff mannequin pose, no camera distortion. Clear small elegant dark English label at bottom of each panel, spelled exactly. No extra title or watermark. This is neutral clothing catalog education. Six panels show SAME beautiful adult East Asian woman, simple dark navy opaque crewneck top, hair tucked behind ears, hands out of view, neutral slight head turn. Each panel contains ONLY its designated jewelry type and no others. Match scale and face naturally. Reading order: STUD EARRINGS (small round studs sitting on earlobes; head and shoulder closeup), HOOP EARRINGS (medium circular open hoops hanging from earlobes; head and shoulder), DROP EARRINGS (slender dangling earrings below earlobes; head and shoulder), CHOKER (one simple close-fitting chain around base of neck; head to chest, NO earrings), LONG NECKLACE (one longer pendant necklace extending visibly down over the chest; frame head to waist so full necklace visible; NO earrings), BROOCH (one simple sculptural flower brooch pinned on upper chest of the navy top; frame head to upper torso, NO earrings or necklace). Distinguish a stud attached at earlobe from hoop and dangling forms, and short versus long necklace placement. No hand touching or obscuring jewelry, no oversized surreal pieces. Do not claim precise metal composition.",
+    "file": "assets/images/48-jewelry-placement.png",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "review": "耳钉、圈耳环、垂坠耳饰、贴颈项链、长项链与胸针位置对照清楚；配饰无手部遮挡，长链完整可见。同一人物外观总体一致，不从图断言贵金属、宝石成分或饰品尺度。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-256e46cc-ce0a-46d3-97e8-5a02c1061746.png"
+  }
+]
+

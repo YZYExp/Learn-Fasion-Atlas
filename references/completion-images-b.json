@@ -1,0 +1,24 @@
+[
+  {
+    "id": "49-layering-comparison",
+    "file": "assets/images/49-layering-comparison.png",
+    "chapter": 31,
+    "prompt": "Use case: scientific-educational. Asset type: a photographic fashion atlas comparison plate. Portrait canvas 1024x1536, exactly 3 columns by 2 rows, six equal panels separated by fine subtle rules, warm ivory studio background, soft daylight and realistic natural skin and cloth. SAME beautiful adult East Asian woman age 28 in every panel, same white crew-neck T-shirt, same navy straight-leg trousers, same simple flat shoes, same natural relaxed standing pose. Keep full body from head through shoes inside every panel. Normal body proportions, warm natural expression, no stiff mannequin pose or fashion elongation. Show differences in OUTER LAYERS clearly, with the base white neckline or inner layer visible. Top row left to right: BASE OUTFIT (only white T-shirt, navy trousers and flat shoes); SHIRT LAYER (open pale blue cotton shirt over the white T-shirt); KNIT MID LAYER (open beige knitted cardigan over white T-shirt). Bottom row left to right: LIGHT SHELL (simple lightweight zipped hooded jacket, partly open so white inner neckline visible); INSULATED LAYER (simple dark green quilted jacket, inner white T-shirt visible at neckline); LONG OUTER LAYER (open beige knee-length trench coat over base outfit). Dark tasteful serif English labels verbatim under each panel: \"BASE OUTFIT\", \"SHIRT LAYER\", \"KNIT MID LAYER\", \"LIGHT SHELL\", \"INSULATED LAYER\", \"LONG OUTER LAYER\". No other title, no logo, no watermark. Correct hands at sides, no blocking of clothing, no extra sleeves or garments. These are visual clothing layers, not proof of warmth or waterproof ratings.",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "review": "逐图目视核验，六格同一白T/海军蓝直筒裤基础与人物一致，衬衫、开衫、轻外套、绗缝夹克、长外套层次清楚，标签拼写正确、头脚完整。姿势为便于比较保持近似，局部袖口与裤褶有微差。LIGHT SHELL和INSULATED仅为造型类别，图像不能验证防水或保暖性能。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-64303bd7-34b8-47cb-a792-f956770f70af.png"
+  },
+  {
+    "id": "50-context-wardrobe",
+    "file": "assets/images/50-context-wardrobe.png",
+    "chapter": 31,
+    "prompt": "Use case: scientific-educational. Asset type: photographic fashion atlas teaching comparison plate. Portrait canvas 1024x1536 with exactly 3 columns by 2 rows, six equal panels, warm ivory seamless studio background and fine rules. SAME beautiful adult East Asian woman age 28, consistent face and normal body proportions across six panels, full length head to feet visible, naturally relaxed standing poses, soft daylight and realistic fabric details. Same base outfit in every panel: dark gray moderately fitted fine-knit top and navy straight-leg trousers. Change only outerwear, shoes and bag appropriate to a suggested ordinary context. Reading order top row left to right: ERRANDS (base outfit, flat loafers, small canvas tote carried low beside leg); COMMUTE (soft-shouldered navy blazer, low heel shoes, leather tote held beside leg); DINNER (simple collarless cropped jacket, pointed low heels and clutch held low); bottom row left to right: WALK IN PARK (light casual jacket, sneakers, small crossbody bag at hip); RAINY STREET (dark hooded jacket, closed-toe ankle boots, folded umbrella held low at side not hiding clothes); INDOOR EVENT (soft draped shawl around shoulders, a single brooch securing shawl near upper chest, small elegant bag, low heels). Refined natural everyday fashion, no formal gowns, no tuxedos or stage costumes. Bags and umbrella must not obscure garment structure. English labels verbatim in a small dark serif under each panel: \"ERRANDS\", \"COMMUTE\", \"DINNER\", \"WALK IN PARK\", \"RAINY STREET\", \"INDOOR EVENT\". No other title, no logos or watermark. Avoid stiff staring, extreme poses, extra limbs, distorted hands or garment artifacts. This is styling inspiration, not a strict dress-code or weather-protection claim.",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "review": "逐图目视核验，六格深灰针织与藏蓝裤基础基本一致，外搭、鞋包及收拢伞对应场景清晰，人物自然、标签拼写正确。裤脚落点、褶量与姿势有微差，不是严格单变量实验；场景名为造型示例，不是正式着装规范或天气防护证明。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-9999cf57-afa4-4408-95c4-8a10d6801a1e.png"
+  }
+]

@@ -1,34 +1,12 @@
 'use strict';
-const atlas=[
-{id:'24-lace-variants',title:'蕾丝裙',tag:'detail',label:'MATERIAL & CONSTRUCTION',sub:'饰边、拼接、整层覆盖，分别怎么说？',chapter:'13-dresses',count:'6 种样式',description:'从左到右、先上后下：蕾丝饰边、带里衬的蕾丝覆盖裙、蕾丝袖拼接、肩部拼接、层叠蕾丝、衬衫式连衣裙。'},
-{id:'23-slip-variants',title:'吊带裙',tag:'detail',label:'ONE GARMENT, MANY LOOKS',sub:'垂领、裙长与叠穿，继续细分。',chapter:'13-dresses',count:'6 种搭配',description:'垂领缎面、蕾丝饰边、直筒长款、柔和外展、内搭T恤、外搭短开衫。斜裁方式需要裁片依据，不能单靠垂坠判断。',pos:'50% 0%'},
-{id:'35-mamian-modern',title:'现代马面裙搭配',tag:'tradition',label:'TRADITION, WORN TODAY',sub:'裙门与侧褶之外，还要核查什么？',chapter:'21-hanfu',count:'6 种搭配',description:'短外套、衬衫、针织、西装、开衫和柔和短夹克的现代搭配。正面图展示裙门与侧褶；背面、内裙片和腰部围合仍需资料核查。'},
-{id:'31-lolita-variants',title:'洛丽塔裙装',tag:'style',label:'STYLE & COORDINATION',sub:'领型、裙体与内搭，一起组织风格。',chapter:'07-lolita',count:'6 种搭配',description:'甜系JSK、古典碎花OP、哥特JSK、水手领OP、田园格纹JSK、较长的古典JSK。图中为成年模特，分类可以交叉。',pos:'50% 0%'},
-{id:'25-sport-variants',title:'运动裙装',tag:'detail',label:'SPORT-INSPIRED',sub:'Polo领、拉链与百褶，线索不同。',chapter:'13-dresses',count:'6 种搭配',description:'Polo领百褶裙装、运动背心式A字裙、半拉链运动裙、包裹前片裙裤、条纹运动中长裙和网球半裙搭配。图中运动感不代表经过专业性能验证。'},
-{id:'28-knit-variants',title:'针织上衣',tag:'detail',label:'TEXTURE & SILHOUETTE',sub:'麻花、罗纹与镂空，不只是一件毛衣。',chapter:'15-tops-underwear',count:'6 种样式',description:'细罗纹高领、粗针麻花圆领、短款纽扣开衫、针织Polo、内衬吊带的镂空针织、衬衫外叠穿针织背心。',pos:'50% 0%'},
-{id:'27-blouse-variants',title:'衬衫与罩衫',tag:'detail',label:'COLLAR, SLEEVE, OPENING',sub:'从领口开始，把袖型也说清楚。',chapter:'15-tops-underwear',count:'6 种样式',description:'牛津衬衫造型、开领衬衫、系带领、裹身侧系带、立领育克抽褶、方领泡泡袖。具体织物组织需要近景核实。',pos:'100% 0%'},
-{id:'30-jacket-variants',title:'短外套',tag:'detail',label:'CUT & LAYERING',sub:'长度相近，衣型可以完全不同。',chapter:'18-trousers-outerwear',count:'6 种样式',description:'短西装、飞行夹克、牛仔卡车夹克、无领粗花呢感外套、机车夹克与绗缝短外套。先说衣型，再说长度。'},
-{id:'33-song-beizi',title:'褙子的结构观察',tag:'tradition',label:'FORM & EVIDENCE',sub:'对照具体实物，认识领襟与侧衩。',chapter:'21-hanfu',count:'3 个视角',triptych:true,description:'直领对襟、长侧衩与前襟闭合的教学观察。参照南宋周氏墓资料约束生成，配色与人物为创作，具体罗组织与原件扣襻细节以藏品资料为准。'},
-{id:'32-urban-tailoring',title:'都市剪裁',tag:'style',label:'AN EVERYDAY WARDROBE',sub:'整套西装，也能向柔和日常打开。',chapter:'02-classic',count:'6 种搭配',description:'宽松西装、短西装与高腰阔腿裤、浅色套装、长西装配直身裙、针织Polo配软肩西装、无领外套配锥形裤。',pos:'50% 0%'},
-{id:'36-cosplay-types',title:'Cosplay 服装',tag:'character',label:'CHARACTER & COSTUME',sub:'制服、袍服、装甲，先看服装骨架。',chapter:'22-cosplay',count:'6 个入口',description:'原创角色教学分组：水手领制服式、幻想立领制服、舞台演出服、法师长袍、板甲式装甲、科幻连体服。它们不对应特定作品。',pos:'100% 0%'},
-{id:'37-xianxia-fantasy',title:'仙侠幻想服装',tag:'character',label:'IMAGINED WORLDS',sub:'让想象自由，也把衣物层次说清。',chapter:'22-cosplay',count:'6 种造型',description:'宽袖层叠袍服、窄袖侠客装、上衣与层叠裙、带护甲袍服、旅装和仪式感长袍。此组明确为幻想设计，不作朝代形制复原。'} ,
-{id:"38-garment-families",title:"衣型名称与边界",tag:"detail",label:"GARMENT FAMILIES",sub:"名称会叠加，衣型先看结构。",chapter:"23-garment-families",count:"6 种衣型",description:"裹身裙、衬衫裙、裙裤、锥形裤、喇叭裤与开前襟披风。名称各自描述不同特征，不构成互斥风格。"},
-{id:"39-bodice-details",title:"上衣固定点与背带",tag:"detail",label:"SUPPORT & FASTENING",sub:"细带、挂脖、抹胸和胸衣式外观。",chapter:"24-bodice-structure",count:"6 个例子",description:"从肩颈固定与背带观察上衣。杯线、竖向分割线和系带外观不能单独证明内部钢圈、骨条或束腰功能。"},
-{id:"40-neck-back-details",title:"领口与背部",tag:"detail",label:"FRONT & BACK",sub:"前领、后背，分别描述才准确。",chapter:"25-visible-details",count:"6 个方案",description:"上排三种前领口，下排三种背部设计。各格是独立设计方案，不是三套前后配对图。"},
-{id:"41-sleeve-comparison",title:"袖接合与袖体积",tag:"detail",label:"SEAM & VOLUME",sub:"接在哪里，和怎样蓬起，是两件事。",chapter:"25-visible-details",count:"6 个例子",description:"上排比较常规装袖、落肩、插肩接合；下排比较泡泡短袖、宽泛灯笼或主教式收口长袖、喇叭袖。"},
-{id:"42-material-comparison",title:"同廓形材料比较",tag:"detail",label:"SURFACE & DRAPE",sub:"光泽、绒毛、透明外层和挺软对照。",chapter:"26-material-comparison",count:"6 种外观",description:"尽量控制人物与衣型的材料视觉比较。领缘、褶量和裙摆仍有微差；图像不能证明纤维成分或材料性能。"},
-{id:"43-footwear-details",title:"鞋型辨识",tag:"accessory",label:"SHOES, NAMED PRECISELY",sub:"看鞋带、鞋口与后跟固定方式。",chapter:"27-shoes-accessories",count:"6 种鞋型",description:"玛丽珍鞋、乐福鞋、穆勒鞋、后空绕带鞋、牛津鞋与切尔西靴。鞋型、跟型和固定方式的名称可以交叉。"},
-{id:"44-bag-types",title:"包型与提带",tag:"accessory",label:"SHAPE & CARRY",sub:"轮廓、软硬与提带，分开描述。",chapter:"27-shoes-accessories",count:"6 个例子",description:"托特、搭扣翻盖书包型、新月软包、水桶、手拿包和长带小包。最后一项强调背法，产品图不能显示人体佩戴落点。"},
-{id:"45-neutral-wardrobe",title:"剪裁与中性衣橱",tag:"style",label:"TAILORING & LAYERS",sub:"把西装、马甲与针织穿成完整造型。",chapter:"28-wardrobe-lab",count:"6 套搭配",description:"单排西装、双排夹克、衬衫马甲、宽松剪裁、针织与裤装、衬衫阔腿裤。服装可跨性别使用，先描述可见剪裁。"}
-];
-const groupData=[{n:'I',title:'先看风格与衣橱',range:[0,12],note:'从观察方法，到相邻风格的差别'},{n:'II',title:'再看一件衣服的细节',range:[13,20],note:'衣型、领袖、材料与描述练习'},{n:'III',title:'传统衣装与角色想象',range:[21,22],note:'具体形制、现代穿着与幻想设计'},{n:'IV',title:'辨识进阶与衣橱实践',range:[23,28],note:'把相近名称、背部与材料说清楚'},{n:'V',title:'需要时，回到索引',appendix:true,note:'双语查词、易混辨析与资料'}];
+let atlas=[];
 let filter='all',query='';const gallery=document.getElementById('gallery');
 function renderGallery(){
  const list=atlas.filter(x=>(filter==='all'||x.tag===filter)&&(`${x.title}${x.sub}${x.description}`).toLowerCase().includes(query));
  gallery.replaceChildren();
  for(const item of list){
   const card=document.createElement('article');card.className='atlas-item'+(item.triptych?' triptych':'');
-  card.innerHTML=`<button class="atlas-board" aria-label="放大查看${item.title}完整图组"><img src="assets/${item.id}.webp" alt="${item.title}：${item.count}，完整对照图组" width="${item.triptych?1536:1024}" height="${item.triptych?1024:1536}" loading="lazy" decoding="async"><span class="zoom-label">放大查看 ↗</span></button><span class="atlas-category">${item.label}</span><h3>${item.title}<small>${item.count}</small></h3><p>${item.sub}</p><a class="atlas-chapter" href="read.html?chapter=${item.chapter}">阅读对应章节 →</a>`;
+  card.innerHTML=`<button class="atlas-board" aria-label="放大查看${item.title}完整图组"><img src="assets/${item.id}.webp" alt="${item.title}：${item.count}，完整对照图组" width="${item.width}" height="${item.height}" loading="lazy" decoding="async"><span class="zoom-label">放大查看 ↗</span></button><span class="atlas-category">${item.label}</span><h3>${item.title}<small>${item.count}</small></h3><p>${item.sub}</p><a class="atlas-chapter" href="read.html?chapter=${item.chapter}">阅读对应章节 →</a>`;
   card.querySelector('.atlas-board').addEventListener('click',()=>openAtlas(item));gallery.append(card);
  }
  document.getElementById('no-results').classList.toggle('hidden',list.length>0);
@@ -37,8 +15,20 @@ function openAtlas(item){const d=document.getElementById('atlas-dialog');documen
 function closeAtlas(){document.getElementById('atlas-dialog').close();document.body.style.overflow='';}
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});renderGallery();}));
 document.getElementById('atlas-search').addEventListener('input',e=>{query=e.target.value.trim().toLowerCase();renderGallery();});
-document.querySelector('.close-dialog').addEventListener('click',closeAtlas);document.getElementById('atlas-dialog').addEventListener('click',e=>{if(e.target===e.currentTarget)closeAtlas();});document.getElementById('atlas-dialog').addEventListener('close',()=>{document.body.style.overflow='';});renderGallery();
-fetch('content.json').then(r=>{if(!r.ok)throw new Error('content');return r.json();}).then(chapters=>{const root=document.getElementById('chapter-groups');for(const group of groupData){const details=document.createElement('details');details.open=true;details.className='chapter-group';const summary=document.createElement('summary');summary.innerHTML=`<span class="group-number">${group.n}</span><h3>${group.title}</h3><span aria-hidden="true">−</span>`;details.append(summary);details.addEventListener('toggle',()=>summary.lastElementChild.textContent=details.open?'−':'+');const list=chapters.filter(c=>group.appendix?c.kind==='appendix':c.kind==='chapter'&&c.number>=group.range[0]&&c.number<=group.range[1]);for(const c of list){const a=document.createElement('a');a.className='chapter-row';a.href=`read.html?chapter=${c.id}`;const title=c.title.split('｜').slice(1).join('｜')||c.title;const number=c.kind==='appendix'?'↗':c.number===0?'序':String(c.number).padStart(2,'0');a.innerHTML=`<em>${number}</em><b></b><span aria-hidden="true">↗</span>`;a.querySelector('b').textContent=title;details.append(a);}root.append(details);}}).catch(()=>{document.getElementById('chapter-groups').innerHTML='<p>章节暂时未载入，请刷新页面，或先下载完整 PDF 阅读。</p>';});
+document.querySelector('.close-dialog').addEventListener('click',closeAtlas);document.getElementById('atlas-dialog').addEventListener('click',e=>{if(e.target===e.currentTarget)closeAtlas();});document.getElementById('atlas-dialog').addEventListener('close',()=>{document.body.style.overflow='';});
+fetch('atlas.json').then(r=>{if(!r.ok)throw new Error('atlas');return r.json();}).then(data=>{atlas=data;renderGallery();}).catch(()=>{const p=document.getElementById('no-results');p.textContent='图鉴暂时未载入，请刷新页面，或从章节目录阅读。';p.classList.remove('hidden');});
+Promise.all([fetch('content.json').then(r=>{if(!r.ok)throw new Error('content');return r.json();}),fetch('book-meta.json').then(r=>{if(!r.ok)throw new Error('meta');return r.json();})]).then(([chapters,meta])=>{
+ const root=document.getElementById('chapter-groups');
+ for(const group of meta.groups){
+  const details=document.createElement('details');details.open=true;details.className='chapter-group';
+  const summary=document.createElement('summary');summary.innerHTML=`<span class="group-number">${group.n}</span><h3></h3><span aria-hidden="true">−</span>`;summary.querySelector('h3').textContent=group.title;details.append(summary);details.addEventListener('toggle',()=>summary.lastElementChild.textContent=details.open?'−':'+');
+  for(const c of chapters.filter(c=>group.ids.includes(c.id))){
+   const a=document.createElement('a');a.className='chapter-row';a.href=`read.html?chapter=${c.id}`;const title=c.title.split('｜').slice(1).join('｜')||c.title;const number=c.kind==='appendix'?'↗':c.number===0?'序':String(c.number).padStart(2,'0');a.innerHTML=`<em>${number}</em><b></b><span aria-hidden="true">↗</span>`;a.querySelector('b').textContent=title;details.append(a);
+  }
+  root.append(details);
+ }
+}).catch(()=>{document.getElementById('chapter-groups').innerHTML='<p>章节暂时未载入，请刷新页面，或先下载完整 PDF 阅读。</p>';});
+
 const presets={slip:{fields:[['颜色',['墨蓝色','黑色','香槟色']],['领口',['浅V领','垂领']],['长度',['及踝','小腿中部']],['搭配',['外搭短款针织开衫','内搭白色T恤','配简洁低跟鞋']]],text:v=>`人物穿${v[0]}缎面细肩带吊带裙，${v[1]}带窄蕾丝饰边，裙长${v[2]}，裙身自然垂落；${v[3]}。`},sport:{fields:[['颜色',['白色','藏蓝色','鼠尾草绿']],['领口',['Polo领','半拉链领口']],['裙体',['膝上百褶裙摆','膝上A字裙摆']],['搭配',['搭配白色运动鞋','搭配短袜与运动鞋','外搭轻薄运动夹克']]],text:v=>`人物穿${v[0]}无袖运动连衣裙，上身采用${v[1]}，下部为${v[2]}；${v[3]}。`},mamian:{fields:[['裙色',['藏蓝色','深绿色','酒红色']],['上衣',['奶油色现代短夹克','白色棉质衬衫','黑色细针织上衣']],['装饰',['下部有横向纹样裙襕','采用低调素色面料']],['鞋履',['配低跟鞋','配平底鞋']]],text:v=>`人物穿${v[0]}马面裙，正面为平整裙门、两侧有密褶，${v[2]}；上配${v[1]}，${v[3]}。这是一套现代搭配。`}};
 function buildFields(){const key=document.getElementById('preset').value;const p=presets[key];const root=document.getElementById('builder-fields');root.replaceChildren();for(const [label,values] of p.fields){const l=document.createElement('label');l.append(label);const select=document.createElement('select');for(const v of values){const o=document.createElement('option');o.value=v;o.textContent=v;select.append(o);}select.addEventListener('change',updateBrief);l.append(select);root.append(l);}updateBrief();}
 function updateBrief(){const key=document.getElementById('preset').value;const vals=[...document.querySelectorAll('#builder-fields select')].map(s=>s.value);document.getElementById('brief-text').textContent=presets[key].text(vals);document.getElementById('copy-status').textContent='';}

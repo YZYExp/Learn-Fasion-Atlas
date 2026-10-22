@@ -134,3 +134,28 @@
 - [资料：V&A，Fashioning Masculinities: The Art of Menswear](https://www.vam.ac.uk/exhibitions/fashioning-masculinities-the-art-of-menswear)
 - [资料：Suitsupply，Your Jacket Detail Guide](https://suitsupply.com/en-it/journal/jacket-details-explained.html)
 - [资料：Suitsupply，Trousers Fit Guide](https://suitsupply.com/en-us/journal/trousers-fit-guide.html)
+
+## 纹样、配饰与场景：第29—31章
+
+### 第 29 章｜纹样的名称、尺度与分布
+
+- [材料与组织参照：MFA Boston，Gingham](https://cameo.mfa.org/wiki/Gingham)
+- [行业参照：Première Vision，Textile Glossary: Suiting Motifs](https://www.premierevision.com/articles/094df59a-75fa-ef11-90cb-00224888722c/textile-glossary-suiting-motifs)
+- [定义与识别边界：Scottish Register of Tartans，FAQ](https://www.tartanregister.gov.uk/FAQ)
+- [结构说明：Cotton Incorporated，Weaving 101，第 22—23 页](https://cottonworks.com/wp-content/uploads/2023/03/Weaving-101.pdf)
+- [文化与实物旁读：National Museums Scotland，South Asian origins of Paisley pattern](https://www.nms.ac.uk/discover-catalogue/stories-about-the-south-asian-origins-paisley-pattern)
+
+### 第 30 章｜帽饰与首饰：轮廓、位置和尺度
+
+- [帽型参照：Lock & Co.，What is a Fedora Hat?](https://www.lockhatters.com/blogs/news/what-is-a-fedora-hat)
+- [真实产品参照：Lock & Co.，French Beret](https://www.lockhatters.com/collections/best-selling-hats/products/women-wool-french-beret-hat)
+- [帽形比较：Eric Javits，Hat Shapes Guide](https://ericjavits.com/blogs/news/hat-shapes-guide-fedora-cloche-bucket-boater)
+- [真实产品分类：Tiffany & Co.，Earrings](https://www.tiffany.com/jewelry/earrings/)
+- [首饰教学参照：GIA GemKids，Necklaces](https://gemkids.gia.edu/jewelry/necklaces)
+- [专题旁读：The Goldsmiths’ Centre，The Brooch: A Versatile Jewel](https://www.goldsmiths-centre.org/learn-and-upskill/resources/knowledge-brooch-versatile-jewel-rachel-church/)
+
+### 第 31 章｜季节与场景：让一套衣服适应实际活动
+
+- [资料：REI，Layering Basics](https://www.rei.com/learn/expert-advice/layering-basics.html)
+- [资料：Saffron Hall，New to concerts?](https://www.saffronhall.com/visit-us/new-to-concerts)
+- [资料：Suitsupply，Black-Tie Attire Decoded](https://suitsupply.com/en-us/journal/blacktie-attire-decoded.html)

@@ -34,7 +34,7 @@ def validate():
         if re.search(r'\bTODO\b|待生成|占位图', text):
             errors.append(f'Unfinished content: {source.name}')
     image_records = []
-    for manifest in ('images.json', 'detail-plan.json', 'variation-plan.json', 'hanfu-cosplay-images.json', 'expansion-images-a.json', 'expansion-images-b.json'):
+    for manifest in ('images.json', 'detail-plan.json', 'variation-plan.json', 'hanfu-cosplay-images.json', 'expansion-images-a.json', 'expansion-images-b.json', 'completion-images-a.json', 'completion-images-b.json'):
         image_records.extend(json.loads((ROOT / 'references' / manifest).read_text(encoding='utf-8')))
     for image in image_records:
         if not (ROOT / image['file']).is_file() or not image.get('prompt'):
@@ -72,6 +72,10 @@ def main():
         detail_toc = '\n'.join(f'- [{p.read_text(encoding="utf-8").splitlines()[0].lstrip("# ")}]({p.relative_to(ROOT).as_posix()})' for p in detail_sources)
         detail_content = '\n\n---\n\n'.join(rebase(p, p.read_text(encoding='utf-8')) for p in detail_sources)
         (ROOT / 'garment-details.md').write_text(detail_heading + detail_toc + '\n\n---\n\n' + detail_content, encoding='utf-8')
+    if not args.check:
+        for name in ('book.md', 'garment-details.md'):
+            p = ROOT / name
+            p.write_text(p.read_text(encoding='utf-8').rstrip() + '\n', encoding='utf-8')
     print(f'Checked {len(chapters)} chapter files, {len(sources)-len(chapters)-1} appendices and all local references.')
 
 if __name__ == '__main__':

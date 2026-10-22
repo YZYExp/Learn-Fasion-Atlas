@@ -1,7 +1,7 @@
 {
   "title": "衣着有名：从风格识别到单品描述",
   "language": "zh-CN",
-  "edition": "辨识进阶扩充版",
+  "edition": "分类与描述完整扩充版",
   "cover": "assets/images/13-dresses.png",
   "sections": [
     {
@@ -19,6 +19,10 @@
     {
       "id": "IV",
       "title": "辨识进阶与衣橱实践"
+    },
+    {
+      "id": "V",
+      "title": "纹样、配饰与场景"
     }
   ],
   "chapters": [
@@ -253,11 +257,36 @@
       "source": "chapters/28-wardrobe-lab.md",
       "slug": "28-wardrobe-lab",
       "group": "IV"
+    },
+    {
+      "id": "29-patterns",
+      "number": 29,
+      "title": "第 29 章｜纹样的名称、尺度与分布",
+      "source": "chapters/29-patterns.md",
+      "slug": "29-patterns",
+      "group": "V"
+    },
+    {
+      "id": "30-headwear-jewelry",
+      "number": 30,
+      "title": "第 30 章｜帽饰与首饰：轮廓、位置和尺度",
+      "source": "chapters/30-headwear-jewelry.md",
+      "slug": "30-headwear-jewelry",
+      "group": "V"
+    },
+    {
+      "id": "31-context-layering",
+      "number": 31,
+      "title": "第 31 章｜季节与场景：让一套衣服适应实际活动",
+      "source": "chapters/31-context-layering.md",
+      "slug": "31-context-layering",
+      "group": "V"
     }
   ],
   "appendices": [
     "appendices/01-glossary.md",
     "appendices/02-comparisons.md",
-    "appendices/03-garment-words.md"
+    "appendices/03-garment-words.md",
+    "appendices/04-description-routes.md"
   ]
 }
