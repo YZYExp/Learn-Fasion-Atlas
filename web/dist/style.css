@@ -11,3 +11,5 @@
 @media(max-width:760px){.gallery{grid-template-columns:1fr;gap:36px}.atlas-item h3{display:flex;font-size:23px}.atlas-item h3 small{display:inline;font-size:10px}.atlas-item p,.atlas-chapter{font-size:11px}.zoom-label{opacity:1}}
 
 .filters{flex-wrap:wrap}.explore-toolbar{flex-wrap:wrap}
+
+.audience-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin:0 0 26px}.audience-toolbar>span{font-size:12px;letter-spacing:.12em;color:var(--muted,#667572)}.audience-toolbar .filters{flex-wrap:wrap}.audience-toolbar p{font-size:12px;color:var(--muted,#667572);margin:0 0 0 auto}@media(max-width:640px){.audience-toolbar{gap:10px}.audience-toolbar>span{width:100%}.audience-toolbar p{margin:0}.audience-toolbar .filters{gap:6px}}

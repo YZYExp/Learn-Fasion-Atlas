@@ -1,0 +1,114 @@
+[
+  {
+    "id": "51-mens-tops",
+    "chapter": 32,
+    "prompt": "Use case: photorealistic-natural. Asset type: teaching comparison plate for a Chinese fashion atlas. Create a portrait 1024x1536 photographic board with exactly 2 columns and 3 rows, thin clean warm-gray dividers, short elegant uppercase English labels below each panel. Neutral light warm-gray seamless studio, soft natural window lighting, detailed real fabric and skin texture, tasteful catalog editorial photography. In every panel show the SAME attractive adult East Asian man age 34, short natural dark hair, relaxed pleasant expression, body at a slight natural angle with relaxed hands visible, from head to upper thighs, no stiff mannequin posture. Identical navy straight trousers and consistent camera distance. Show six unmistakably different upper garments in a muted harmonious palette. Reading order: top left CREW TEE (cream crew-neck short-sleeve T-shirt); top right POLO (sage short-sleeve knit polo with turn-down collar and short button placket); middle left HENLEY (off-white collarless long-sleeve Henley with short center button placket, not full-button shirt); middle right SWEATSHIRT (slate crewneck sweatshirt with ribbed cuffs and hem, no hood); bottom left HOODIE (light oatmeal pullover hoodie with visible hood and kangaroo pocket); bottom right CARDIGAN (soft brown V-neck button-front knitted cardigan over white tee, cardigan full front opening visible). Keep heads and garment hems comfortably inside every panel; no cropped hands, no extra limbs. No logos, no watermarks, no other text. Clear garment identification is the priority.",
+    "file": "assets/images/51-mens-tops.png",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "panels": [
+      "CREW TEE",
+      "POLO",
+      "HENLEY",
+      "SWEATSHIRT",
+      "HOODIE",
+      "CARDIGAN"
+    ],
+    "review": "六种上装结构及英文标签清晰。成年东亚男性，姿态自然，部分格手入袋、部分格手垂放。",
+    "limitations": "手臂、姿势、袖长及颜色并非严格控制，不以此推断保暖性能、成分或尺寸。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-34c783c2-53e2-4cc8-8a5e-1e2846e7596b.png"
+  },
+  {
+    "id": "52-shirt-collars",
+    "chapter": 32,
+    "prompt": "Use case: photorealistic-natural. Asset type: accurate shirt collar teaching comparison plate. Create portrait 1024x1536, exactly 2 columns x 2 rows, neutral warm light gray studio, fine dividers and separate small serif uppercase English label beneath each photograph. Every panel shows the SAME attractive adult East Asian man about 42, natural salt-and-pepper short hair, soft friendly alert expression, consistent close portrait from full head to mid chest. He wears the same plain pale blue woven cotton shirt, no tie, first neck button fastened so collar shape is clearly visible. Only change collar construction; show the collar clearly and large, face not dominant. Top left label POINT: traditional point collar, long narrow tips point down and inward with small opening between; top right label SPREAD: wider-spread turned-down collar with tips visibly farther apart, broad opening, no tip buttons; bottom left label BUTTON-DOWN: traditional turned-down collar with two clear tiny buttons fastening both collar tips to shirt front, both visible, no tie; bottom right label BAND: simple narrow upright band collar, center front closed by one small button, absolutely no folded collar points. Consistent shirt body, no decorative seams or logos. Actual photographic texture, natural head angle and shoulders, elegant editorial quality not illustration. Accurate shirt collar distinctions, no duplicated or garbled labels, no watermark. Do not add additional text or arrows.",
+    "file": "assets/images/52-shirt-collars.png",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "panels": [
+      "POINT",
+      "SPREAD",
+      "BUTTON-DOWN",
+      "BAND"
+    ],
+    "review": "四种领型可辨，纽扣领两领尖固定扣清楚，立领无翻折领尖；成熟东亚男性肖像。",
+    "limitations": "spread格顶扣敞开，与其他格扣合状态不同，不作为严格角度测量或布料织法证据。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-2fe947a9-4aec-421f-ba89-10aeedee05ab.png"
+  },
+  {
+    "id": "53-mens-trousers",
+    "chapter": 33,
+    "prompt": "Use case: photorealistic-natural. Asset type: mens trouser category identification teaching plate. Generate portrait 1024x1536 2 columns x 2 rows photorealistic studio comparison, thin dividers and small separate serif English label bands below each panel. Same attractive adult East Asian male age 38 with a fuller average build, same plain ivory crew T-shirt neatly tucked in so waistbands are visible, natural relaxed arms hanging outside pockets, same neutral stance, same simple white low sneakers. Frame each panel from mid chest through entire shoes, keep all shoe tips and heels inside panel, no cropped toes. Neutral light warm gray background, soft light, premium editorial fabric detail. Four specific trousers, readable construction. Top left label DRESS TROUSERS: charcoal gray wool-look plain front tailored trousers with a pressed center crease, clean side pockets, open straight hem. Top right label CHINOS: tan cotton-twill look straight chinos with slant side pockets, belt loops, plain open hems, no cargo pockets, no pressed sharp formal crease. Bottom left label CARGO: olive relaxed straight cargo trousers with large clearly visible thigh flap pockets, plain open hems. Bottom right label JOGGERS: navy jersey-look joggers with an elastic drawstring waistband and clearly ribbed elastic ankle cuffs. Natural human proportions and hands. No logos, no watermark, no additional text. Category differences are external clothing features; avoid any anatomical distortion.",
+    "file": "assets/images/53-mens-trousers.png",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "panels": [
+      "DRESS TROUSERS",
+      "CHINOS",
+      "CARGO",
+      "JOGGERS"
+    ],
+    "review": "四裤类的中线、斜袋、大腿贴袋、抽绳与束脚等可见区别清楚；全身完整，成熟普通身型东亚男模。",
+    "limitations": "AI只能显示表面外观，不证明毛料、棉斜纹或针织实际成分、纤维和性能。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-f50cc068-45bb-48e8-a1bc-21650a1dddb9.png"
+  },
+  {
+    "id": "54-jeans-fits",
+    "chapter": 33,
+    "prompt": "Use case: photorealistic-natural. Asset type: mens jeans cut comparison in an illustrated fashion atlas. Portrait 1024x1536, exactly 2 columns and 2 rows separated by subtle gray rules, small elegant uppercase serif label bands. Same attractive adult South Asian man age 32, medium brown skin, short dark hair and neatly trimmed beard, normal athletic-average body, same natural slightly open stance with feet a comfortable distance apart, both hands relaxed by sides, identical tucked-in white T-shirt and simple white low sneakers. Full body all panels, enough margin around head, fingertips, and whole shoes. Same neutral warm-gray studio and camera distance, real skin/fabric detail. Change only dark indigo denim jeans cut; all jeans have plain five-pocket style, same waistband height, straight unrolled hems and no holes. Top left SLIM: closely follows thigh and calf but not skinny leggings; top right STRAIGHT: moderate thigh space, nearly straight lower leg; bottom left RELAXED STRAIGHT: noticeably more room through seat and thigh, loose straight lower leg; bottom right WIDE LEG: generous wide thigh and broad straight hem, clearly wider than relaxed straight. Keep each hem at same shoe-top level with minimal break, not oversized folds. Denim shape differences obvious but plausible on same man; consistent pants color and lighting, avoid body-size changes. No logos, no watermark, no other text. This is a comparison of visible silhouettes, not a brand sizing chart.",
+    "file": "assets/images/54-jeans-fits.png",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "panels": [
+      "SLIM",
+      "STRAIGHT",
+      "RELAXED STRAIGHT",
+      "WIDE LEG"
+    ],
+    "review": "同一南亚男性、深蓝牛仔裤，贴体至宽腿外轮廓递增可辨，完整鞋头，无明显肢体异常。",
+    "limitations": "宽松直筒与阔腿变化程度有限，裤脚褶皱和手部有轻微差异；品牌名称与松量标准并不统一，不作量化版型尺码表。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-fd4812d3-e683-4cc5-890b-a8d0371785b3.png"
+  },
+  {
+    "id": "55-short-jackets",
+    "chapter": 34,
+    "prompt": "Use case: photorealistic-natural. Asset type: six common men's short outerwear types for an educational fashion atlas. Generate portrait 1024x1536 with exactly 2 columns x 3 rows, thin warm gray dividers and readable small serif uppercase English label bands. Light warm-gray studio and soft natural light, real fabric and skin texture, clean premium fashion catalog. Same attractive adult East Asian male age 36 with neat black hair and pleasant lively face in every panel, waist-to-head plus upper thigh framing with uncropped head and hands, relaxed weight shift and hands resting naturally by sides, all jackets worn over same plain white tee and navy trousers. Distinct silhouettes and construction: top left BOMBER: muted olive waist-length zip jacket, low rib-knit collar, clearly ribbed cuffs and waistband, no epaulettes. Top right HARRINGTON: beige hip-length zip jacket with two-button stand/umbrella collar, slanted front flap pockets, fine gathered waistband, no hood. Middle left DENIM TRUCKER: indigo denim point-collar button jacket, two chest flap pockets and characteristic vertical front seams, short straight hem. Middle right CHORE JACKET: faded blue cotton-looking work coat at hip, four large plain patch pockets, shirt collar and button front, no ribbing. Bottom left OVERSHIRT: brown lightly checked loose shirt-jacket, classic shirt collar, two chest pockets, visibly rounded shirt-tail hem, lighter and unstructured, no ribbing. Bottom right FIELD JACKET: olive hip-length field-inspired jacket, stand collar, concealed zip front with snap flap, four flap pockets, external drawcord waist, no military badges. Each jacket clearly different, correct external details, no brand logos, no watermark, no extra labels. No visible weapons or military emblems. Label bands must not cover hems.",
+    "file": "assets/images/55-short-jackets.png",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "panels": [
+      "BOMBER",
+      "HARRINGTON",
+      "DENIM TRUCKER",
+      "CHORE JACKET",
+      "OVERSHIRT",
+      "FIELD JACKET"
+    ],
+    "review": "六件短外套区分清楚，罗纹边、领型、口袋、牛仔分割线、衬衫摆、抽绳等可见；东亚成年男性自然轻微侧身。",
+    "limitations": "Harrington后背伞形裁片、内衬和材料未展示；chore呈牛仔外观，不从图断言面料织造、历史原版、功能性能。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-28316922-1b9a-4c6e-b8ee-1e9d77ef2d39.png"
+  },
+  {
+    "id": "56-long-outerwear",
+    "chapter": 34,
+    "prompt": "Use case: photorealistic-natural. Asset type: long men's outerwear identification teaching plate. Portrait 1024x1536 exactly 2 columns x 2 rows, subtle warm gray dividers and small serif English label band under every panel. Same handsome adult Black man age 48, natural short salt-and-pepper hair, friendly composed face, a broad average body, all four panels consistent studio distance and light warm-gray background. Every panel full body including whole head, fingers, and whole shoes with comfortable margins. Natural relaxed standing pose with one foot slightly forward, arms by sides, confident but not stiff. Same ivory crew knit underlayer, charcoal straight trousers, dark brown plain shoes. Show four distinct long outer garments. Top left TRENCH COAT: beige double-breasted trench, broad notched lapels, matching waist belt neatly fastened, cuff straps and shoulder epaulettes, length just below knee. Top right WRAP COAT: camel soft belted wrap coat, unstructured large shawl-like turned-back collar, overlapping wrap front fastened only by self fabric belt, no visible double button rows, calf length. Bottom left OVERCOAT: navy single-breasted tailored knee-length overcoat, notch lapel and three visible front buttons, no waist belt, clean straight silhouette. Bottom right DUFFLE COAT: dark charcoal hooded duffle coat, large distinctive wooden toggle closures with rope loops at center front, large patch pockets, upper-knee length, hood visible behind neck. Real fabric texture and construction, all fastenings clear and plausible, no logos or military badges, no watermark, no extra text. Do not crop the bottom garment or shoes; label bands separate from photos.",
+    "file": "assets/images/56-long-outerwear.png",
+    "provider": "built-in image_gen",
+    "kind": "AI教学示意",
+    "status": "generated-reviewed",
+    "panels": [
+      "TRENCH COAT",
+      "WRAP COAT",
+      "OVERCOAT",
+      "DUFFLE COAT"
+    ],
+    "review": "成熟黑人男性；双排扣腰带风衣、系带围裹大衣、单排扣大衣和带帽牛角扣大衣清楚，鞋头完整。",
+    "limitations": "围裹大衣衣长实际约膝部至膝下而非小腿；不可凭外观验证防雨、保暖和牛角扣材质。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-8c29e931-ee4e-46ee-b356-9411f60b07c7.png"
+  }
+]

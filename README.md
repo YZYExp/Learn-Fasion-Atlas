@@ -4,7 +4,7 @@
 
 ## 阅读
 
-从 [全书合并稿](book.md) 连续阅读，或按下面的分章目录阅读。只想先学会描述人物穿着，可先看 [单品细节分册](garment-details.md)，从第 13—31 章进入；不需要先掌握风格名。图片全部附在工程内，解压后请保留目录关系。主稿为 Markdown，不需要联网才能看自有配图；真实作品与资料链接需联网访问。
+从 [全书合并稿](book.md) 连续阅读，男装可从 [第 28 章阅读导引](chapters/28-wardrobe-lab.md) 或 [男性服饰与搭配分册](output/pdf/menswear-atlas.pdf) 进入，或按下面的分章目录阅读。只想先学会描述人物穿着，可先看 [单品细节分册](garment-details.md)，从第 13—39 章进入；不需要先掌握风格名。图片全部附在工程内，解压后请保留目录关系。主稿为 Markdown，不需要联网才能看自有配图；真实作品与资料链接需联网访问。
 
 | 顺序 | 章节 | 读完能做什么 |
 |---|---|---|
@@ -40,10 +40,19 @@
 | 29 | [纹样的名称、尺度与分布](chapters/29-patterns.md) | 纹样、配饰与场景描述 |
 | 30 | [帽饰与首饰：轮廓、位置和尺度](chapters/30-headwear-jewelry.md) | 纹样、配饰与场景描述 |
 | 31 | [季节与场景：让一套衣服适应实际活动](chapters/31-context-layering.md) | 纹样、配饰与场景描述 |
+| 32 | [男式上装：从领口、门襟到下摆](chapters/32-mens-tops.md) | 男性服饰的命名、结构与穿搭描述 |
+| 33 | [男式裤装：裤类、裤型与牛仔裤](chapters/33-mens-trousers.md) | 男性服饰的命名、结构与穿搭描述 |
+| 34 | [男式外套：短夹克到长大衣](chapters/34-mens-outerwear.md) | 男性服饰的命名、结构与穿搭描述 |
+| 35 | [西装与礼服：前襟、驳领和套装关系](chapters/35-mens-tailoring.md) | 男性服饰的命名、结构与穿搭描述 |
+| 36 | [男装版型与比例：把合身说成可见关系](chapters/36-mens-fit.md) | 男性服饰的命名、结构与穿搭描述 |
+| 37 | [男鞋与配饰：从鞋襟到领带](chapters/37-mens-accessories.md) | 男性服饰的命名、结构与穿搭描述 |
+| 38 | [男装风格辨识：用衣物组合说明风格](chapters/38-mens-styles.md) | 男性服饰的命名、结构与穿搭描述 |
+| 39 | [男性场景穿搭：把需要写成完整描述](chapters/39-mens-scenarios.md) | 男性服饰的命名、结构与穿搭描述 |
 | A | [双语索引](appendices/01-glossary.md) | 查 81 条术语与正文位置 |
 | B | [12 组易混辨析](appendices/02-comparisons.md) | 快速找到可见区别与讨论说法 |
 | C | [单品细节词表](appendices/03-garment-words.md) | 从模糊说法查具体名称与部位词 |
 | D | [从印象到名称的查找路线](appendices/04-description-routes.md) | 按模糊描述回查章节并组合表达 |
+| E | [男装查词与描述入口](appendices/05-menswear-words.md) | 32 个男装用语与第32—39章的阅读路线 |
 
 ## 图片与资料
 
@@ -114,3 +123,9 @@ python3 scripts/split_pdf.py
 ## 分类与描述扩展完成
 
 第29—31章补充纹样、帽饰首饰、叠穿与场景，附录D提供从模糊印象回查全书的路线。全书31章正文、导读、4篇附录、50张实际配图；图鉴直接展示49组摄影教学图板，覆盖主要风格、单品、局部、传统与角色服装。章节清单book.json与图鉴清单web/atlas.json分别维护阅读顺序与图像入口，构建时校验覆盖。完整提示词在references/completion-images-a.json及completion-images-b.json；集中审校记录见references/final-audit.md。
+
+## 男装系统扩充
+
+第 32—39 章补齐男式上装、裤装、外套、西装礼服、版型比例、男鞋配饰、风格和场景穿搭。新增 16 张男装图板；展示以成年东亚男性为主，并覆盖其他族裔、年龄和体型。图鉴可将展示方向与单品／风格分类组合筛选，同类样式仍完整展开。
+
+[男装分册](output/pdf/menswear-atlas.pdf)复用全书已排版页面，保留章书签和当页来源。[扩充计划与记录](references/menswear-plan.md)记录分工和审校状态，原图与最终提示词在 references/menswear-images-*.json。

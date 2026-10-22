@@ -1,0 +1,247 @@
+[
+  {
+    "id": "01-classic",
+    "audience": "mixed",
+    "reason": "同板含男装与女装的经典学院示例"
+  },
+  {
+    "id": "02-romantic",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "03-subculture",
+    "audience": "mixed",
+    "reason": "朋克、哥特与街头含不同穿着方向"
+  },
+  {
+    "id": "04-functional",
+    "audience": "mixed",
+    "reason": "含男装工装与女装Safari等混合示例"
+  },
+  {
+    "id": "05-retro",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "06-lolita",
+    "audience": "mixed",
+    "reason": "洛丽塔裙装与王子系裤装同板比较"
+  },
+  {
+    "id": "07-tradition",
+    "audience": "mixed",
+    "reason": "裙装与新中式男装同板"
+  },
+  {
+    "id": "08-avant",
+    "audience": "mixed",
+    "reason": "女装轮廓与明确androgynous造型同板"
+  },
+  {
+    "id": "09-accessories",
+    "audience": "mixed",
+    "reason": "无人物的鞋包饰物混合类型，供多种衣装使用"
+  },
+  {
+    "id": "10-history",
+    "audience": "mixed",
+    "reason": "裙装历史灵感与西部男装混合"
+  },
+  {
+    "id": "11-street-future",
+    "audience": "mixed",
+    "reason": "日系街头含city boy与裙装等方向"
+  },
+  {
+    "id": "13-dresses",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "14-skirts",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "15-tops",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "16-underwear",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "17-necklines",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "18-sleeves-v2",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "19-fabrics",
+    "audience": "mixed",
+    "reason": "无人物的材料局部，共通材料知识"
+  },
+  {
+    "id": "20-trousers",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "21-outerwear",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "22-details",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "23-slip-variants",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "24-lace-variants",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "25-sport-variants",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "26-bustier-variants",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "27-blouse-variants",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "28-knit-variants",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "29-skirt-variants",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "30-jacket-variants",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "31-lolita-variants",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "32-urban-tailoring",
+    "audience": "mixed",
+    "reason": "西装与裤装有多种衣装展示方向"
+  },
+  {
+    "id": "33-song-beizi",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "34-ming-layers",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "35-mamian-modern",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "36-cosplay-types",
+    "audience": "mixed",
+    "reason": "男女装与护甲角色造型混合"
+  },
+  {
+    "id": "37-xianxia-fantasy",
+    "audience": "mixed",
+    "reason": "长袍、裙装与男式角色造型混合"
+  },
+  {
+    "id": "38-garment-families",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "39-bodice-details",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "40-neck-back-details",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "41-sleeve-comparison",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "42-material-comparison",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "43-footwear-details",
+    "audience": "mixed",
+    "reason": "玛丽珍、后空带鞋与牛津、切尔西等混合"
+  },
+  {
+    "id": "44-bag-types",
+    "audience": "mixed",
+    "reason": "无人物的包型比较，供多种衣装使用"
+  },
+  {
+    "id": "45-neutral-wardrobe",
+    "audience": "mixed",
+    "reason": "明确中性与男、女装剪裁同板"
+  },
+  {
+    "id": "46-pattern-comparison",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "47-headwear-types",
+    "audience": "mixed",
+    "reason": "不同人物展示帽饰，未按单一衣装方向组织"
+  },
+  {
+    "id": "48-jewelry-placement",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "49-layering-comparison",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  },
+  {
+    "id": "50-context-wardrobe",
+    "audience": "womens",
+    "reason": "实际图板以女装轮廓或女装穿搭示例组织；分类不限制其他穿着者使用"
+  }
+]

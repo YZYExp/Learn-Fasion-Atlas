@@ -1,0 +1,107 @@
+[
+  {
+    "id": 62,
+    "path": "assets/images/62-neckwear.png",
+    "provider": "built-in image_gen",
+    "use_case": "photorealistic-natural",
+    "prompt": "Use case: photorealistic-natural. Asset: an educational menswear atlas plate, portrait 1024x1536. A tasteful premium studio photographic contact sheet, exactly 2 columns by 2 rows, thin straight dark grey divider lines, warm light grey background and diffuse daylight. Same handsome adult East Asian man aged 35 with short dark hair and natural soft expression, waist-up portraits, upright relaxed shoulders, arms relaxed, head fully visible in each panel. Precise realistic clothing textures and anatomy, no mannequin stiffness. TOP LEFT: navy jacket, white point-collar shirt, dark plain necktie properly knotted; short caption 'NECKTIE'. TOP RIGHT: navy evening jacket, white shirt, neat black bow tie; caption 'BOW TIE'. BOTTOM LEFT: soft taupe jacket and navy knit top, loosely wrapped muted brown scarf, caption 'SCARF'. BOTTOM RIGHT: navy blazer, white shirt with collar open, NO necktie and NO scarf, small white pocket square visibly in jacket breast pocket, caption 'POCKET SQUARE'. Captions in clear small elegant uppercase dark serif text in narrow strips below each photograph. All four squares equally sized, no logos, no extra text, no jewelry, no borders cutting off head. This is clothing comparison, natural human expressions, realistic fingers when visible.",
+    "panels_order": "左上、右上、左下、右下",
+    "panels": [
+      "NECKTIE｜领带",
+      "BOW TIE｜领结",
+      "SCARF｜围巾",
+      "POCKET SQUARE｜胸袋口袋巾"
+    ],
+    "review": "已查看实际生成图；4格标注、服装映射、人物完整性、可见手脚和自然姿势可用；保留以下教学限制。",
+    "limitations": [
+      "各格同时变化领部配饰和内搭/外套，不能用作单变量实验。",
+      "口袋巾是胸袋配饰，第四格没有颈饰。",
+      "手部多在画面外，不能用于袖长测量；图像不证明礼仪适用性。"
+    ],
+    "file": "assets/images/62-neckwear.png"
+  },
+  {
+    "id": 63,
+    "path": "assets/images/63-mens-classic-styles.png",
+    "provider": "built-in image_gen",
+    "use_case": "photorealistic-natural",
+    "prompt": "Use case: photorealistic-natural. Asset type: Chinese fashion book educational photographic menswear atlas. Portrait 1024x1536 pixels, exactly 2 columns by 2 rows equally sized, fine dark grey grid lines, warm light grey seamless studio background, soft neutral daylight and elegant short uppercase English serif captions on narrow strips below each photograph. Beautiful realistic adult male model, convincing natural face and skin, relaxed standing pose with gentle variation, both hands anatomically correct and not hidden behind back. Each full-length subject completely inside its own cell, head and both shoes fully visible with generous margin. Camera perspective and subject scale remain comparable across the four cells. Real fabric detail, no brands, no watermark, no extra text, no caricature, no mannequin stiffness. Same handsome East Asian man aged about 38 in all four photographs, natural average build, elegant but not exaggerated. Top left caption 'BUSINESS': dark navy two-piece suit with matching trousers, white shirt, plain dark navy tie and black leather lace-up shoes. Top right 'IVY': navy blazer, light blue button-down collar shirt, beige chinos, brown penny loafers. Bottom left 'MINIMAL': black fine-knit crewneck sweater, grey straight tailored trousers, black minimalist shoes. Bottom right 'SOFT TAILORING': relaxed beige unstructured-looking blazer, white roundneck T-shirt, dark brown trousers, brown suede loafers. Show real observable differences in garment layering and silhouette. No claim of definitive style categories.",
+    "panels_order": "左上、右上、左下、右下",
+    "panels": [
+      "BUSINESS｜商务套装",
+      "IVY｜学院式组合",
+      "MINIMAL｜极简组合",
+      "SOFT TAILORING｜柔和剪裁搭配"
+    ],
+    "review": "已查看实际生成图；4格标注、服装映射、人物完整性、可见手脚和自然姿势可用；保留以下教学限制。",
+    "limitations": [
+      "四套组合同时改变衣物和配色；是当代创作示例，不是风格的唯一标准或历史证据。",
+      "左上为完整深色套装；右上浅蓝衬衫领尖细节较小，不能据小图检验扣领工艺。",
+      "右下外套的柔和外观不能证明内部无衬结构。"
+    ],
+    "file": "assets/images/63-mens-classic-styles.png"
+  },
+  {
+    "id": 64,
+    "path": "assets/images/64-mens-casual-styles.png",
+    "provider": "built-in image_gen",
+    "use_case": "photorealistic-natural",
+    "prompt": "Use case: photorealistic-natural. Asset type: Chinese fashion book educational photographic menswear atlas. Portrait 1024x1536 pixels, exactly 2 columns by 2 rows equally sized, fine dark grey grid lines, warm light grey seamless studio background, soft neutral daylight and elegant short uppercase English serif captions on narrow strips below each photograph. Beautiful realistic adult male model, convincing natural face and skin, relaxed standing pose with gentle variation, both hands anatomically correct and not hidden behind back. Each full-length subject completely inside its own cell, head and both shoes fully visible with generous margin. Camera perspective and subject scale remain comparable across the four cells. Real fabric detail, no brands, no watermark, no extra text, no caricature, no mannequin stiffness. Same handsome South Asian man aged about 35 with warm medium brown skin and short dark hair, average athletic build, in all four photographs. Top left caption 'WORKWEAR': olive chore jacket with three visible patch pockets over cream tee, indigo straight jeans and brown work boots. Top right 'AMERICANA': indigo denim trucker jacket with chest pockets, white tee, faded straight blue jeans and brown boots. Bottom left 'STREET': roomy muted charcoal hoodie, olive wide cargo trousers with side flap pockets and white low-top sneakers. Bottom right 'OUTDOOR': teal lightweight hooded shell jacket over grey layer, dark practical hiking trousers, hiking shoes, small grey backpack with realistic straps. No camouflage or weapons, no technical performance claims. Natural slight weight shift, clear outfit silhouette.",
+    "panels_order": "左上、右上、左下、右下",
+    "panels": [
+      "WORKWEAR｜工装式",
+      "AMERICANA｜美式复古组合",
+      "STREET｜街头式",
+      "OUTDOOR｜户外式"
+    ],
+    "review": "已查看实际生成图；4格标注、服装映射、人物完整性、可见手脚和自然姿势可用；保留以下教学限制。",
+    "limitations": [
+      "四套完整造型同时改变多个条件，不是材料或功能实验。",
+      "生成图不能证明防水、耐磨、保暖或户外安全性能。",
+      "工装、美式复古、街头与户外的视觉线索可以交叉。"
+    ],
+    "file": "assets/images/64-mens-casual-styles.png"
+  },
+  {
+    "id": 65,
+    "path": "assets/images/65-warm-weather.png",
+    "provider": "built-in image_gen",
+    "use_case": "photorealistic-natural",
+    "prompt": "Use case: photorealistic-natural. Asset type: Chinese fashion book educational photographic menswear atlas. Portrait 1024x1536 pixels, exactly 2 columns by 2 rows equally sized, fine dark grey grid lines, warm light grey seamless studio background, soft neutral daylight and elegant short uppercase English serif captions on narrow strips below each photograph. Beautiful realistic adult male model, convincing natural face and skin, relaxed standing pose with gentle variation, both hands anatomically correct and not hidden behind back. Each full-length subject completely inside its own cell, head and both shoes fully visible with generous margin. Camera perspective and subject scale remain comparable across the four cells. Real fabric detail, no brands, no watermark, no extra text, no caricature, no mannequin stiffness. Same attractive stocky East Asian adult man aged about 45 in all four panels, soft natural belly and broad frame, confident relaxed expression, not oversized muscular. Clearly different contemporary warm weather outfits. Top left caption 'SHIRT + CHINOS': cream lightly slubbed long-sleeve shirt with sleeves rolled, olive chinos, brown loafers. Top right caption 'KNIT POLO': muted navy short-sleeve knit polo with small placket and ribbed texture, beige pleated trousers, brown loafers. Bottom left caption 'TEE + SHORTS': white and navy horizontal striped tee, tailored tan knee-above shorts, plain white sneakers. Bottom right caption 'CAMP COLLAR': pale sage short-sleeve camp-collar shirt visibly open flat collar, off-white loose straight trousers, simple brown sandals with realistic feet. Do not imply actual fibre composition or cooling performance.",
+    "panels_order": "左上、右上、左下、右下",
+    "panels": [
+      "SHIRT + CHINOS｜衬衫与奇诺裤",
+      "KNIT POLO｜针织Polo与褶裥裤",
+      "TEE + SHORTS｜条纹T恤与短裤",
+      "CAMP COLLAR｜开领短袖衬衫与宽松长裤"
+    ],
+    "review": "已查看实际生成图；4格标注、服装映射、人物完整性、可见手脚和自然姿势可用；保留以下教学限制。",
+    "limitations": [
+      "同一成年男性为比较入口，姿态和手臂位置存在细微变化，并非严格控制实验。",
+      "左上有浅色麻感纹理，但不能据此确认亚麻成分、透气或降温性能。",
+      "右下是开领衬衫，图注可讲翻领轮廓，不能推断内部纸样。"
+    ],
+    "file": "assets/images/65-warm-weather.png"
+  },
+  {
+    "id": 66,
+    "path": "assets/images/66-mens-occasions.png",
+    "provider": "built-in image_gen",
+    "use_case": "photorealistic-natural",
+    "prompt": "Use case: photorealistic-natural. Asset type: Chinese fashion book educational photographic menswear atlas. Portrait 1024x1536 pixels, exactly 2 columns by 2 rows equally sized, fine dark grey grid lines, warm light grey seamless studio background, soft neutral daylight and elegant short uppercase English serif captions on narrow strips below each photograph. Beautiful realistic adult male model, convincing natural face and skin, relaxed standing pose with gentle variation, both hands anatomically correct and not hidden behind back. Each full-length subject completely inside its own cell, head and both shoes fully visible with generous margin. Camera perspective and subject scale remain comparable across the four cells. Real fabric detail, no brands, no watermark, no extra text, no caricature, no mannequin stiffness. Four different attractive adult men of diverse ages and builds, authentic natural expressions and poses, none a stereotype. Top left caption 'OFFICE': average-built East Asian man around 40, grey blazer over pale blue shirt with open collar, navy trousers, black Derby shoes, holding closed slim document folder. Top right caption 'CASUAL OUTING': sturdy Black man around 35, olive knit polo and beige chinos, clean off-white sneakers, empty hands. Bottom left caption 'WEDDING GUEST': slim East Asian man around 30, dark navy two-piece suit, white shirt and muted burgundy necktie, black lace-up shoes, no boutonniere. Bottom right caption 'TRAVEL': mature white man around 55 with short salt-and-pepper hair, tobacco overshirt over white tee, charcoal relaxed trousers, comfortable neutral sneakers and modest grey backpack worn on both shoulders, empty hands. All four against the same uncluttered light grey studio background, no scene clutter. Clothing examples only, not universal dress code rules.",
+    "panels_order": "左上、右上、左下、右下",
+    "panels": [
+      "OFFICE｜办公室",
+      "CASUAL OUTING｜休闲出行",
+      "WEDDING GUEST｜婚礼宾客",
+      "TRAVEL｜旅行"
+    ],
+    "review": "已查看实际生成图；4格标注、服装映射、人物完整性、可见手脚和自然姿势可用；保留以下教学限制。",
+    "limitations": [
+      "各格人物不同，不能比较体型造成的版型变化。",
+      "情境名称表示创作方向，不代表所有办公室、婚礼或旅行的着装规则。",
+      "旅行图中背包属于造型，不能证明负重舒适度或鞋服性能。"
+    ],
+    "file": "assets/images/66-mens-occasions.png"
+  }
+]

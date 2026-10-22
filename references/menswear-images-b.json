@@ -1,0 +1,91 @@
+[
+  {
+    "n": 57,
+    "id": "57-lapel-fronts",
+    "chapter": "35-mens-tailoring",
+    "panels": [
+      "上：平驳领 NOTCH LAPEL",
+      "中：戗驳领 PEAK LAPEL",
+      "下：青果领 SHAWL COLLAR"
+    ],
+    "review": "三种领缘区别可见，单排扣一致，面部和双肩自然；中格戗驳领尖向上较含蓄，需放大比较。",
+    "limitations": "对照为创作，衣领宽度和衬衫开口也有轻微漂移；不能作精确变量实验，不能判断垫肩衬料或纤维成分。",
+    "path": "assets/images/57-lapel-fronts.png",
+    "tool": "built-in image_gen",
+    "use_case": "scientific-educational",
+    "prompt": "Use case: scientific-educational. Asset: photorealistic fashion teaching atlas, portrait 1024x1536. Create ONE refined warm light-gray studio triptych arranged as THREE equal horizontal rows, each shows the SAME attractive 40-year-old East Asian man with natural skin, dark blue single-breasted tailored jacket over plain white shirt, front view head through waist. Relaxed shoulders, natural friendly expression, hands outside crop. Keep body, pose, jacket color, shirt, scale and lighting nearly identical; CHANGE ONLY lapel shape. Top row: NOTCH LAPEL, clearly visible outward notch at each collar-to-lapel junction. Middle row: PEAK LAPEL, sharply upward pointing lapel tips, clearly distinct from notch. Bottom: SHAWL COLLAR, continuous smooth curved lapel with no notch or peak, tonal navy satin facing allowed. All jackets single-breasted same two-button configuration, so button rows are not a changing variable. Thin neutral grid dividers, generous margin, one clean serif caption centered beneath each image inside its row. Exact English labels: 'NOTCH LAPEL', 'PEAK LAPEL', 'SHAWL COLLAR'. No other text. High-detail realistic garment edges and natural anatomy, neutral soft diffused light, elegant editorial photography, no branding or watermark.",
+    "file": "assets/images/57-lapel-fronts.png"
+  },
+  {
+    "n": 58,
+    "id": "58-suit-eveningwear",
+    "chapter": "35-mens-tailoring",
+    "panels": [
+      "左上：深蓝商务两件套，长领带",
+      "右上：灰色三件套，马甲可见",
+      "左下：黑色晚礼服，黑领结",
+      "右下：象牙白晚礼服夹克配黑礼裤，黑领结"
+    ],
+    "review": "四格完整头至鞋，成年男性体型年龄族裔有变化，均自然合理。晚礼服两个例子为领结，白夹克为青果领。",
+    "limitations": "裤侧缎条正面无法清楚核实，不以图证明galon。不同人物、姿态和衣物配色同时变化，不是结构控制实验；不是具体活动着装规则。",
+    "path": "assets/images/58-suit-eveningwear.png",
+    "tool": "built-in image_gen",
+    "use_case": "scientific-educational",
+    "prompt": "Use case: scientific-educational. Asset: photorealistic fashion teaching atlas, portrait 1024x1536. ONE warm pale gray studio photographic plate in a clean 2 columns by 2 rows grid, full-body adult male fashion models head to shoes completely visible in every panel, natural relaxed standing posture, attractive believable facial features, real skin and garment texture. Four distinct adult men, 3 East Asian including one mature 50-year-old medium-build man, one Black man, balanced natural physiques; no body ranking. Consistent front three-quarter camera and soft light. Top left: attractive adult East Asian man in a dark navy BUSINESS SUIT, matching jacket and trousers, white plain shirt with long burgundy necktie, black leather oxfords. Top right: mature medium-build East Asian man in grey THREE-PIECE SUIT, matching grey jacket waistcoat trousers, light blue shirt with long dark tie, brown formal shoes. Bottom left: East Asian male in BLACK TUXEDO, black satin peak lapels, white evening shirt, black self-tied bow tie, black matching evening trousers with subtle single side stripe, polished black shoes. Bottom right: handsome Black male in IVORY DINNER JACKET, ivory shawl collar and jacket, white evening shirt, black bow tie, black evening trousers, polished black shoes. Ensure evening looks use bow ties, not long ties. Natural hands by sides, no rigid mannequin poses, no anatomy errors. Thin dividers and roomy light caption strips, exact labels 'BUSINESS SUIT', 'THREE-PIECE SUIT', 'BLACK TUXEDO', 'IVORY DINNER JACKET'. No other text, no logos, no watermark. Elegant clear teaching photography not runway.",
+    "file": "assets/images/58-suit-eveningwear.png"
+  },
+  {
+    "n": 59,
+    "id": "59-jacket-fit",
+    "chapter": "36-mens-fit",
+    "panels": [
+      "上：TRIM FIT 较贴身余量",
+      "中：REGULAR FIT 常规余量",
+      "下：ROOMY FIT 较宽松余量"
+    ],
+    "review": "同一成年中年东亚男模、同蓝夹克白T灰裤，上下身比例自然；胸腰余量和肩线逐渐变宽可见，没有强烈拉扯或畸形。",
+    "limitations": "不同格有表情、T领开口、肩宽与衣身细节微小漂移；只作可见轮廓比较，不是通用合身标准、尺码表或定量测量。",
+    "path": "assets/images/59-jacket-fit.png",
+    "tool": "built-in image_gen",
+    "use_case": "scientific-educational",
+    "prompt": "Use case: scientific-educational. Asset: photorealistic menswear fit comparison atlas, portrait 1024x1536. ONE page with THREE horizontal rows, a head-through-upper-thigh front view of the SAME handsome East Asian man around 48 years old, ordinary medium build with a slightly soft waist, natural face and skin. Warm pale gray studio background, soft natural editorial light, identical scale and frontal relaxed standing pose, hands relaxed beside body, each row. Same navy single-breasted two-button notch lapel jacket, plain white crew neck T-shirt and gray straight trousers. KEEP jacket length to seat and the person's true body shape the same. Change only garment ease progressively: top TRIM FIT closer to torso but no strain/X wrinkles, shoulders fitting natural shoulder; middle REGULAR FIT moderate clean chest and waist room; bottom ROOMY FIT visibly roomier chest and waist and slightly extended shoulder without enormous exaggeration. All three credible wearable tailoring, upper button gently fastened in all. This is a comparison of appearance/ease, not a body attractiveness ranking or exact sizing chart. Simple thin grid lines, light caption strip under each image. Verbatim labels 'TRIM FIT', 'REGULAR FIT', 'ROOMY FIT'. No numbers or advice, no other text, no logos, no watermark. Ensure the three jackets' volumes differ noticeably and the man remains the same across all rows.",
+    "file": "assets/images/59-jacket-fit.png"
+  },
+  {
+    "n": 60,
+    "id": "60-trouser-break",
+    "chapter": "36-mens-fit",
+    "panels": [
+      "上：NO BREAK 无裤脚折痕",
+      "中：SLIGHT BREAK 轻微折痕",
+      "下：FULL BREAK 较明显折痕"
+    ],
+    "review": "同灰直筒裤棕系带鞋；最上裤脚前缘平直，中格浅折，下格覆盖鞋面更多并有较明显前折。开放裤脚无束口，完整鞋头在画内。",
+    "limitations": "前折程度是定性示意，鞋的细微角度和裤褶也稍有改变，不是精确同机位尺寸实验。不能从图片推断裤长厘米数。鞋只描述棕色系带皮鞋，勿作为牛津鞋鞋襟结构例证。",
+    "path": "assets/images/60-trouser-break.png",
+    "tool": "built-in image_gen",
+    "use_case": "scientific-educational",
+    "prompt": "Use case: scientific-educational. Create one premium photorealistic fashion teaching plate portrait 1024x1536, THREE horizontal rows, each row a close view from the SAME adult male's waistband to complete brown leather oxford shoes and floor, front three-quarter stance. Identical medium-gray straight dress trousers, brown shoes, muted dark socks, same ordinary adult male legs, same warm light gray studio, same camera distance and relaxed feet in all three rows. Do NOT show faces. Change ONLY the trouser hem length. Top 'NO BREAK': straight clean trouser front falls to the top of the shoe without any fold or crease where it meets the vamp; hem back near shoe collar. Middle 'SLIGHT BREAK': hem slightly longer and front has one small gentle shallow fold just above shoe, lightly resting on shoe vamp. Bottom 'FULL BREAK': hem longer so a single clearly visible deeper horizontal fold forms across the front at shoe vamp; covers more upper shoe than middle, yet no multiple folds, no dragging hem, no huge puddle. Open straight hems throughout, NO elastic cuffs, no rolled cuffs. This is a clear qualitative comparison, not numerical measurement. Natural pressed center creases along the legs, realistic tailoring and shoes. Each row show belt waistband through the shoe tips, identical framing and lighting, generous margins. Thin neutral row dividers, label in a separate caption band below each row, exact text 'NO BREAK', 'SLIGHT BREAK', 'FULL BREAK'. No other text, no logos, no watermark, no distorted feet.",
+    "file": "assets/images/60-trouser-break.png"
+  },
+  {
+    "n": 61,
+    "id": "61-mens-shoes",
+    "chapter": "37-mens-accessories",
+    "panels": [
+      "左上：OXFORD 牛津鞋，闭合式鞋襟",
+      "右上：DERBY 德比鞋，开放式鞋襟",
+      "左中：LOAFER 乐福鞋，便士横带",
+      "右中：CHELSEA 切尔西靴，侧面弹力片",
+      "左下：CHUKKA 丘卡靴，两对鞋眼",
+      "右下：SNEAKER 低帮运动鞋"
+    ],
+    "review": "六格关键可见外观正确：牛津鞋窄V闭合鞋襟与德比独立开放鞋襟可辨，乐福无系带、切尔西侧片可见、丘卡两对鞋眼。皮鞋、靴、运动鞋比例自然，标签无拼写错误。",
+    "limitations": "AI教学示意不作品牌产品、材质成分、制造工艺或穿着性能证明。鞋色和取景变化，不能把颜色当分类标准。",
+    "path": "assets/images/61-mens-shoes.png",
+    "tool": "built-in image_gen",
+    "use_case": "scientific-educational",
+    "prompt": "Use case: scientific-educational. ONE photorealistic fashion teaching atlas portrait 1024x1536, clean 2-column x 3-row grid, six photographs each show adult man's two feet wearing shoes, cropped from lower calves to complete shoe tips and a little floor, warm pale gray studio. Natural realistic foot positions, front three-quarter camera slightly above, expertly made plausible unbranded shoes, texture and construction edges crystal clear. Garment and shoes should be correctly proportioned. Order row-major: top left 'OXFORD' black smooth leather cap-toe Oxford shoes with CLOSED LACING: the eyelet facings stitched UNDER the vamp, joined at bottom in a narrow neat V, not flaps stitched on top. Top right 'DERBY' brown plain-toe Derby shoes with OPEN LACING: separate eyelet-bearing quarters stitched ON TOP of the vamp visibly opening at bottom. Camera makes this closed vs open lacing difference explicit. Middle left 'LOAFER' brown leather penny loafers, no laces, clear strap across vamp. Middle right 'CHELSEA' dark brown ankle boots with clearly visible elastic side gussets, no laces; one foot rotated enough to see side panel. Bottom left 'CHUKKA' suede ankle chukka boots, ONLY TWO PAIRS of eyelets on each boot and short shaft. Bottom right 'SNEAKER' minimalist off-white low-top lace-up sneakers, rubber cupsole, no marks. Neutral dark trousers hem above each shoe to reveal neck/shaft, dark socks. Each panel has generous pale caption band below image, exact labels as above; thin dividers and no other text. Avoid brogue perforations that obscure structure, avoid logos/watermarks, avoid distorted feet, avoid fake anatomical shoe shapes. Editorial-quality real leather/suede texture and soft studio light.",
+    "file": "assets/images/61-mens-shoes.png"
+  }
+]

@@ -39,6 +39,7 @@ atlas=json.loads((root / 'atlas.json').read_text())
 for board in atlas:
     check_url('assets/'+board['id']+'.webp',board['id'])
     assert board['chapter'] in ids, f"Unknown atlas chapter: {board['id']}"
+    assert board.get('audience') in {'mens','womens','mixed'}, f"Missing audience: {board['id']}"
     assert board['width']>0 and board['height']>0
 expected={p.stem for p in (root/'assets').glob('*.webp') if not p.stem.endswith('-thumb') and p.stem!='12-silhouettes'}
 assert {b['id'] for b in atlas} == expected, 'Gallery does not cover all photographic plates'
@@ -47,6 +48,7 @@ assert set().union(*(set(g['ids']) for g in meta['groups'])) == ids, 'Reading gr
 for image in (root / 'assets').glob('*.webp'):
     Image.open(image).verify()
 assert len(ids) == len(chapters), 'Duplicate chapter IDs'
-assert (root / 'fashion-atlas.pdf').read_bytes().startswith(b'%PDF-'), 'Missing or invalid PDF'
+for name in ['fashion-atlas.pdf','menswear-atlas.pdf']:
+    assert (root / name).read_bytes().startswith(b'%PDF-'), f'Missing or invalid PDF: {name}'
 assert not errors, '\n'.join(errors)
 print(f'Validated {len(chapters)} reading entries, local assets and PDF.')

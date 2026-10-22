@@ -89,6 +89,7 @@ def para(text,style='body',track=True):
 
 def img(path):
  source=PILImage.open(path).convert('RGB')
+ source.thumbnail((1280,1280),PILImage.Resampling.LANCZOS)
  maxw=491;maxh=520 if path.stem[:2].isdigit() and int(path.stem[:2])>=38 else 540
  fac=min(maxw/source.width,maxh/source.height)
  target=TMP/(hashlib.sha256(str(path).encode()).hexdigest()[:12]+'.jpg')
@@ -105,11 +106,13 @@ class Cover(Flowable):
   c.setFillColor(MUTED);c.setFont('CN',10.5)
   c.drawString(0,483,'看懂服饰 · 认识名称 · 说清人物穿着')
   c.setFont('CN',10);c.drawString(0,448,f'{len(CHAPTERS)-1} 章正文 / {IMAGE_COUNT} 张教学配图')
-  path=ROOT/'assets/images/13-dresses.png'
-  p=PILImage.open(path);dw=245;dh=dw*p.height/p.width
-  c.drawImage(ImageReader(p),BW-dw,28,width=dw,height=dh,mask='auto')
+  dw=173
+  for x,name in [(BW-2*dw-12,'13-dresses.png'),(BW-dw,'63-mens-classic-styles.png')]:
+   picture=img(ROOT/'assets/images'/name)
+   dh=dw*picture.imageHeight/picture.imageWidth
+   c.drawImage(picture.filename,x,55,width=dw,height=dh,mask='auto')
   c.setFillColor(TEAL);c.setFont('CN',13)
-  for i,line in enumerate(['风格与衣橱','衣型与比例','领口与袖子','面料与装饰','完整描述练习']):c.drawString(0,338-i*29,line)
+  for i,line in enumerate(['风格与衣橱','女装与男装','衣型与比例','面料与装饰','完整描述练习']):c.drawString(0,338-i*29,line)
   c.setFillColor(MUTED);c.setFont('CN',9);c.drawString(0,28,'中文图解兴趣读本')
   c.drawString(0,9,'扩充版 · 2026 年 10 月')
 

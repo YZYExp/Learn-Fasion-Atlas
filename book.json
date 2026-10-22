@@ -1,7 +1,7 @@
 {
   "title": "衣着有名：从风格识别到单品描述",
   "language": "zh-CN",
-  "edition": "分类与描述完整扩充版",
+  "edition": "男装系统扩充版",
   "cover": "assets/images/13-dresses.png",
   "sections": [
     {
@@ -23,6 +23,10 @@
     {
       "id": "V",
       "title": "纹样、配饰与场景"
+    },
+    {
+      "id": "VI",
+      "title": "男性服饰与搭配"
     }
   ],
   "chapters": [
@@ -281,12 +285,77 @@
       "source": "chapters/31-context-layering.md",
       "slug": "31-context-layering",
       "group": "V"
+    },
+    {
+      "id": "32-mens-tops",
+      "number": 32,
+      "title": "第 32 章｜男式上装：从领口、开合与下摆认名字",
+      "source": "chapters/32-mens-tops.md",
+      "slug": "32-mens-tops",
+      "group": "VI"
+    },
+    {
+      "id": "33-mens-trousers",
+      "number": 33,
+      "title": "第 33 章｜男式裤装：裤类、裤型和细节要分开说",
+      "source": "chapters/33-mens-trousers.md",
+      "slug": "33-mens-trousers",
+      "group": "VI"
+    },
+    {
+      "id": "34-mens-outerwear",
+      "number": 34,
+      "title": "第 34 章｜男式外套：短夹克与长外套怎样辨认",
+      "source": "chapters/34-mens-outerwear.md",
+      "slug": "34-mens-outerwear",
+      "group": "VI"
+    },
+    {
+      "id": "35-mens-tailoring",
+      "number": 35,
+      "title": "第 35 章｜西装与晚礼服：从套装关系读到驳领细节",
+      "source": "chapters/35-mens-tailoring.md",
+      "slug": "35-mens-tailoring",
+      "group": "VI"
+    },
+    {
+      "id": "36-mens-fit",
+      "number": 36,
+      "title": "第 36 章｜男装版型与比例：把“合身”拆成可见关系",
+      "source": "chapters/36-mens-fit.md",
+      "slug": "36-mens-fit",
+      "group": "VI"
+    },
+    {
+      "id": "37-mens-accessories",
+      "number": 37,
+      "title": "第 37 章｜男鞋与配饰：从“皮鞋领带”说到具体结构",
+      "source": "chapters/37-mens-accessories.md",
+      "slug": "37-mens-accessories",
+      "group": "VI"
+    },
+    {
+      "id": "38-mens-styles",
+      "number": 38,
+      "title": "第 38 章｜男装风格辨识：先认衣物，再看它们怎样组合",
+      "source": "chapters/38-mens-styles.md",
+      "slug": "38-mens-styles",
+      "group": "VI"
+    },
+    {
+      "id": "39-mens-scenarios",
+      "number": 39,
+      "title": "第 39 章｜男装场景描述：让一套衣服跟着活动变化",
+      "source": "chapters/39-mens-scenarios.md",
+      "slug": "39-mens-scenarios",
+      "group": "VI"
     }
   ],
   "appendices": [
     "appendices/01-glossary.md",
     "appendices/02-comparisons.md",
     "appendices/03-garment-words.md",
-    "appendices/04-description-routes.md"
+    "appendices/04-description-routes.md",
+    "appendices/05-menswear-words.md"
   ]
 }

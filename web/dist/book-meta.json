@@ -65,19 +65,34 @@
     },
     {
       "n": "VI",
+      "title": "男性服饰与搭配",
+      "ids": [
+        "32-mens-tops",
+        "33-mens-trousers",
+        "34-mens-outerwear",
+        "35-mens-tailoring",
+        "36-mens-fit",
+        "37-mens-accessories",
+        "38-mens-styles",
+        "39-mens-scenarios"
+      ]
+    },
+    {
+      "n": "VII",
       "title": "查词、辨析与描述路线",
       "ids": [
         "01-glossary",
         "02-comparisons",
         "03-garment-words",
         "04-description-routes",
+        "05-menswear-words",
         "sources"
       ]
     }
   ],
   "stats": {
-    "pages": 160,
-    "chapters": 31,
-    "images": 50
+    "pages": 198,
+    "chapters": 39,
+    "images": 66
   }
 }

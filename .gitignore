@@ -22,3 +22,5 @@ fonts/*.otf
 !output/pdf/metadata.json
 web/dist/.*.pdf.*
 web/dist/assets/*.tmp.webp
+
+!output/pdf/menswear-atlas.pdf

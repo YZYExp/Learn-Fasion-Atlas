@@ -13,6 +13,7 @@ for p in (SOURCE/'assets/images').glob('*.png'):
  data=buffer.getvalue();Image.open(io.BytesIO(data)).verify();target.write_bytes(data)
 cache_path.write_text(json.dumps(new_cache,indent=2)+'\n')
 shutil.copy2(SOURCE/'output/pdf/fashion-atlas-expanded.pdf',DIST/'fashion-atlas.pdf')
+shutil.copy2(SOURCE/'output/pdf/menswear-atlas.pdf',DIST/'menswear-atlas.pdf')
 book=json.loads((SOURCE/'book.json').read_text());chapters=[SOURCE/c['source'] for c in book['chapters']];appendices=[SOURCE/p for p in book['appendices']]
 files=chapters+appendices+[SOURCE/'references/sources.md'];ids={p.name:p.stem for p in files}
 def urlfix(u):
@@ -88,7 +89,7 @@ p.write_text(s)
 
 shutil.copy2(Path(__file__).parent/'atlas.json',DIST/'atlas.json')
 groups=[{'n':g['id'],'title':g['title'],'ids':[c['id'] for c in book['chapters'] if c['group']==g['id']]} for g in book['sections']]
-groups.append({'n':'VI','title':'查词、辨析与描述路线','ids':[c['id'] for c in out if c['kind']=='appendix']})
+groups.append({'n':['I','II','III','IV','V','VI','VII','VIII','IX','X'][len(book['sections'])],'title':'查词、辨析与描述路线','ids':[c['id'] for c in out if c['kind']=='appendix']})
 (DIST/'book-meta.json').write_text(json.dumps({'title':book['title'],'groups':groups,'stats':meta},ensure_ascii=False,indent=2)+'\n')
 
 # Content fingerprints keep browsers from mixing old scripts/data with a new edition.
@@ -101,6 +102,6 @@ for name in ['app.js','reader.js']:
  p.write_text(s)
 for p in DIST.glob('*.html'):
  s=p.read_text()
- for name in ['app.js','reader.js','style.css','fashion-atlas.pdf']:
+ for name in ['app.js','reader.js','style.css','fashion-atlas.pdf','menswear-atlas.pdf']:
   s=re.sub(r'((?:src|href)=")'+re.escape(name)+r'(?:\?v=[a-f0-9]+)?"',lambda m: m[1]+versioned(name)+'"',s)
  p.write_text(s)

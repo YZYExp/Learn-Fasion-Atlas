@@ -10,3 +10,7 @@ for name,col in PANELS.items():
  box=(round(w*col/3)+3,0,round(w*(col+1)/3)-3,h//rows-18)
  im.crop(box).save(ROOT/(name+'-thumb.webp'),quality=92)
 print('Extracted',len(PANELS),'undistorted panels')
+
+# The male style plate has two columns, unlike the earlier six-panel sheets.
+im=Image.open(ROOT/'63-mens-classic-styles.webp');w,h=im.size
+im.crop((3,0,w//2-3,h//2-18)).save(ROOT/'63-mens-classic-styles-thumb.webp',quality=92)
