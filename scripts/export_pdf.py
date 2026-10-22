@@ -89,7 +89,7 @@ def img(path):
  maxw=491;maxh=540
  fac=min(maxw/source.width,maxh/source.height)
  target=TMP/(hashlib.sha256(str(path).encode()).hexdigest()[:12]+'.jpg')
- source.save(target,quality=94,subsampling=0)
+ source.save(target,quality=int(os.environ.get('FASHION_ATLAS_JPEG_QUALITY','82')),subsampling=2,optimize=True)
  return Image(str(target),width=source.width*fac,height=source.height*fac,hAlign='CENTER')
 
 class Cover(Flowable):

@@ -77,7 +77,7 @@ python3 scripts/export_pdf.py
 python3 scripts/split_pdf.py
 ```
 
-字体需为支持中文的 Noto Sans SC 常规字重 TTF；脚本也会检查项目 fonts/、用户字体目录和常见系统目录。PDF 文件已随仓库提交，可直接阅读。中间渲染、缓存、HTML 和历史归档包不进入版本控制。
+字体需为支持中文的 Noto Sans SC 常规字重 TTF；脚本也会检查项目 fonts/、用户字体目录和常见系统目录。PDF 文件已随仓库提交，可直接阅读。阅读版内嵌图片采用 JPEG 82 质量优化体积，原始 PNG 保存在 assets/images/；如需更高图片质量，可在导出前设置 FASHION_ATLAS_JPEG_QUALITY=94。中间渲染、缓存、HTML 和历史归档包不进入版本控制。
 
 仓库内的分章稿为编辑源；更改后重跑构建，即可同步全书。范围、覆盖表与图片校验说明见 [PROJECT.md](PROJECT.md)。
 
