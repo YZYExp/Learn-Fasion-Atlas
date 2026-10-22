@@ -15,7 +15,16 @@ const atlas=[
 ];
 const groupData=[{n:'I',title:'先看风格与衣橱',range:[0,12],note:'从观察方法，到相邻风格的差别'},{n:'II',title:'再看一件衣服的细节',range:[13,20],note:'衣型、领袖、材料与描述练习'},{n:'III',title:'传统衣装与角色想象',range:[21,22],note:'具体形制、现代穿着与幻想设计'},{n:'IV',title:'需要时，回到索引',appendix:true,note:'双语查词、易混辨析与资料'}];
 let filter='all',query='';const gallery=document.getElementById('gallery');
-function renderGallery(){const list=atlas.filter(x=>(filter==='all'||x.tag===filter)&&(`${x.title}${x.sub}${x.description}`).toLowerCase().includes(query));gallery.replaceChildren();for(const item of list){const button=document.createElement('button');button.className='atlas-item'+(item.triptych?' triptych':'');button.setAttribute('aria-label',`展开${item.title}：${item.count}`);button.innerHTML=`<div class="atlas-photo" style="--photo:url('assets/${item.id}-thumb.webp');--pos:${item.pos||'0% 0%'}"></div><span class="atlas-category">${item.label}</span><h3>${item.title}<small>${item.count} ↗</small></h3><p>${item.sub}</p>`;button.addEventListener('click',()=>openAtlas(item));gallery.append(button);}document.getElementById('no-results').classList.toggle('hidden',list.length>0);}
+function renderGallery(){
+ const list=atlas.filter(x=>(filter==='all'||x.tag===filter)&&(`${x.title}${x.sub}${x.description}`).toLowerCase().includes(query));
+ gallery.replaceChildren();
+ for(const item of list){
+  const card=document.createElement('article');card.className='atlas-item'+(item.triptych?' triptych':'');
+  card.innerHTML=`<button class="atlas-board" aria-label="放大查看${item.title}完整图组"><img src="assets/${item.id}.webp" alt="${item.title}：${item.count}，完整对照图组" width="${item.triptych?1536:1024}" height="${item.triptych?1024:1536}" loading="lazy" decoding="async"><span class="zoom-label">放大查看 ↗</span></button><span class="atlas-category">${item.label}</span><h3>${item.title}<small>${item.count}</small></h3><p>${item.sub}</p><a class="atlas-chapter" href="read.html?chapter=${item.chapter}">阅读对应章节 →</a>`;
+  card.querySelector('.atlas-board').addEventListener('click',()=>openAtlas(item));gallery.append(card);
+ }
+ document.getElementById('no-results').classList.toggle('hidden',list.length>0);
+}
 function openAtlas(item){const d=document.getElementById('atlas-dialog');document.getElementById('dialog-kicker').textContent=item.label;document.getElementById('dialog-title').textContent=item.title;document.getElementById('dialog-description').textContent=item.description;const im=document.getElementById('dialog-image');im.src=`assets/${item.id}.webp`;im.alt=`${item.title}完整教学图组，${item.count}`;document.getElementById('dialog-chapter').href=`read.html?chapter=${item.chapter}`;d.showModal();d.scrollTop=0;document.body.style.overflow='hidden';}
 function closeAtlas(){document.getElementById('atlas-dialog').close();document.body.style.overflow='';}
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});renderGallery();}));
