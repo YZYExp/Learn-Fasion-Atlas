@@ -63,3 +63,8 @@ Levi’s 的官方版型指南分别说明 Straight、Tapered 与 Bootcut，并�
 Cropped 是截短的长度描述。Cropped blazer 是短西装，cropped cardigan 是短开衫，cropped trousers 是较短裤长；三个词组不能互相替换。看到一件胸下结束的小外搭，可以先说“胸下长度、长袖、前开式短外搭”，再判断更接近 Bolero、针织 Shrug，还是某件衣服的截短变体。
 
 试把“酷一点的外套配宽裤”改成“齐腰 Bomber 夹克、罗纹袖口和下摆，搭配高腰宽松直筒 Cargo 裤”。你还没有使用任何风格标签，衣服却已经能被画出来了。
+
+
+## 裤装远不止六格
+
+现有图例混合了裤腿廓形、Cargo 功能与 Culottes 裙式外观，不能视为互斥分类全集。补充 skinny、slim、bootcut、carrot、balloon、jodhpur/breeches、pleated trousers、joggers、overalls/dungarees、Bermuda shorts 与七分、九分裤。分开描述腰高及门襟、臀腿松量、裤管和裤脚、褶裥与口袋，一条裤可以同时是高腰、打褶、阔腿、九分和工装款。
