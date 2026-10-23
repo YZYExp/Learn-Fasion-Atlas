@@ -1,0 +1,125 @@
+{
+  "version": "2026-10-23",
+  "purpose": "扩展六格之外的分类，逐张审校后才进入正式图库",
+  "status": "planned-not-published",
+  "groups": [
+    {
+      "chapter": 13,
+      "topic": "直身/鞘形/收腰大摆/帝国腰/罩衫裙",
+      "views": [
+        "front",
+        "side",
+        "back"
+      ],
+      "priority": "high"
+    },
+    {
+      "chapter": 14,
+      "topic": "裹身/拼片/插片/箱褶/斜裁/不对称",
+      "views": [
+        "front",
+        "back",
+        "closure-detail"
+      ],
+      "priority": "high"
+    },
+    {
+      "chapter": 16,
+      "topic": "船领/单肩/一字肩/挂脖/钥匙孔",
+      "views": [
+        "front",
+        "shoulder-detail",
+        "back"
+      ],
+      "priority": "high"
+    },
+    {
+      "chapter": 17,
+      "topic": "织物组织与纤维/后整理区分",
+      "views": [
+        "macro",
+        "reverse",
+        "garment"
+      ],
+      "priority": "high"
+    },
+    {
+      "chapter": 18,
+      "topic": "裤管、腰高、裤脚与口袋",
+      "views": [
+        "front",
+        "side",
+        "back",
+        "detail"
+      ],
+      "priority": "medium"
+    },
+    {
+      "chapter": 29,
+      "topic": "同纹样不同排布、同衣型不同纹样",
+      "views": [
+        "full",
+        "pattern-detail"
+      ],
+      "priority": "medium"
+    },
+    {
+      "chapter": 30,
+      "topic": "帽型与首饰连接结构",
+      "views": [
+        "front",
+        "side",
+        "back",
+        "closure-detail"
+      ],
+      "priority": "medium"
+    },
+    {
+      "chapter": 32,
+      "topic": "男式上装领型与门襟",
+      "views": [
+        "front",
+        "back",
+        "detail"
+      ],
+      "priority": "medium"
+    },
+    {
+      "chapter": 33,
+      "topic": "男裤腰头、裤腿与裤脚",
+      "views": [
+        "front",
+        "back",
+        "detail"
+      ],
+      "priority": "medium"
+    },
+    {
+      "chapter": 34,
+      "topic": "男式外套结构与叠穿",
+      "views": [
+        "front",
+        "back",
+        "closure-detail"
+      ],
+      "priority": "medium"
+    },
+    {
+      "chapter": 22,
+      "topic": "Cosplay 多组件与连接件",
+      "views": [
+        "front",
+        "side",
+        "back",
+        "detail"
+      ],
+      "priority": "medium"
+    }
+  ],
+  "rules": [
+    "Existing images are retained until replacements are reviewed",
+    "Never infer hidden structures from front-only images",
+    "Keep independent atlas cards and legible mobile captions",
+    "AI-generated examples must be marked and checked for garment continuity"
+  ]
+}
