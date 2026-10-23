@@ -96,7 +96,7 @@ python3 scripts/export_pdf.py
 python3 scripts/split_pdf.py
 ```
 
-字体需为支持中文的 Noto Sans SC 常规字重 TTF；脚本也会检查项目 fonts/、用户字体目录和常见系统目录。PDF 文件已随仓库提交，可直接阅读。阅读版内嵌图片采用 JPEG 82 质量优化体积，原始 PNG 保存在 assets/images/；如需更高图片质量，可在导出前设置 FASHION_ATLAS_JPEG_QUALITY=94。中间渲染、缓存、HTML 和历史归档包不进入版本控制。
+字体需为支持中文的 Noto Sans SC 常规字重 TTF；脚本也会检查项目 fonts/、用户字体目录和常见系统目录。PDF 文件已随仓库提交，可直接阅读。阅读版内嵌图片采用 JPEG 75 质量优化体积，原始 PNG 保存在 assets/images/；如需更高图片质量，可在导出前设置 FASHION_ATLAS_JPEG_QUALITY=94。中间渲染、缓存和历史归档包不进入版本控制；经授权的网页成品与独立审图文件按各自用途留存。
 
 仓库内的分章稿为编辑源；更改后重跑构建，即可同步全书。范围、覆盖表与图片校验说明见 [PROJECT.md](PROJECT.md)。
 
@@ -129,3 +129,9 @@ python3 scripts/split_pdf.py
 第 32—39 章补齐男式上装、裤装、外套、西装礼服、版型比例、男鞋配饰、风格和场景穿搭。新增 16 张男装图板；展示以成年东亚男性为主，并覆盖其他族裔、年龄和体型。图鉴可将展示方向与单品／风格分类组合筛选，同类样式仍完整展开。
 
 [男装分册](output/pdf/menswear-atlas.pdf)复用全书已排版页面，保留章书签和当页来源。[扩充计划与记录](references/menswear-plan.md)记录分工和审校状态，原图与最终提示词在 references/menswear-images-*.json。
+
+## 背视补充与独立审图
+
+第13章增加吊带裙与运动式裙装的正背配对，第34章增加衬衫和外套后背细节，第35章增加西装后摆开衩，第25章补充跨视角核查方法。新图67—70为独立创作示例，不能倒推旧图未显示的一面。
+
+工程审查文件：[全部图片审查索引](review/image-index.html)。这是单文件离线HTML，内嵌所有源图预览，提供图号、文件名、所属章节、SHA256、图注和制作核查记录，可搜索与放大。它不进入全书PDF、正文、逐章阅读目录或Pages发布目录。重建命令：`python scripts/build_image_index.py`。

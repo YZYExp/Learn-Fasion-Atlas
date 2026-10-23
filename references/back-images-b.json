@@ -1,0 +1,37 @@
+[
+  {
+    "id": "69-jacket-back-vents",
+    "file": "assets/images/69-jacket-back-vents.png",
+    "chapter": "35-mens-tailoring",
+    "prompt": "Use case: scientific-educational. Make one portrait 1024x1536 photorealistic menswear teaching plate, THREE equal HORIZONTAL ROWS, one image per row, simple warm light-gray studio, thin rules and understated English serif labels beneath each row. Same attractive 38-year-old East Asian adult man seen DIRECTLY FROM THE REAR, head through mid-thigh, short neat hair, head facing away normally, relaxed shoulders, arms slightly clear of body, natural stance. Same charcoal gray tailored suit jacket, pale gray trousers, soft light and camera distance. Precisely compare ONLY lower jacket back vent structures. TOP labelled 'NO VENT': continuous unbroken jacket hem and center back seam ending at the hem, no slits or opening. MIDDLE labelled 'SINGLE VENT': ONE vertical center-back slit rising naturally from the lower hem, overlapping jacket edges, just a narrow small glimpse of pale trousers, NOT a zipper. BOTTOM labelled 'DOUBLE VENTS': TWO clearly separate vertical slits near left and right back hip, continuous central back skirt panel between them, not two decorative seam lines. Show the slit edges clearly with natural drape and slight tiny garment separation, no wind, no hands lifting clothes. All three jackets normally closed at front, no labels on clothing, no branding or watermark, no exploded pattern diagrams, no arrows, no impossible neck turn. High-quality editorial clothing texture and accurate anatomy. The teaching purpose is visible rear opening, not internal tailoring or precise measurement.",
+    "tool": "built-in image_gen",
+    "use_case": "scientific-educational",
+    "status": "generated-and-reviewed",
+    "panels": [
+      "上：无开衩 NO VENT",
+      "中：后中单开衩 SINGLE VENT",
+      "下：后背两侧双开衩 DOUBLE VENTS"
+    ],
+    "review": "三种后下摆连续或开口关系可见；各格人物、夹克颜色与裤装保持相近，头颈自然朝前、双臂不遮后衩。单开衩一处后中开口，双开衩两侧开口且中央后片完整。",
+    "limitations": "仅为可见开衩位置的AI教学示意，不是精确同姿态尺寸实验；开衩重叠量、活动量、内衬、缝制方法和合身效果不能据图确定。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-7a532017-ff30-4943-83fa-d2ff264c3bd5.png"
+  },
+  {
+    "id": "70-shirt-outerwear-backs",
+    "file": "assets/images/70-shirt-outerwear-backs.png",
+    "chapter": "34-mens-outerwear",
+    "prompt": "Use case: scientific-educational. ONE portrait 1024x1536 photorealistic teaching atlas, TWO columns and THREE rows. Exact top column headers 'FRONT' and 'BACK', each row has an understated short English label 'SHIRT', 'HARRINGTON', 'TRENCH'. Warm light-gray studio, elegant thin grid, all garments opaque and unbranded, realistic attractive adult male models with relaxed natural standing poses and hands not obscuring garment, same man SAME CLOTHES and same hairstyle front/back within each row, no impossible head turns. Upper row: middle-aged East Asian man, light blue long-sleeved button-down-collar shirt, head to upper thighs; FRONT shows simple button front and naturally roomy torso, BACK shows horizontal shoulder YOKE and ONE CENTER BOX PLEAT opening immediately below the yoke. Middle row: handsome adult South Asian man, tan Harrington short zip jacket, small two-button standing/folded collar, slanted flap pockets, ribbed cuffs and hem, head to hips; BACK clearly shows its distinctive UMBRELLA YOKE, a curved/pointed umbrella-shaped upper-back overlay, torso below uninterrupted, the same collar and ribbed hem. Lower row: attractive mature Black man, beige belted double-breasted trench coat, head to knees; FRONT shows lapels, double button rows and tied waist belt; BACK shows broad horizontal storm flap across upper back, continuous belt around waist and normal lower coat drape. No needless props. Fabric texture and matching front/back colors and lengths clear. Separate row subjects but maintain paired person identity, garment details and scale. No extra unrequested garments or text, no logos, no watermark. Do not confuse shirt box pleat with jacket slit; do not turn Harrington umbrella yoke into a full trench storm flap.",
+    "tool": "built-in image_gen",
+    "use_case": "scientific-educational",
+    "status": "generated-and-reviewed",
+    "panels": [
+      "第一排左正右背：浅蓝衬衫，背面水平后育克及下方中央褶",
+      "第二排左正右背：卡其哈灵顿夹克，背面伞形育克／覆片、罗纹下摆",
+      "第三排左正右背：米色系带风衣，背面上背覆片、腰带与后下摆"
+    ],
+    "review": "实际三排两列front/back成对，人物发型、衣长、颜色相互对应；浅蓝衬衫后育克及中央褶可见，哈灵顿背部覆片与罗纹下摆清楚，风衣后背覆片与腰带相连。定向编辑增强右上衬衫中央褶的边缘，其他格基本保持。",
+    "limitations": "提示词要求box pleat，但最终渲染仅作为“后育克下中央褶”观察；不从明暗判断box/inverted-box方向或具体折法。哈灵顿和风衣为外观结构示意，不作为具体品牌实物或历史复原；不由覆片推断防雨通风性能，人物比例与姿态也有轻微漂移。",
+    "revision_prompt": "Use case: precise-object-edit. Edit this existing six-panel fashion teaching atlas. Change ONLY the upper-right SHIRT BACK panel's small central back pleat. Make it an unmistakable classic BOX PLEAT immediately below the horizontal shoulder yoke: a flat raised central rectangular strip about 4cm wide, bounded by TWO clearly visible parallel vertical folded edges; a short stitched-down upper section and the two folds releasing softly lower down. NOT a single slit and NOT an inverted center groove. Preserve all other pixels and photographic quality as closely as possible: same older East Asian man, light-blue shirt, yoke height, collar, arms, shirt hem, trousers, panel grid, labels, all five other panels (including Harrington umbrella yoke and trench storm flap), colors and image dimensions unchanged. The pleat must be a fold in fabric not an open hole.",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-812fccbd-1fc7-495e-a016-2320713e1faa.png"
+  }
+]

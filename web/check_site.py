@@ -13,6 +13,8 @@ def check_url(url, source):
         return
     parsed = urlsplit(url)
     path = unquote(parsed.path)
+    if path.startswith('review/') or path.endswith('image-index.html'):
+        errors.append(f'{source}: internal review link leaked into reading site')
     if path and not (root / path).is_file():
         errors.append(f'{source}: missing {path}')
     version = parse_qs(parsed.query).get('v', [None])[0]
@@ -50,5 +52,6 @@ for image in (root / 'assets').glob('*.webp'):
 assert len(ids) == len(chapters), 'Duplicate chapter IDs'
 for name in ['fashion-atlas.pdf','menswear-atlas.pdf']:
     assert (root / name).read_bytes().startswith(b'%PDF-'), f'Missing or invalid PDF: {name}'
+assert not (root/'review').exists() and not (root/'image-index.html').exists(), 'Internal review file in published bundle'
 assert not errors, '\n'.join(errors)
 print(f'Validated {len(chapters)} reading entries, local assets and PDF.')

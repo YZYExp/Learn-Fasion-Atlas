@@ -1,0 +1,33 @@
+[
+  {
+    "id": "67-slip-front-back",
+    "file": "assets/images/67-slip-front-back.png",
+    "chapter": "13-dresses",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. Create ONE photorealistic fashion teaching comparison plate, portrait 1024x1536. Warm light gray studio background, soft natural studio light, real fabric texture, no brand, no watermark. Precise 2 rows x 2 columns. Each row is a front/back paired view of the SAME elegant 30-year-old East Asian adult woman, same height/build, hair in a tidy bun leaving the entire back and shoulder straps visible, relaxed natural stance with arms slightly away from torso. Upper row: an opaque navy satin calf-length outerwear slip dress with a shallow V front neckline, narrow parallel shoulder straps; back view has a moderately high straight horizontal back edge below shoulder blades, two separate narrow vertical straps connect cleanly from shoulders to the back edge. Lower row: same color, opaque calf-length outerwear slip dress and same shallow V front neckline, but two narrow straps cross once as an X across the upper back and attach cleanly at opposite sides of the back edge. Only these two strap arrangements; do not add extra straps. Keep front and rear hem length, waistline, color and dress volume matching within each pair. Clear garment continuity and plausible strap attachment. Full head through complete calf-length dress hem and ankles visible, no cut-off hem. No very low back, no sheer fabric, no exposed buttocks, no lingerie styling, no sexual pose. Refined slim panel dividers, generous margins, serif English caption beneath each panel. Exact labels top-left 'PARALLEL - FRONT', top-right 'PARALLEL - BACK', bottom-left 'CROSS - FRONT', bottom-right 'CROSS - BACK'. No other text.",
+    "panels": [
+      "左上：直肩带正面 PARALLEL - FRONT",
+      "右上：直肩带背面 PARALLEL - BACK",
+      "左下：交叉肩带正面 CROSS - FRONT",
+      "右下：交叉肩带背面 CROSS - BACK"
+    ],
+    "review": "实际图为2行2列；每行正背配对，深蓝不透中长吊带裙，发髻让肩带接点完全可见。上排背部两带近乎平行，下排背部两带X形交叉且各接至背片。裙摆、腰线、颜色和鞋在每对中相近；无明显异常四肢。",
+    "limitations": "两行是两种独立设计，不是同一件裙子的可变结构；轻微姿态、布褶与背缘高度差异存在，不是精确制版或严格单变量实验。布面光泽不能证明纤维或斜裁；正背未展示内部闭合和支撑。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-bbb96d1a-1adc-42dd-b8a7-5ac67601fe3b.png"
+  },
+  {
+    "id": "68-sport-front-back",
+    "file": "assets/images/68-sport-front-back.png",
+    "chapter": "13-dresses",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. ONE photorealistic educational fashion plate in portrait 1024x1536, warm light gray studio, realistic opaque athletic fabric, no branding, no watermark, soft clear light. Exact THREE ROWS and TWO COLUMNS. In each row the left image is FRONT and right image is BACK of the SAME adult 30-year-old woman wearing the SAME opaque above-knee sports-style dress, same color, same waist seam and hem and shoes. Upper row attractive East Asian adult woman, dark muted teal sleeveless sports dress with moderately wide shoulder straps: front scoop neckline, BACK has a wide U-shaped opening and two parallel wide straps, labeled 'U BACK - FRONT' and 'U BACK - BACK'. Middle row attractive adult East Asian woman with a slightly fuller build, slate blue sleeveless sports dress: front high scoop neckline and wide shoulder coverage, BACK is a TRUE RACERBACK, shoulder straps converge into one solid narrow central vertical fabric bridge between the shoulder blades before widening toward the lower back, visibly an I/Y-shaped connection, NOT two crossing strips and NOT a large cutout divided by a horizontal band. Labels 'RACERBACK - FRONT' and 'RACERBACK - BACK'. Lower row attractive adult South Asian woman, muted dark green sports dress: front modest high neckline and broad shoulder straps, BACK has exactly TWO fabric straps crossing once in a clear X and attaching to the opposite side of the back bodice, NO extra central vertical bridge. Labels 'CROSS BACK - FRONT' and 'CROSS BACK - BACK'. All six views full head to complete above-knee hem and shoes with margins. Hair in high neat buns to expose the entire back structure, relaxed shoulders and natural weight on one leg, arms resting with small clearance from body, hands normal, no exaggerated poses. Each row must be an exact garment design front/back pair, not unrelated clothes. Thin neutral panel dividers and clean serif English labels beneath each panel, no other text. Opaque fully lined clothes, practical catalog styling, no sexualization, no bare buttocks, no lingerie.",
+    "panels": [
+      "第一行左：U形背连接款正面 U BACK - FRONT；右：背面 U BACK - BACK",
+      "第二行左：工字/Y形背连接款正面 RACERBACK - FRONT；右：背面 RACERBACK - BACK",
+      "第三行左：交叉背带款正面 CROSS BACK - FRONT；右：背面 CROSS BACK - BACK"
+    ],
+    "review": "实际图为3行2列，每行正背配对，三套不透运动式膝上裙。第一行背部宽U开口、两侧分开的宽肩带；第二行肩带在背中央形成单条连续的工字/Y形连接，不是X交叉；第三行为两条宽带X交叉，无额外中央竖带。头发盘起，完整鞋和裙摆可见，包含较丰满东亚成年女性及南亚成年女性。",
+    "limitations": "三行不同设计和人物，不能比较体型优劣；各对仍有轻微布褶和姿势漂移。新图是独立教学设计，不能称旧图25同款转身，也不证明内部胸垫、短裤、透气或运动性能。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-79ffb575-6be3-49fd-96d0-0d40fa68c8a4.png"
+  }
+]

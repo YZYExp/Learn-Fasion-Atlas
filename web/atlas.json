@@ -850,5 +850,57 @@
     "width": 1024,
     "height": 1536,
     "audience": "mens"
+  },
+  {
+    "id": "67-slip-front-back",
+    "title": "吊带裙的正面与背面",
+    "tag": "detail",
+    "label": "FRONT & BACK / VISIBLE STRUCTURE",
+    "sub": "平行肩带和交叉肩带，正面相近，背面怎样连接？",
+    "chapter": "13-dresses",
+    "count": "2 款正背配对",
+    "description": "两行各为独立设计的正背配对；比较细带接点、后背上缘与腰线，不从图判断承重或内部做法。",
+    "width": 1024,
+    "height": 1536,
+    "audience": "womens"
+  },
+  {
+    "id": "68-sport-front-back",
+    "title": "运动裙装的背部连接",
+    "tag": "detail",
+    "label": "FRONT & BACK / VISIBLE STRUCTURE",
+    "sub": "U 形背、工字背与交叉背带，不能只看正面。",
+    "chapter": "13-dresses",
+    "count": "3 款正背配对",
+    "description": "三行从上到下为U背、工字/Y形中央连接、X形交叉带，左右为正面和背面。不是旧运动图的精确转面。",
+    "width": 1024,
+    "height": 1536,
+    "audience": "womens"
+  },
+  {
+    "id": "69-jacket-back-vents",
+    "title": "西装后摆的开衩",
+    "tag": "detail",
+    "label": "FRONT & BACK / VISIBLE STRUCTURE",
+    "sub": "无开衩、单中衩与双侧衩，分开观察。",
+    "chapter": "35-mens-tailoring",
+    "count": "3 种背面",
+    "description": "同色西装夹克后视定性示意；竖向车缝不自动等于开衩，不由图推断内部重叠和活动性能。",
+    "width": 1024,
+    "height": 1536,
+    "audience": "mens"
+  },
+  {
+    "id": "70-shirt-outerwear-backs",
+    "title": "衬衫与外套的后背",
+    "tag": "detail",
+    "label": "FRONT & BACK / VISIBLE STRUCTURE",
+    "sub": "后育克、中央褶、背部覆片和腰带在哪里？",
+    "chapter": "34-mens-outerwear",
+    "count": "3 款正背配对",
+    "description": "衬衫、哈灵顿夹克、风衣各有正背配对。衬衫只确认后育克下中央褶，不由渲染判断确切折法。",
+    "width": 1024,
+    "height": 1536,
+    "audience": "mens"
   }
 ]

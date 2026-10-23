@@ -24,3 +24,6 @@ web/dist/.*.pdf.*
 web/dist/assets/*.tmp.webp
 
 !output/pdf/menswear-atlas.pdf
+
+# Standalone internal image review, excluded from public reading build
+!review/image-index.html

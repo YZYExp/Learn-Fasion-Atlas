@@ -23,6 +23,8 @@ def validate():
         errors.append('Chapter manifest does not match source files')
     for source in [*files, *sorted((ROOT / 'appendices').glob('*.md')), ROOT / 'README.md']:
         text = source.read_text(encoding='utf-8')
+        if source.name != 'README.md' and 'image-index.html' in text:
+            errors.append(f'Internal image review linked in book source: {source.name}')
         if len(text) < 500:
             errors.append(f'Too little text: {source.name}')
         for match in LINK.finditer(text):
@@ -34,7 +36,7 @@ def validate():
         if re.search(r'\bTODO\b|待生成|占位图', text):
             errors.append(f'Unfinished content: {source.name}')
     image_records = []
-    for manifest in ('images.json', 'detail-plan.json', 'variation-plan.json', 'hanfu-cosplay-images.json', 'expansion-images-a.json', 'expansion-images-b.json', 'completion-images-a.json', 'completion-images-b.json', 'menswear-images-a.json', 'menswear-images-b.json', 'menswear-images-c.json'):
+    for manifest in ('images.json', 'detail-plan.json', 'variation-plan.json', 'hanfu-cosplay-images.json', 'expansion-images-a.json', 'expansion-images-b.json', 'completion-images-a.json', 'completion-images-b.json', 'menswear-images-a.json', 'menswear-images-b.json', 'menswear-images-c.json', 'back-images-a.json', 'back-images-b.json'):
         image_records.extend(json.loads((ROOT / 'references' / manifest).read_text(encoding='utf-8')))
     for image in image_records:
         if not (ROOT / image['file']).is_file() or not image.get('prompt'):
@@ -62,7 +64,7 @@ def main():
     chapters = validate()
     sources = [*chapters, *sorted((ROOT / 'appendices').glob('*.md')), ROOT / 'references/sources.md']
     if not args.check:
-        heading = '# 衣着有名：从风格识别到单品描述\n\n中文图解兴趣读本 · 扩充版 · 2026-10-22\n\n'
+        heading = '# 衣着有名：从风格识别到单品描述\n\n中文图解兴趣读本 · 扩充版 · 2026-10-23\n\n'
         toc = '\n'.join(f'- [{p.read_text(encoding="utf-8").splitlines()[0].lstrip("# ")}]({p.relative_to(ROOT).as_posix()})' for p in sources)
         content = '\n\n---\n\n'.join(rebase(p, p.read_text(encoding='utf-8')) for p in sources)
         (ROOT / 'book.md').write_text(heading + toc + '\n\n---\n\n' + content, encoding='utf-8')

@@ -194,3 +194,13 @@
 - [资料：REI，How to Dress for Humidity](https://www.rei.com/learn/expert-advice/how-to-dress-for-humidity.html)
 - [资料：Emily Post，Business Casual 101](https://emilypost.com/advice/business-casual-attire-guide)
 - [资料：Emily Post，Black Tie Dress Code](https://emilypost.com/advice/black-tie-dress-code)
+
+## 选择性背视补充
+
+吊带连接、运动式背部、衬衫后育克与西装开衩的实物资料在对应新增段落就近引用。AI配对图不等于品牌实物转面或纸样，结构性能仍需独立核实。
+
+- [商品旁读：Reformation，Amani Dress](https://www.thereformation.com/products/amani-dress/1310787.html)
+- [真实参照：Nike，Swoosh 899371](https://www.nike.com/sg/t/swoosh-womens-medium-support-sports-bra-NDQZsv/899371-010)
+- [真实参照：Nike，One Strappy Back FZ2914](https://www.nike.ae/en/one-strappy-back-womens-medium-support-lightly-lined-printed-sports-bra/NKFZ2914-010.html)
+- [实物参照：Ralph Lauren，Stitch Your Own Men's Oxford](https://www.ralphlauren.com.sg/stitch-your-own-mens-oxford-CYO0053AP.html)
+- [结构参照：Indochino，What Are Vents?](https://support.indochino.com/hc/en-us/articles/360044131754-What-are-Vents)
