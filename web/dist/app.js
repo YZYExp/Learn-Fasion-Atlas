@@ -1,23 +1,38 @@
 'use strict';
 let atlas=[];
-let filter='all',audience='all',query='';
+let filter='all',audience='all',query='',page=1;
+const PAGE_SIZE=12;
 const audienceWords={mens:'男装 男性',womens:'女装 女性',mixed:'中性 混合'};const gallery=document.getElementById('gallery');
 function renderGallery(){
  const list=atlas.filter(x=>(filter==='all'||x.tag===filter)&&(audience==='all'||x.audience===audience)&&(`${x.title}${x.sub}${x.description}${audienceWords[x.audience]||''}`).toLowerCase().includes(query));
+ const pages=Math.max(1,Math.ceil(list.length/PAGE_SIZE));
+ page=Math.min(page,pages);
+ const start=(page-1)*PAGE_SIZE;
  gallery.replaceChildren();
- document.getElementById('gallery-count').textContent=`显示 ${list.length} / ${atlas.length} 组完整图板`;
- for(const item of list){
+ document.getElementById('gallery-count').textContent=list.length?`本页 ${start+1}–${Math.min(start+PAGE_SIZE,list.length)} / ${list.length} 组`:'没有匹配的图组';
+ renderPagination(pages,list.length);
+ for(const item of list.slice(start,start+PAGE_SIZE)){
   const card=document.createElement('article');card.className='atlas-item'+(item.triptych?' triptych':'');
   card.innerHTML=`<header class="atlas-card-head"><span class="atlas-category">${item.label}</span><div class="atlas-title-row"><h3>${item.title}</h3><span class="atlas-count">${item.count}</span></div><p>${item.sub}</p><a class="atlas-chapter" href="read.html?chapter=${item.chapter}">阅读对应章节 →</a></header><button class="atlas-board" aria-label="放大查看${item.title}完整图组"><img src="assets/${item.id}.webp" alt="${item.title}：${item.count}，完整对照图组" width="${item.width}" height="${item.height}" loading="lazy" decoding="async"><span class="zoom-label">放大查看 ↗</span></button>`;
   card.querySelector('.atlas-board').addEventListener('click',()=>openAtlas(item));gallery.append(card);
  }
  document.getElementById('no-results').classList.toggle('hidden',list.length>0);
 }
+function renderPagination(pages,total){
+ document.querySelectorAll('.atlas-pagination').forEach(nav=>{
+  nav.replaceChildren();nav.hidden=total===0;
+  const previous=document.createElement('button');previous.textContent='← 上一页';previous.disabled=page===1;
+  const status=document.createElement('span');status.textContent=`第 ${page} / ${pages} 页 · 每页 ${PAGE_SIZE} 组`;
+  const next=document.createElement('button');next.textContent='下一页 →';next.disabled=page===pages;
+  const change=delta=>{page+=delta;renderGallery();document.getElementById('atlas-pagination-top').scrollIntoView({block:'start'});document.querySelector('#atlas-pagination-top button:not(:disabled)')?.focus({preventScroll:true});};
+  previous.addEventListener('click',()=>change(-1));next.addEventListener('click',()=>change(1));nav.append(previous,status,next);
+ });
+}
 function openAtlas(item){const d=document.getElementById('atlas-dialog');document.getElementById('dialog-kicker').textContent=item.label;document.getElementById('dialog-title').textContent=item.title;document.getElementById('dialog-description').textContent=item.description;const im=document.getElementById('dialog-image');im.src=`assets/${item.id}.webp`;im.alt=`${item.title}完整教学图组，${item.count}`;document.getElementById('dialog-chapter').href=`read.html?chapter=${item.chapter}`;d.showModal();d.scrollTop=0;document.body.style.overflow='hidden';}
 function closeAtlas(){document.getElementById('atlas-dialog').close();document.body.style.overflow='';}
-document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});renderGallery();}));
-document.querySelectorAll('[data-audience]').forEach(b=>b.addEventListener('click',()=>{audience=b.dataset.audience;document.querySelectorAll('[data-audience]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});renderGallery();}));
-document.getElementById('atlas-search').addEventListener('input',e=>{query=e.target.value.trim().toLowerCase();renderGallery();});
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;page=1;document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});renderGallery();}));
+document.querySelectorAll('[data-audience]').forEach(b=>b.addEventListener('click',()=>{audience=b.dataset.audience;page=1;document.querySelectorAll('[data-audience]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});renderGallery();}));
+document.getElementById('atlas-search').addEventListener('input',e=>{query=e.target.value.trim().toLowerCase();page=1;renderGallery();});
 document.querySelector('.close-dialog').addEventListener('click',closeAtlas);document.getElementById('atlas-dialog').addEventListener('click',e=>{if(e.target===e.currentTarget)closeAtlas();});document.getElementById('atlas-dialog').addEventListener('close',()=>{document.body.style.overflow='';});
 fetch('atlas.json?v=9e2089498f02').then(r=>{if(!r.ok)throw new Error('atlas');return r.json();}).then(data=>{atlas=data;renderGallery();}).catch(()=>{const p=document.getElementById('no-results');p.textContent='图鉴暂时未载入，请刷新页面，或从章节目录阅读。';p.classList.remove('hidden');});
 Promise.all([fetch('content.json?v=d1bbaefff31e').then(r=>{if(!r.ok)throw new Error('content');return r.json();}),fetch('book-meta.json?v=79bf1382f76c').then(r=>{if(!r.ok)throw new Error('meta');return r.json();})]).then(([chapters,meta])=>{
