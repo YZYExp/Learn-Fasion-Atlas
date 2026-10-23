@@ -13,3 +13,26 @@
 .filters{flex-wrap:wrap}.explore-toolbar{flex-wrap:wrap}
 
 .audience-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin:0 0 26px}.audience-toolbar>span{font-size:12px;letter-spacing:.12em;color:var(--muted,#667572)}.audience-toolbar .filters{flex-wrap:wrap}.audience-toolbar p{font-size:12px;color:var(--muted,#667572);margin:0 0 0 auto}@media(max-width:640px){.audience-toolbar{gap:10px}.audience-toolbar>span{width:100%}.audience-toolbar p{margin:0}.audience-toolbar .filters{gap:6px}}
+
+/* Keep each plate's introduction above it and visibly inside the same card. */
+.gallery{gap:32px 28px}
+.atlas-item{border:1px solid var(--line);background:var(--white);overflow:hidden}
+.atlas-card-head{padding:22px 24px 20px;border-bottom:1px solid var(--line)}
+.atlas-card-head .atlas-category{margin:0 0 8px;font-size:10px;line-height:1.5}
+.atlas-title-row{display:flex;align-items:baseline;gap:10px 16px;flex-wrap:wrap;margin-bottom:8px}
+.atlas-title-row h3{display:block;flex:1;min-width:0;margin:0;font-size:24px;line-height:1.5;overflow-wrap:anywhere}
+.atlas-count{font-size:12px;line-height:1.7;white-space:nowrap;color:var(--muted)}
+.atlas-card-head p{margin:0;font-size:14px;line-height:1.8}
+.atlas-card-head .atlas-chapter{font-size:13px;line-height:1.6;margin-top:12px;padding:8px 0;min-height:40px}
+.atlas-board:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.atlas-chapter:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(max-width:760px){
+ .gallery{gap:24px}
+ .atlas-card-head{padding:18px 16px 14px}
+ .atlas-title-row{gap:6px 12px}
+ .atlas-title-row h3{font-size:21px;flex-basis:75%}
+ .atlas-count{font-size:12px}
+ .atlas-card-head p{font-size:14px;line-height:1.85}
+ .atlas-card-head .atlas-chapter{font-size:13px;min-height:44px;padding:11px 0;margin-top:6px}
+ .atlas-card-head .atlas-category{font-size:9px;letter-spacing:1px}
+}

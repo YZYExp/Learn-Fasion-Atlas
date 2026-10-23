@@ -8,7 +8,7 @@ function renderGallery(){
  document.getElementById('gallery-count').textContent=`显示 ${list.length} / ${atlas.length} 组完整图板`;
  for(const item of list){
   const card=document.createElement('article');card.className='atlas-item'+(item.triptych?' triptych':'');
-  card.innerHTML=`<button class="atlas-board" aria-label="放大查看${item.title}完整图组"><img src="assets/${item.id}.webp" alt="${item.title}：${item.count}，完整对照图组" width="${item.width}" height="${item.height}" loading="lazy" decoding="async"><span class="zoom-label">放大查看 ↗</span></button><span class="atlas-category">${item.label}</span><h3>${item.title}<small>${item.count}</small></h3><p>${item.sub}</p><a class="atlas-chapter" href="read.html?chapter=${item.chapter}">阅读对应章节 →</a>`;
+  card.innerHTML=`<header class="atlas-card-head"><span class="atlas-category">${item.label}</span><div class="atlas-title-row"><h3>${item.title}</h3><span class="atlas-count">${item.count}</span></div><p>${item.sub}</p><a class="atlas-chapter" href="read.html?chapter=${item.chapter}">阅读对应章节 →</a></header><button class="atlas-board" aria-label="放大查看${item.title}完整图组"><img src="assets/${item.id}.webp" alt="${item.title}：${item.count}，完整对照图组" width="${item.width}" height="${item.height}" loading="lazy" decoding="async"><span class="zoom-label">放大查看 ↗</span></button>`;
   card.querySelector('.atlas-board').addEventListener('click',()=>openAtlas(item));gallery.append(card);
  }
  document.getElementById('no-results').classList.toggle('hidden',list.length>0);
