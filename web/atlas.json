@@ -902,5 +902,31 @@
     "width": 1024,
     "height": 1536,
     "audience": "mens"
+  },
+  {
+    "id": "71-back-openings",
+    "title": "挂脖、抹胸与后领开孔",
+    "tag": "detail",
+    "label": "FRONT & BACK / OPENINGS",
+    "sub": "前面怎样收拢，背面怎样覆盖和连接？",
+    "chapter": "25-visible-details",
+    "count": "3 款正背配对",
+    "description": "挂脖颈后结、无肩带连续背片、高背后领水滴开孔，三行各自正背对应；不推断隐藏支撑和穿脱通道。",
+    "width": 1024,
+    "height": 1536,
+    "audience": "womens"
+  },
+  {
+    "id": "72-back-closures",
+    "title": "背部闭合件与近景",
+    "tag": "detail",
+    "label": "BACK & DETAIL / CLOSURES",
+    "sub": "小拉头、纽扣门襟和孔眼穿带，放大看连接。",
+    "chapter": "25-visible-details",
+    "count": "3 组背面与近景",
+    "description": "后中隐形拉链式外观、5枚纽扣门襟、5对孔眼穿带下的不透衬片；近景是教学外观，不是缝制工艺图。",
+    "width": 1024,
+    "height": 1536,
+    "audience": "womens"
   }
 ]

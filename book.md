@@ -1891,6 +1891,20 @@ UNIQLO 的 Wide Tapered Pants 将宽松与向裤口收拢放在同一名称中�
 
 背面资料缺失时，描述也可以完整地保留空白：“正面宽方领、窄肩带；背部结构待定。”对人物设计而言，这句话比自行补一个低背更有用，因为它明确告诉后续绘图者，哪些是已定条件。
 
+## 三组正背对照：绕颈、无肩带与后领开孔
+
+![挂脖、无肩带与后领开孔上衣的正背对照](assets/images/71-back-openings.png)
+
+*图 71：AI 教学示意，按三行排列，每行左为正面、右为背面。依次比较挂脖、无肩带和后领局部开孔三种方案；同一行用于核对前后连接，各行互相独立。挂脖后下片部分受裤腰遮挡，无肩带款上缘近水平；画面只说明可见衣料与接点，不作为精确转面纸样，也不证明内部支撑。*
+
+先找**绕到哪里**。挂脖款的前片向颈部收拢，这组背面展示绕颈带和颈后结；它不等于任意高领无袖上衣。现实中的挂脖也会配不同背部覆盖，例如 Reformation 的 Amarena 同时标注挂脖领、开放后背与系带，说明这几个条件需要分别交代。[真实案例：Reformation，Amarena Dress](https://www.thereformation.com/products/amarena-dress/1320355WHT.html)
+
+再找**有没有越过肩顶的连接**。无肩带款的上缘围绕躯干，背片仍可以完整覆盖；“无肩带”不等于“没有背片”，也不保证里面有骨条。Reformation 的 Lennon 将无肩带、后背松紧抽褶与后拉链同时列出，是结构可以组合的例子；图 71 不据此宣称复制了它的抽褶或内工艺。[真实案例：Reformation，Lennon Top](https://www.thereformation.com/products/lennon-top/1312244.html)
+
+最后找**开口边界**。后领的小水滴开孔只打开局部，顶端可以用扣与扣袢连接，不能把它写成整片低背。Tilly and the Buttons 的 Marnie 纸样明确使用这种后开孔与扣袢组合，可对照它的技术图理解边缘。[纸样参照：Tilly and the Buttons，Marnie](https://tillyandthebuttons.com/blogs/sewing/meet-marnie-blouse-and-dress-sewing-pattern)
+
+可以直接写：“她穿不透明高背短袖上衣，正面圆领；后领留一处小水滴形开口，顶端以小扣和扣袢连接，其余背部保持覆盖。”这比只写“露背上衣”更接近已确定的设计。
+
 ## 袖子用两层词，不挤进一个名称
 
 一层说袖子怎样接近肩部，另一层说袖体怎样展开。常规装袖沿袖窿连接独立袖体，常见接合位置接近肩部；落肩描述连接位置向上臂方向下移；插肩则让袖部延伸到领口附近，形成斜向分界。针织服装还可能通过增减针形成这些边界，不一定都有可见缝线。Knit Picks 的自有教学文章用实际毛衣区分这些结构，因此看针织物时应写“斜向分界”或“增减针线”，不一律说成缝合线。[品牌教学参照：Knit Picks，Anatomy of a Sweater](https://blog.knitpicks.com/anatomy-of-a-sweater/)
@@ -1909,6 +1923,20 @@ FIT 的《Statement Sleeves》展览把基础袖型与设计变奏相连：同�
 
 这一区分会改变生图指令。想要装饰性系带，就补“衣身保持覆盖，带子附在表面”；想要真实可开的背中系带，则说明两边衣片、穿带范围与下方是否有衬片。设计任务还应另画背面或局部图，因为正面摄影无法说明隐藏的闭合件。
 
+## 闭合件要看近一点：拉链、纽扣与穿带
+
+**拉链**看拉头与合拢的后中边缘，不要把任何一条竖缝都认成拉链。隐形拉链合上后，链齿通常被接缝边缘遮住，可能主要看到细缝与小拉头；缺少这些线索时先写“后中接缝”。[结构参照：YKK，Concealed and Reverse Use Coil Zippers](https://ykkamericas.com/what-is-the-difference-between-concealed-and-reverse-use-coil-zippers/) Martha 纸样明确用后背隐形拉链闭合，是可查验的实际设计。[纸样参照：Tilly and the Buttons，Martha](https://tillyandthebuttons.com/blogs/sewing/meet-martha-our-new-sewing-pattern-for)
+
+**纽扣**看排列，也看两侧布边是否形成重叠门襟。图 40 已展示一排后背纽扣，这里增加近景，帮助区分“有纽扣外观”与“边缘怎样合拢”。Mathilde 纸样将后纽扣开口列为设计特征；不过仅凭生成图的一排圆点，仍不能确认每颗扣都能解开。[纸样参照：Tilly and the Buttons，Mathilde](https://tillyandthebuttons.com/products/mathilde-blouse-sewing-pattern)
+
+**穿带**看两侧对应的孔眼、带子往返路线与下方覆盖。这里保留同色不透衬片，不把交叉空隙误读成裸露皮肤。Reformation 的 Cara 明确说明可调后系带，但那是该商品的资料；本图只示范可见穿带关系，不把调节能力或紧身塑形效果直接移植过来。[真实案例：Reformation，Cara Top](https://www.thereformation.com/products/cara-top/1308732.html)
+
+同样写“背后有系带”，可能得到颈后一个结，也可能得到腰背多排穿带。完整指令应补位置和范围，例如：“背中两侧孔眼之间多排交叉穿带，底下有同色不透衬片，衣身到自然腰。”至于是否另有侧拉链、里面如何加固，仍留给实物或设计资料回答。
+
+![后中拉链、纽扣门襟与系带的背面及局部对照](assets/images/72-back-closures.png)
+
+*图 72：AI 教学示意，三行分别比较后中隐形拉链式、纽扣门襟式与穿带式处理；左侧展示背部位置，右侧放大相应部位。近景帮助核对边缘和接点，不提供内部工艺、纤维成分或束形性能证明。*
+
 ## 让一段描述在转身后仍然成立
 
 可以先用一句话确定主件，再按观察方向补充：“她穿奶油色合体上衣，正面是浅心形领口；短袖上臂略鼓、袖口收窄；背部保留完整衣片，后中拉链闭合。”这段话没有依赖某个风格标签，却能限制领口、袖体和背面的主要变化。
@@ -1921,7 +1949,7 @@ FIT 的《Statement Sleeves》展览把基础袖型与设计变奏相连：同�
 
 例如同一件黑上衣，正面全身图用于确认腰线和袖长；背部半身图用于确认 U 形开口；肩部近景用于确认接合边界。不要把三个视角误当三套衣服：颜色、带宽、袖口与缝线位置应连续一致。只展示一面时，图注也注明视角，读者便能区分“这一面没出现”与“这件衣服没有”。
 
-资料核查：2026 年 10 月 22 日。术语作为描述工具使用；内部工艺与合体效果需结合实物、纸样或设计资料确认。
+资料核查：2026 年 10 月 23 日。术语作为描述工具使用；内部工艺与合体效果需结合实物、纸样或设计资料确认。
 
 ## 什么时候需要另补一张背面图
 
@@ -3495,3 +3523,14 @@ REI 的炎热天气与高湿环境衣着指南讨论了轻量、透气、较宽�
 - [真实参照：Nike，One Strappy Back FZ2914](https://www.nike.ae/en/one-strappy-back-womens-medium-support-lightly-lined-printed-sports-bra/NKFZ2914-010.html)
 - [实物参照：Ralph Lauren，Stitch Your Own Men's Oxford](https://www.ralphlauren.com.sg/stitch-your-own-mens-oxford-CYO0053AP.html)
 - [结构参照：Indochino，What Are Vents?](https://support.indochino.com/hc/en-us/articles/360044131754-What-are-Vents)
+
+
+## 背部开口与闭合补充
+
+- [Reformation，Amarena Dress](https://www.thereformation.com/products/amarena-dress/1320355WHT.html)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Reformation，Lennon Top](https://www.thereformation.com/products/lennon-top/1312244.html)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Tilly and the Buttons，Marnie blouse and dress](https://tillyandthebuttons.com/blogs/sewing/meet-marnie-blouse-and-dress-sewing-pattern)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [YKK Americas，Concealed and Reverse Use Coil Zippers](https://ykkamericas.com/what-is-the-difference-between-concealed-and-reverse-use-coil-zippers/)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Tilly and the Buttons，Martha dress](https://tillyandthebuttons.com/blogs/sewing/meet-martha-our-new-sewing-pattern-for)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Tilly and the Buttons，Mathilde Blouse](https://tillyandthebuttons.com/products/mathilde-blouse-sewing-pattern)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Reformation，Cara Top](https://www.thereformation.com/products/cara-top/1308732.html)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。

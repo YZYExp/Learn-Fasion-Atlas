@@ -204,3 +204,14 @@
 - [真实参照：Nike，One Strappy Back FZ2914](https://www.nike.ae/en/one-strappy-back-womens-medium-support-lightly-lined-printed-sports-bra/NKFZ2914-010.html)
 - [实物参照：Ralph Lauren，Stitch Your Own Men's Oxford](https://www.ralphlauren.com.sg/stitch-your-own-mens-oxford-CYO0053AP.html)
 - [结构参照：Indochino，What Are Vents?](https://support.indochino.com/hc/en-us/articles/360044131754-What-are-Vents)
+
+
+## 背部开口与闭合补充
+
+- [Reformation，Amarena Dress](https://www.thereformation.com/products/amarena-dress/1320355WHT.html)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Reformation，Lennon Top](https://www.thereformation.com/products/lennon-top/1312244.html)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Tilly and the Buttons，Marnie blouse and dress](https://tillyandthebuttons.com/blogs/sewing/meet-marnie-blouse-and-dress-sewing-pattern)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [YKK Americas，Concealed and Reverse Use Coil Zippers](https://ykkamericas.com/what-is-the-difference-between-concealed-and-reverse-use-coil-zippers/)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Tilly and the Buttons，Martha dress](https://tillyandthebuttons.com/blogs/sewing/meet-martha-our-new-sewing-pattern-for)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Tilly and the Buttons，Mathilde Blouse](https://tillyandthebuttons.com/products/mathilde-blouse-sewing-pattern)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。
+- [Reformation，Cara Top](https://www.thereformation.com/products/cara-top/1308732.html)。用于第25章的背部开口或闭合真实参照，核查2026-10-23。

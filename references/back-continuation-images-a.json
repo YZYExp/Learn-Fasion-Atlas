@@ -1,0 +1,17 @@
+[
+  {
+    "id": "71-back-openings",
+    "file": "assets/images/71-back-openings.png",
+    "chapter": "25-visible-details",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. ONE photorealistic fashion teaching comparison plate, portrait 1024x1536. Precise THREE ROWS by TWO COLUMNS. Warm light gray studio with soft clear light, natural realistic skin and opaque fabric, no branding, no watermark. Each ROW is the FRONT (left) and BACK (right) of the SAME adult woman wearing the SAME top and trousers, same garment color, shape, length, waistline and build. Framing in all panels from complete head to below hips, leaving garment edges visible. Hair tied in a tidy high bun so all neck and back details are unobstructed. Relaxed natural standing pose, shoulders loose, arms resting with small space from torso, normal hands; not stiff and not sexualized. TOP ROW HALTER: elegant 30-year-old East Asian woman, opaque ink-navy halter top and high-waisted charcoal trousers. Front top completely covers chest, modest high neckline, narrow fabric neck straps go around neck. BACK has a small clearly tied bow at nape, shoulder blades visible, an opaque lower back panel ending at upper waist with a horizontal top edge. No extra shoulder straps. Exact labels below panels: 'HALTER - FRONT', 'HALTER - BACK'. MIDDLE ROW STRAPLESS: attractive 35-year-old East Asian woman with a slightly fuller body, opaque dark green strapless top and high-waisted charcoal trousers. No shoulder or neck straps anywhere, continuous straight horizontal upper edge around chest and back at appropriate coverage, back panel complete and opaque, hem and fit matching front; no internal support structures displayed. Exact labels 'STRAPLESS - FRONT', 'STRAPLESS - BACK'. BOTTOM ROW KEYHOLE: elegant 30-year-old South Asian woman, opaque burgundy short-sleeve top with a high round front neckline, high-waisted charcoal trousers. BACK stays HIGH and FULLY COVERED except one SMALL clear teardrop-shaped opening immediately below nape. The teardrop hole is surrounded on both sides and below by burgundy cloth; a SINGLE tiny button at the top closes the neckline edge. This is a small upper-back KEYHOLE, NOT a low open back and NOT a broad cutout. Exact labels 'KEYHOLE - FRONT', 'KEYHOLE - BACK'. Thin neutral grid dividers, clean serif English captions beneath every panel, generous margin, no other text. Opaque practical outerwear tops, no sheer fabric, no lingerie, no erotic poses.",
+    "panels": [
+      "第一行左：挂脖上衣正面 HALTER - FRONT；右：颈后系结与肩胛外露背面 HALTER - BACK",
+      "第二行左：无肩带抹胸上衣正面 STRAPLESS - FRONT；右：完整背片与近水平上缘 STRAPLESS - BACK",
+      "第三行左：高圆领短袖上衣正面 KEYHOLE - FRONT；右：颈后小水滴开口及顶部单扣 KEYHOLE - BACK"
+    ],
+    "review": "已实际查看。图为3行2列正背配对；各对颜色、款型、衣长与高腰裤关系相近。挂脖颈后小结清楚、没有多余肩带；抹胸前后均无肩带，背片完整；水滴款背部高覆盖，小开口两侧及下方有布包围，顶部小扣可见。成年东亚/南亚女性含较丰满体型，头发盘起，手臂与身体有间隙，无明显肢体异常。",
+    "limitations": "三行是不同人物与设计，不是换背片的严格单变量实验；图像有轻微衣褶和姿态漂移。抹胸上缘近水平但非尺规直线；挂脖后下片被裤腰部分遮住，不能据图判断全部闭合通道、内部支撑或穿着稳定性。水滴开口与顶部小扣只证明外观，不证明内部扣袢工艺。",
+    "source_path": "/workspace/scratch/1d31e0f9d8ad/generated_images/exec-0e69d6c2-d106-4c89-a196-e42169be9929.png"
+  }
+]

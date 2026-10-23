@@ -36,7 +36,7 @@ def validate():
         if re.search(r'\bTODO\b|待生成|占位图', text):
             errors.append(f'Unfinished content: {source.name}')
     image_records = []
-    for manifest in ('images.json', 'detail-plan.json', 'variation-plan.json', 'hanfu-cosplay-images.json', 'expansion-images-a.json', 'expansion-images-b.json', 'completion-images-a.json', 'completion-images-b.json', 'menswear-images-a.json', 'menswear-images-b.json', 'menswear-images-c.json', 'back-images-a.json', 'back-images-b.json'):
+    for manifest in ('images.json', 'detail-plan.json', 'variation-plan.json', 'hanfu-cosplay-images.json', 'expansion-images-a.json', 'expansion-images-b.json', 'completion-images-a.json', 'completion-images-b.json', 'menswear-images-a.json', 'menswear-images-b.json', 'menswear-images-c.json', 'back-images-a.json', 'back-images-b.json', 'back-continuation-images-a.json', 'back-continuation-images-b.json'):
         image_records.extend(json.loads((ROOT / 'references' / manifest).read_text(encoding='utf-8')))
     for image in image_records:
         if not (ROOT / image['file']).is_file() or not image.get('prompt'):

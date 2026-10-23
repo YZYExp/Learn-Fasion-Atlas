@@ -141,8 +141,9 @@ def main():
                     details += metadata_block(label, record[key])
             details += '<details class="prompt"><summary>查看原始提示词</summary>'
             details += f'<pre>{esc(record["prompt"])}</pre></details>'
-            if record.get('edit_prompt'):
-                details += metadata_block('定向修订提示词', record['edit_prompt'])
+            for key in ('edit_prompt', 'revision_prompt', 'revision_prompts'):
+                if record.get(key):
+                    details += metadata_block('定向修订提示词', record[key])
         if not plan_records:
             details += metadata_block('制作记录', '未匹配到图像生成记录；几何示意等程序绘图可能没有生成提示词')
         search = ' '.join([path.stem, title, source_path, audience_label] + [
