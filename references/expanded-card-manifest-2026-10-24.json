@@ -1,0 +1,154 @@
+[
+  {
+    "source": "dress_classification_infographic_chart.png",
+    "asset": "assets/images/73-dress-classification-card.png",
+    "chapter": "chapters/13-dresses.md",
+    "anchor": "assets/images/13-dresses.png",
+    "alt": "连衣裙多维分类图卡",
+    "caption": "廓形、腰线和结构"
+  },
+  {
+    "source": "skirt_classification_reference_chart.png",
+    "asset": "assets/images/74-skirt-classification-card.png",
+    "chapter": "chapters/14-skirts.md",
+    "anchor": "assets/images/14-skirts.png",
+    "alt": "半裙多维分类图卡",
+    "caption": "轮廓、褶裥与裙体组织"
+  },
+  {
+    "source": "上装分类图卡_时尚结构指南.png",
+    "asset": "assets/images/75-tops-classification-card.png",
+    "chapter": "chapters/15-tops-underwear.md",
+    "anchor": "assets/images/15-tops.png",
+    "alt": "上装多维分类图卡",
+    "caption": "品类、开合和肩部结构"
+  },
+  {
+    "source": "领口与袖型时尚图卡.png",
+    "asset": "assets/images/76-neckline-sleeve-card.png",
+    "chapter": "chapters/16-necklines-sleeves.md",
+    "anchor": "assets/images/17-necklines.png",
+    "alt": "领口与袖型图卡",
+    "caption": "领口、肩部和袖型分轴"
+  },
+  {
+    "source": "fabric_texture_reference_chart.png",
+    "asset": "assets/images/77-fabric-observation-card.png",
+    "chapter": "chapters/17-fabrics.md",
+    "anchor": "assets/images/19-fabrics.png",
+    "alt": "面料组织观察图卡",
+    "caption": "可见质地、组织和表面效果"
+  },
+  {
+    "source": "elegant_trousers_classification_guide.png",
+    "asset": "assets/images/78-womens-trousers-classification-card.png",
+    "chapter": "chapters/18-trousers-outerwear.md",
+    "anchor": "assets/images/20-trousers.png",
+    "alt": "裤装多维分类图卡",
+    "caption": "裤型、裤长与结构"
+  },
+  {
+    "source": "女式外套图卡_风格与结构指南.png",
+    "asset": "assets/images/79-womens-outerwear-card.png",
+    "chapter": "chapters/18-trousers-outerwear.md",
+    "anchor": "assets/images/21-outerwear.png",
+    "alt": "女式外套扩展图卡",
+    "caption": "衣长、构造与用途"
+  },
+  {
+    "source": "fashion_detail_vocabulary_chart.png",
+    "asset": "assets/images/80-garment-detail-vocabulary-card.png",
+    "chapter": "chapters/19-details.md",
+    "anchor": "assets/images/22-details.png",
+    "alt": "服装细节图卡",
+    "caption": "门襟、闭合、褶裥和边缘"
+  },
+  {
+    "source": "hanfu_components_reference_chart.png",
+    "asset": "assets/images/81-hanfu-components-card.png",
+    "chapter": "chapters/21-hanfu.md",
+    "anchor": "assets/images/33-song-beizi.png",
+    "alt": "汉服组件观察图卡",
+    "caption": "基础衣物、罩层与配饰；不作历史复原证据"
+  },
+  {
+    "source": "cosplay_component_guide_infographic.png",
+    "asset": "assets/images/82-cosplay-components-card.png",
+    "chapter": "chapters/22-cosplay.md",
+    "anchor": "assets/images/36-cosplay-types.png",
+    "alt": "Cosplay组件图卡",
+    "caption": "基础衣物、覆层与连接件"
+  },
+  {
+    "source": "shoe_classification_reference_chart.png",
+    "asset": "assets/images/83-shoe-classification-card.png",
+    "chapter": "chapters/27-shoes-accessories.md",
+    "anchor": "assets/images/43-footwear-details.png",
+    "alt": "鞋履扩展分类图卡",
+    "caption": "鞋型、开口和使用场景"
+  },
+  {
+    "source": "elegant_handbag_classification_chart.png",
+    "asset": "assets/images/84-bag-classification-card.png",
+    "chapter": "chapters/27-shoes-accessories.md",
+    "anchor": "assets/images/44-bag-types.png",
+    "alt": "包袋扩展分类图卡",
+    "caption": "携带方式与包身结构"
+  },
+  {
+    "source": "fashion_pattern_classification_chart.png",
+    "asset": "assets/images/85-pattern-classification-card.png",
+    "chapter": "chapters/29-patterns.md",
+    "anchor": "assets/images/46-pattern-comparison.png",
+    "alt": "纹样扩展分类图卡",
+    "caption": "母题、重复方式和图案布置"
+  },
+  {
+    "source": "style_accessories_reference_chart.png",
+    "asset": "assets/images/86-headwear-jewelry-overview-card.png",
+    "chapter": "chapters/30-headwear-jewelry.md",
+    "anchor": "assets/images/47-headwear-types.png",
+    "alt": "帽饰首饰概览图卡",
+    "caption": "头部、耳部、颈部和手部"
+  },
+  {
+    "source": "layered_styling_guide_from_casual_to_commuter.png",
+    "asset": "assets/images/87-layered-styling-scenarios-card.png",
+    "chapter": "chapters/31-context-layering.md",
+    "anchor": "assets/images/49-layering-comparison.png",
+    "alt": "叠穿场景图卡",
+    "caption": "内外层与应用场景"
+  },
+  {
+    "source": "men_s_tops_fashion_guide_chart.png",
+    "asset": "assets/images/88-mens-tops-classification-card.png",
+    "chapter": "chapters/32-mens-tops.md",
+    "anchor": "assets/images/51-mens-tops.png",
+    "alt": "男式上装扩展图卡",
+    "caption": "开合、领型与用途"
+  },
+  {
+    "source": "men_s_trousers_classification_guide.png",
+    "asset": "assets/images/89-mens-trousers-classification-card.png",
+    "chapter": "chapters/33-mens-trousers.md",
+    "anchor": "assets/images/53-mens-trousers.png",
+    "alt": "男裤扩展分类图卡",
+    "caption": "裤管、用途和腰头细节"
+  },
+  {
+    "source": "men_s_outerwear_style_guide.png",
+    "asset": "assets/images/90-mens-outerwear-card.png",
+    "chapter": "chapters/34-mens-outerwear.md",
+    "anchor": "assets/images/55-short-jackets.png",
+    "alt": "男式外套扩展图卡",
+    "caption": "短外套、长外套与功能"
+  },
+  {
+    "source": "men_s_accessories_style_guide_infographic.png",
+    "asset": "assets/images/91-mens-accessories-card.png",
+    "chapter": "chapters/37-mens-accessories.md",
+    "anchor": "assets/images/62-neckwear.png",
+    "alt": "男式配饰扩展图卡",
+    "caption": "颈部、手腕及腰部配饰"
+  }
+]
