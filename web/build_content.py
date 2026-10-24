@@ -43,7 +43,7 @@ def render(text):
    while i<len(lines) and not lines[i].startswith('```'):b.append(lines[i]);i+=1
    o.append('<pre><code>'+html.escape('\n'.join(b))+'</code></pre>');i+=1;continue
   m=re.fullmatch(r'!\[([^\]]*)\]\(([^)]+)\)',line)
-  if m:o.append('<figure><img loading="lazy" src="'+urlfix(m[2])+'" alt="'+html.escape(m[1],quote=True)+'"></figure>');i+=1;continue
+  if m:o.append('<figure><a href="'+urlfix(m[2])+'" target="_blank" rel="noopener" title="查看原尺寸图片"><img loading="lazy" src="'+urlfix(m[2])+'" alt="'+html.escape(m[1],quote=True)+'"></a><figcaption>点图查看原尺寸</figcaption></figure>');i+=1;continue
   if line.startswith('#'):
    m=re.match(r'(#+)\s+(.*)',line);n=min(len(m[1]),4);o.append(f'<h{n}>'+inline(m[2])+f'</h{n}>');i+=1;continue
   if line.startswith('|'):

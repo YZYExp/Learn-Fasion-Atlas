@@ -30,9 +30,9 @@ def display(value):
 def image_records(value):
     """Accept historic list/nested-object schemas without assuming every JSON is a plan."""
     if isinstance(value, dict):
-        if isinstance(value.get('prompt'), str) and any(
+        if any(isinstance(value.get(k), str) for k in ('prompt', 'review')) and any(
             isinstance(value.get(k), str) and value[k].lower().endswith('.png')
-            for k in ('file', 'path')
+            for k in ('file', 'path', 'asset')
         ):
             yield value
         for child in value.values():
@@ -48,7 +48,7 @@ def collect_records():
     for path in sorted((ROOT / 'references').glob('*.json')):
         data = json.loads(path.read_text(encoding='utf-8'))
         for record in image_records(data):
-            filename = record.get('file') or record.get('path')
+            filename = record.get('file') or record.get('path') or record.get('asset')
             key = Path(filename).name
             result.setdefault(key, []).append((path.relative_to(ROOT).as_posix(), record))
     return result
@@ -140,7 +140,7 @@ def main():
                 if record.get(key) not in (None, '', [], {}):
                     details += metadata_block(label, record[key])
             details += '<details class="prompt"><summary>查看原始提示词</summary>'
-            details += f'<pre>{esc(record["prompt"])}</pre></details>'
+            details += f'<pre>{esc(record.get("prompt", "用户提供图片；原始提示词未提供。"))}</pre></details>'
             for key in ('edit_prompt', 'revision_prompt', 'revision_prompts'):
                 if record.get(key):
                     details += metadata_block('定向修订提示词', record[key])

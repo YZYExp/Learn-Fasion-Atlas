@@ -1,154 +1,211 @@
 [
   {
-    "source": "dress_classification_infographic_chart.png",
+    "source": "73-dress-classification-card.png",
     "asset": "assets/images/73-dress-classification-card.png",
     "chapter": "chapters/13-dresses.md",
     "anchor": "assets/images/13-dresses.png",
     "alt": "连衣裙多维分类图卡",
-    "caption": "廓形、腰线和结构"
+    "caption": "按行比较廓形、腰部与衣身构成、局部变化；同一条裙可同时收腰、A字、裹身。罩衫裙图展示宽松抽褶，不能由外观确认手工smocking",
+    "original_source": "dress_classification_infographic_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "skirt_classification_reference_chart.png",
+    "source": "74-skirt-classification-card.png",
     "asset": "assets/images/74-skirt-classification-card.png",
     "chapter": "chapters/14-skirts.md",
     "anchor": "assets/images/14-skirts.png",
     "alt": "半裙多维分类图卡",
-    "caption": "轮廓、褶裥与裙体组织"
+    "caption": "直筒、铅笔与A字是外轮廓入口；裹身、褶裥、拼片与插片是构成线索，可以交叉。圆裙的圆裁比例、斜裁方向须查裁片，不能从摆量倒推",
+    "original_source": "skirt_classification_reference_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "上装分类图卡_时尚结构指南.png",
+    "source": "75-tops-classification-card.png",
     "asset": "assets/images/75-tops-classification-card.png",
     "chapter": "chapters/15-tops-underwear.md",
     "anchor": "assets/images/15-tops.png",
     "alt": "上装多维分类图卡",
-    "caption": "品类、开合和肩部结构"
+    "caption": "品类、开合、肩部固定与衣长分开观察。针织是成布方式，T恤也常用针织；短款和单肩可以修饰不同品类",
+    "original_source": "上装分类图卡_时尚结构指南.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "领口与袖型时尚图卡.png",
+    "source": "76-neckline-sleeve-card.png",
     "asset": "assets/images/76-neckline-sleeve-card.png",
     "chapter": "chapters/16-necklines-sleeves.md",
     "anchor": "assets/images/17-necklines.png",
     "alt": "领口与袖型图卡",
-    "caption": "领口、肩部和袖型分轴"
+    "caption": "前两行观察领口和肩部，末行兼有袖体积、袖口和装袖方式。插肩袖可同时有泡泡袖的体积，图格并不互斥",
+    "original_source": "领口与袖型时尚图卡.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "fabric_texture_reference_chart.png",
-    "asset": "assets/images/77-fabric-observation-card.png",
+    "source": "77-fabric-observation-card-v2.png",
+    "asset": "assets/images/77-fabric-observation-card-v2.png",
     "chapter": "chapters/17-fabrics.md",
     "anchor": "assets/images/19-fabrics.png",
-    "alt": "面料组织观察图卡",
-    "caption": "可见质地、组织和表面效果"
+    "alt": "面料外观与成布方式观察",
+    "caption": "外观线索、成布与组织示例、光泽与表面分行阅读。棉感、麻感、毛感和皮革感仅是模拟外观；真实成分、织物参数与性能需查标签及实物",
+    "original_source": "fabric_texture_reference_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。原上传版本有误标，采用定向重绘版。"
   },
   {
-    "source": "elegant_trousers_classification_guide.png",
+    "source": "78-womens-trousers-classification-card.png",
     "asset": "assets/images/78-womens-trousers-classification-card.png",
     "chapter": "chapters/18-trousers-outerwear.md",
     "anchor": "assets/images/20-trousers.png",
     "alt": "裤装多维分类图卡",
-    "caption": "裤型、裤长与结构"
+    "caption": "依次观察裤管、裤长、腰头与口袋。“九分”不是跨身高的固定比例，及踝位置应按穿着者描述；高腰、阔腿、打褶可以共存",
+    "original_source": "elegant_trousers_classification_guide.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "女式外套图卡_风格与结构指南.png",
+    "source": "79-womens-outerwear-card.png",
     "asset": "assets/images/79-womens-outerwear-card.png",
     "chapter": "chapters/18-trousers-outerwear.md",
     "anchor": "assets/images/21-outerwear.png",
     "alt": "女式外套扩展图卡",
-    "caption": "衣长、构造与用途"
+    "caption": "比较短夹克、休闲外层与长外套的领襟和衣长。羽绒、羊毛等图内商品名指示检索方向，不能凭充绒外观或绒感确认成分及保暖性能",
+    "original_source": "女式外套图卡_风格与结构指南.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "fashion_detail_vocabulary_chart.png",
-    "asset": "assets/images/80-garment-detail-vocabulary-card.png",
+    "source": "80-garment-detail-vocabulary-card-v2.png",
+    "asset": "assets/images/80-garment-detail-vocabulary-card-v2.png",
     "chapter": "chapters/19-details.md",
     "anchor": "assets/images/22-details.png",
     "alt": "服装细节图卡",
-    "caption": "门襟、闭合、褶裥和边缘"
+    "caption": "依次观察闭合、体积与分割、口袋和边缘。第二行第三格是分割缝，不是省道；第三行第二格是侧缝袋。包边将带条折覆边缘，滚边在接缝处形成窄凸线",
+    "original_source": "fashion_detail_vocabulary_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。原上传版本有误标，采用定向重绘版。"
   },
   {
-    "source": "hanfu_components_reference_chart.png",
-    "asset": "assets/images/81-hanfu-components-card.png",
+    "source": "81-hanfu-components-card-v2.png",
+    "asset": "assets/images/81-hanfu-components-card-v2.png",
     "chapter": "chapters/21-hanfu.md",
     "anchor": "assets/images/33-song-beizi.png",
-    "alt": "汉服组件观察图卡",
-    "caption": "基础衣物、罩层与配饰；不作历史复原证据"
+    "alt": "现代汉服穿搭的可见部件观察",
+    "caption": "当代穿搭的可见部件观察：领口与衣层、裙摆与罩层、配饰与携带物。名称只描述画面，不据此确定朝代、形制或整套穿着制度；相关藏品依据见本章原有案例",
+    "original_source": "hanfu_components_reference_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。原上传版本有误标，采用定向重绘版。"
   },
   {
-    "source": "cosplay_component_guide_infographic.png",
+    "source": "82-cosplay-components-card.png",
     "asset": "assets/images/82-cosplay-components-card.png",
     "chapter": "chapters/22-cosplay.md",
     "anchor": "assets/images/36-cosplay-types.png",
     "alt": "Cosplay组件图卡",
-    "caption": "基础衣物、覆层与连接件"
+    "caption": "从基础衣物读到覆盖层、硬质件与配件。图示长手套、腿套不展示全部固定点；护甲为造型示例，不能据此判断防护能力或制作材料",
+    "original_source": "cosplay_component_guide_infographic.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "shoe_classification_reference_chart.png",
+    "source": "83-shoe-classification-card.png",
     "asset": "assets/images/83-shoe-classification-card.png",
     "chapter": "chapters/27-shoes-accessories.md",
     "anchor": "assets/images/43-footwear-details.png",
     "alt": "鞋履扩展分类图卡",
-    "caption": "鞋型、开口和使用场景"
+    "caption": "观察鞋面固定、筒高和后跟覆盖。牛津鞋需核对闭合式系带，不能由黑色皮面判断；运动鞋外观不代表专项运动性能。高跟、玛丽珍、露跟等特征可组合",
+    "original_source": "shoe_classification_reference_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "elegant_handbag_classification_chart.png",
+    "source": "84-bag-classification-card.png",
     "asset": "assets/images/84-bag-classification-card.png",
     "chapter": "chapters/27-shoes-accessories.md",
     "anchor": "assets/images/44-bag-types.png",
     "alt": "包袋扩展分类图卡",
-    "caption": "携带方式与包身结构"
+    "caption": "携带方式、包体结构、开口、肩带材料分别命名。斜挎、水桶与链条包不限小尺寸；本图未提供同一比例尺，不能比较真实容量",
+    "original_source": "elegant_handbag_classification_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "fashion_pattern_classification_chart.png",
+    "source": "85-pattern-classification-card.png",
     "asset": "assets/images/85-pattern-classification-card.png",
     "chapter": "chapters/29-patterns.md",
     "anchor": "assets/images/46-pattern-comparison.png",
     "alt": "纹样扩展分类图卡",
-    "caption": "母题、重复方式和图案布置"
+    "caption": "从条纹、格纹和花卉等观察母题与重复。圆点属于几何图形；人字可由织造或图案模拟，扎染外观也可能是印花，不能由图反推工艺",
+    "original_source": "fashion_pattern_classification_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "style_accessories_reference_chart.png",
+    "source": "86-headwear-jewelry-overview-card.png",
     "asset": "assets/images/86-headwear-jewelry-overview-card.png",
     "chapter": "chapters/30-headwear-jewelry.md",
     "anchor": "assets/images/47-headwear-types.png",
     "alt": "帽饰首饰概览图卡",
-    "caption": "头部、耳部、颈部和手部"
+    "caption": "帽冠、帽檐、佩戴部位与首饰尺度的速览。珍珠状、金色等只说明外观，不证明珠宝成分；鸭舌与分片帽冠仍须结合侧面判断",
+    "original_source": "style_accessories_reference_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "layered_styling_guide_from_casual_to_commuter.png",
+    "source": "87-layered-styling-scenarios-card.png",
     "asset": "assets/images/87-layered-styling-scenarios-card.png",
     "chapter": "chapters/31-context-layering.md",
     "anchor": "assets/images/49-layering-comparison.png",
     "alt": "叠穿场景图卡",
-    "caption": "内外层与应用场景"
+    "caption": "十二套叠穿示例展示内外层关系和场景线索，不是十二种固定搭配法。保暖和正式程度还取决于材料、活动、天气与具体着装要求",
+    "original_source": "layered_styling_guide_from_casual_to_commuter.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "men_s_tops_fashion_guide_chart.png",
+    "source": "88-mens-tops-classification-card.png",
     "asset": "assets/images/88-mens-tops-classification-card.png",
     "chapter": "chapters/32-mens-tops.md",
     "anchor": "assets/images/51-mens-tops.png",
     "alt": "男式上装扩展图卡",
-    "caption": "开合、领型与用途"
+    "caption": "比较全开襟、短门襟、套头和针织外层。牛津布不是领型，法兰绒不是格纹同义词；图中的面料商品名须以实物和说明核实",
+    "original_source": "men_s_tops_fashion_guide_chart.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "men_s_trousers_classification_guide.png",
+    "source": "89-mens-trousers-classification-card.png",
     "asset": "assets/images/89-mens-trousers-classification-card.png",
     "chapter": "chapters/33-mens-trousers.md",
     "anchor": "assets/images/53-mens-trousers.png",
     "alt": "男裤扩展分类图卡",
-    "caption": "裤管、用途和腰头细节"
+    "caption": "裤型、裤类与腰头或长度细节可叠加。阔腿也可为直筒；工装口袋不保证耐磨或工作防护；“九分”与及踝位置需按穿着者核对",
+    "original_source": "men_s_trousers_classification_guide.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "men_s_outerwear_style_guide.png",
+    "source": "90-mens-outerwear-card.png",
     "asset": "assets/images/90-mens-outerwear-card.png",
     "chapter": "chapters/34-mens-outerwear.md",
     "anchor": "assets/images/55-short-jackets.png",
     "alt": "男式外套扩展图卡",
-    "caption": "短外套、长外套与功能"
+    "caption": "从短夹克到长外套观察门襟、领子、口袋与衣长。海军呢大衣有短款传统，图中只示双排扣轮廓；材料、防水、防护与保暖不能从造型确认",
+    "original_source": "men_s_outerwear_style_guide.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   },
   {
-    "source": "men_s_accessories_style_guide_infographic.png",
+    "source": "91-mens-accessories-card.png",
     "asset": "assets/images/91-mens-accessories-card.png",
     "chapter": "chapters/37-mens-accessories.md",
     "anchor": "assets/images/62-neckwear.png",
     "alt": "男式配饰扩展图卡",
-    "caption": "颈部、手腕及腰部配饰"
+    "caption": "领颈及胸前、手腕、腰部与携带物的观察示例。口袋巾位于胸袋；领针应结合领片与领带位置理解，装饰性连接杆不等于完整规范佩戴示范",
+    "original_source": "men_s_accessories_style_guide_infographic.png",
+    "status": "reviewed",
+    "review": "逐张放大核对；使用边界已写入图注。保留上传原图。"
   }
 ]

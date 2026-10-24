@@ -64,7 +64,7 @@ def main():
     chapters = validate()
     sources = [*chapters, *sorted((ROOT / 'appendices').glob('*.md')), ROOT / 'references/sources.md']
     if not args.check:
-        heading = '# 衣着有名：从风格识别到单品描述\n\n中文图解兴趣读本 · 扩充版 · 2026-10-23\n\n'
+        heading = '# 衣着有名：从风格识别到单品描述\n\n中文图解兴趣读本 · 多维分类审校版 · 2026-10-24\n\n'
         toc = '\n'.join(f'- [{p.read_text(encoding="utf-8").splitlines()[0].lstrip("# ")}]({p.relative_to(ROOT).as_posix()})' for p in sources)
         content = '\n\n---\n\n'.join(rebase(p, p.read_text(encoding='utf-8')) for p in sources)
         (ROOT / 'book.md').write_text(heading + toc + '\n\n---\n\n' + content, encoding='utf-8')

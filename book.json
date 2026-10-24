@@ -1,7 +1,7 @@
 {
   "title": "衣着有名：从风格识别到单品描述",
   "language": "zh-CN",
-  "edition": "背部结构与闭合补充版",
+  "edition": "多维分类与图卡审校版",
   "cover": "assets/images/13-dresses.png",
   "sections": [
     {
@@ -145,7 +145,7 @@
     {
       "id": "14-skirts",
       "number": 14,
-      "title": "第 14 章｜半裙的六种组织：裙摆为什么这样展开",
+      "title": "第 14 章｜半裙的分类坐标：廓形、裁片与裙摆怎样展开",
       "source": "chapters/14-skirts.md",
       "slug": "14-skirts",
       "group": "II"

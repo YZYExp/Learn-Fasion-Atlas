@@ -41,6 +41,9 @@ def integrate(source: Path | None = None, check: bool = False) -> None:
         marker = f"![{entry['alt']}](../{entry['asset']})"
         if marker in body:
             continue
+        if check:
+            errors.append(f"Card not embedded: {entry['chapter']}: {entry['asset']}")
+            continue
         old_image = re.search(r"!\[[^\]]*\]\(\.\./" + re.escape(entry["anchor"]) + r"\)", body)
         if not old_image:
             errors.append(f"Anchor missing: {entry['chapter']}: {entry['anchor']}")
@@ -51,8 +54,8 @@ def integrate(source: Path | None = None, check: bool = False) -> None:
         insert_at = old_image.end() + (caption.end() if caption else 0)
         snippet = (
             "\n\n" + marker + "\n\n"
-            + "*新增多维分类图卡（AI 教学示意，待逐项术语审校）："
-            + entry["caption"] + "。这张扩展图不能代替历史原图的逐格图注，也不用于判断被遮挡的背部或内部构造。*\n"
+            + "*扩展观察图卡（AI 教学示意）："
+            + entry["caption"] + "。图中例子不是完整分类；细部判断请结合本章原图和正文。*\n"
         )
         if not check:
             body = body[:insert_at] + snippet + body[insert_at:]

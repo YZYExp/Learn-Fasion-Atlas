@@ -34,6 +34,8 @@ jobs:
           touch web/dist/.nojekyll
       - name: Validate site
         run: |
+          python scripts/build.py --check
+          python scripts/integrate_expanded_cards.py --check
           node --check web/dist/app.js
           node --check web/dist/reader.js
           python web/check_site.py

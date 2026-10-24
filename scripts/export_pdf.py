@@ -90,7 +90,7 @@ def para(text,style='body',track=True):
 def img(path):
  source=PILImage.open(path).convert('RGB')
  source.thumbnail((1280,1280),PILImage.Resampling.LANCZOS)
- maxw=491;maxh=520 if path.stem[:2].isdigit() and int(path.stem[:2])>=38 else 540
+ maxw=491;maxh=420  # Leave room for chapter heading, introduction and the attached caption.
  fac=min(maxw/source.width,maxh/source.height)
  target=TMP/(hashlib.sha256(str(path).encode()).hexdigest()[:12]+'.jpg')
  source.save(target,quality=int(os.environ.get('FASHION_ATLAS_JPEG_QUALITY','75')),subsampling=2,optimize=True)
