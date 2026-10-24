@@ -1,7 +1,7 @@
 {
-  "title": "衣着有名：从风格识别到单品描述",
+  "title": "衣着有名：服饰风格、单品与穿着知识",
   "language": "zh-CN",
-  "edition": "多维分类与图卡审校版",
+  "edition": "服饰知识修订版",
   "cover": "assets/images/13-dresses.png",
   "sections": [
     {
@@ -97,7 +97,7 @@
     {
       "id": "08-tradition",
       "number": 8,
-      "title": "第 8 章｜传统、改良与新表达：先说清你想靠近哪一种",
+      "title": "第 8 章｜传统、改良与新表达：结构与文化语境",
       "source": "chapters/08-tradition.md",
       "slug": "08-tradition",
       "group": "I"
@@ -121,7 +121,7 @@
     {
       "id": "11-express",
       "number": 11,
-      "title": "第 11 章｜把喜欢变成表达：检索、生图、设计与讨论",
+      "title": "第 11 章｜服饰资料怎么看：实物、图像与商品名称",
       "source": "chapters/11-express.md",
       "slug": "11-express",
       "group": "I"
@@ -193,7 +193,7 @@
     {
       "id": "20-description-workshop",
       "number": 20,
-      "title": "第 20 章｜不知道衣服叫什么，也能把它说清楚",
+      "title": "第 20 章｜综合辨识：从整件衣物到结构与穿着",
       "source": "chapters/20-description-workshop.md",
       "slug": "20-description-workshop",
       "group": "II"
@@ -233,7 +233,7 @@
     {
       "id": "25-visible-details",
       "number": 25,
-      "title": "第 25 章｜从领口到背部：把一件上衣描述完整",
+      "title": "第 25 章｜领口、袖子与背部：上衣的连接和开合",
       "source": "chapters/25-visible-details.md",
       "slug": "25-visible-details",
       "group": "IV"
@@ -241,7 +241,7 @@
     {
       "id": "26-material-comparison",
       "number": 26,
-      "title": "第 26 章｜只换一种材料：用对照看清衣服的质感",
+      "title": "第 26 章｜材料与质感：光泽、透光、挺括和垂坠",
       "source": "chapters/26-material-comparison.md",
       "slug": "26-material-comparison",
       "group": "IV"
@@ -257,7 +257,7 @@
     {
       "id": "28-wardrobe-lab",
       "number": 28,
-      "title": "第 28 章｜男装与中性衣橱：把整套穿着写成可调整的关系",
+      "title": "第 28 章｜男装与中性衣橱：剪裁、叠穿与衣物组合",
       "source": "chapters/28-wardrobe-lab.md",
       "slug": "28-wardrobe-lab",
       "group": "IV"
@@ -321,7 +321,7 @@
     {
       "id": "36-mens-fit",
       "number": 36,
-      "title": "第 36 章｜男装版型与比例：把“合身”拆成可见关系",
+      "title": "第 36 章｜男装版型、松量与合身",
       "source": "chapters/36-mens-fit.md",
       "slug": "36-mens-fit",
       "group": "VI"
@@ -345,7 +345,7 @@
     {
       "id": "39-mens-scenarios",
       "number": 39,
-      "title": "第 39 章｜男装场景描述：让一套衣服跟着活动变化",
+      "title": "第 39 章｜男装场景穿搭：天气、活动与着装要求",
       "source": "chapters/39-mens-scenarios.md",
       "slug": "39-mens-scenarios",
       "group": "VI"

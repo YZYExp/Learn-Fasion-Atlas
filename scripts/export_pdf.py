@@ -102,9 +102,9 @@ class Cover(Flowable):
   c=self.canv
   c.setFillColor(TEAL);c.rect(0,608,42,5,fill=1,stroke=0)
   c.setFont('CN',35);c.drawString(0,552,'衣着有名')
-  c.setFont('CN',18);c.drawString(0,517,'从风格识别到单品描述')
+  c.setFont('CN',18);c.drawString(0,517,'服饰风格、单品与穿着知识')
   c.setFillColor(MUTED);c.setFont('CN',10.5)
-  c.drawString(0,483,'看懂服饰 · 认识名称 · 说清人物穿着')
+  c.drawString(0,483,'认识风格 · 理解结构 · 了解现实穿着')
   c.setFont('CN',10);c.drawString(0,448,f'{len(CHAPTERS)-1} 章正文 / {IMAGE_COUNT} 张教学配图')
   dw=173
   for x,name in [(BW-2*dw-12,'13-dresses.png'),(BW-dw,'63-mens-classic-styles.png')]:
@@ -112,9 +112,9 @@ class Cover(Flowable):
    dh=dw*picture.imageHeight/picture.imageWidth
    c.drawImage(picture.filename,x,55,width=dw,height=dh,mask='auto')
   c.setFillColor(TEAL);c.setFont('CN',13)
-  for i,line in enumerate(['风格与衣橱','女装与男装','衣型与比例','面料与装饰','完整描述练习']):c.drawString(0,338-i*29,line)
+  for i,line in enumerate(['风格与衣橱','女装与男装','衣型与比例','面料与装饰','综合辨识与穿着']):c.drawString(0,338-i*29,line)
   c.setFillColor(MUTED);c.setFont('CN',9);c.drawString(0,28,'中文图解兴趣读本')
-  c.drawString(0,9,'扩充版 · 2026 年 10 月')
+  c.drawString(0,9,'服饰知识修订版 · 2026 年 10 月')
 
 class Doc(BaseDocTemplate):
  def __init__(self,*a,**k):
@@ -206,7 +206,7 @@ def parse(p):
 
 def main():
  OUT.parent.mkdir(parents=True,exist_ok=True)
- d=Doc(str(OUT),pagesize=(W,H),leftMargin=M,rightMargin=M,topMargin=58,bottomMargin=112,title='衣着有名：从风格识别到单品描述',author='衣着有名',pageCompression=1)
+ d=Doc(str(OUT),pagesize=(W,H),leftMargin=M,rightMargin=M,topMargin=58,bottomMargin=112,title=BOOK['title'],author='衣着有名',pageCompression=1)
  d.addPageTemplates(PageTemplate('main',[Frame(M,112,BW,H-170,leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0)],onPageEnd=footer))
  toc=TableOfContents();toc.levelStyles=[ParagraphStyle('toc',fontName='CN',fontSize=9.3,leading=16.5,textColor=INK,spaceBefore=5,wordWrap='CJK',rightIndent=25)]
  story=[Cover(),PageBreak(),para('目录','h1'),para('点选目录或 PDF 书签即可跳转。第 13 章起为单品细节；来源编号在对应页下方可点击。','small'),Spacer(1,14),toc]

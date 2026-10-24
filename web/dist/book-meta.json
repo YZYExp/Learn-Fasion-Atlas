@@ -1,5 +1,5 @@
 {
-  "title": "衣着有名：从风格识别到单品描述",
+  "title": "衣着有名：服饰风格、单品与穿着知识",
   "groups": [
     {
       "n": "I",
@@ -79,7 +79,7 @@
     },
     {
       "n": "VII",
-      "title": "查词、辨析与描述路线",
+      "title": "术语、辨析与阅读路线",
       "ids": [
         "01-glossary",
         "02-comparisons",
@@ -91,7 +91,7 @@
     }
   ],
   "stats": {
-    "pages": 231,
+    "pages": 227,
     "chapters": 39,
     "images": 91
   }

@@ -89,7 +89,7 @@ p.write_text(s)
 
 shutil.copy2(Path(__file__).parent/'atlas.json',DIST/'atlas.json')
 groups=[{'n':g['id'],'title':g['title'],'ids':[c['id'] for c in book['chapters'] if c['group']==g['id']]} for g in book['sections']]
-groups.append({'n':['I','II','III','IV','V','VI','VII','VIII','IX','X'][len(book['sections'])],'title':'查词、辨析与描述路线','ids':[c['id'] for c in out if c['kind']=='appendix']})
+groups.append({'n':['I','II','III','IV','V','VI','VII','VIII','IX','X'][len(book['sections'])],'title':'术语、辨析与阅读路线','ids':[c['id'] for c in out if c['kind']=='appendix']})
 (DIST/'book-meta.json').write_text(json.dumps({'title':book['title'],'groups':groups,'stats':meta},ensure_ascii=False,indent=2)+'\n')
 
 # Content fingerprints keep browsers from mixing old scripts/data with a new edition.

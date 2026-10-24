@@ -64,13 +64,13 @@ def main():
     chapters = validate()
     sources = [*chapters, *sorted((ROOT / 'appendices').glob('*.md')), ROOT / 'references/sources.md']
     if not args.check:
-        heading = '# 衣着有名：从风格识别到单品描述\n\n中文图解兴趣读本 · 多维分类审校版 · 2026-10-24\n\n'
+        heading = '# ' + json.loads((ROOT / 'book.json').read_text())['title'] + '\n\n中文图解兴趣读本 · 服饰知识修订版 · 2026-10-24\n\n'
         toc = '\n'.join(f'- [{p.read_text(encoding="utf-8").splitlines()[0].lstrip("# ")}]({p.relative_to(ROOT).as_posix()})' for p in sources)
         content = '\n\n---\n\n'.join(rebase(p, p.read_text(encoding='utf-8')) for p in sources)
         (ROOT / 'book.md').write_text(heading + toc + '\n\n---\n\n' + content, encoding='utf-8')
         detail_sources = [p for p in chapters if int(p.name[:2]) >= 13]
         detail_sources.append(ROOT / 'appendices/03-garment-words.md')
-        detail_heading = '# 衣着有名：人物衣着与单品细节分册\n\n从连衣裙、蕾丝与领袖开始，学会说清人物穿着。\n\n'
+        detail_heading = '# 衣着有名：单品、结构与材料分册\n\n认识常见衣物的名称、构造、面料与穿着关系。\n\n'
         detail_toc = '\n'.join(f'- [{p.read_text(encoding="utf-8").splitlines()[0].lstrip("# ")}]({p.relative_to(ROOT).as_posix()})' for p in detail_sources)
         detail_content = '\n\n---\n\n'.join(rebase(p, p.read_text(encoding='utf-8')) for p in detail_sources)
         (ROOT / 'garment-details.md').write_text(detail_heading + detail_toc + '\n\n---\n\n' + detail_content, encoding='utf-8')
